@@ -38,22 +38,6 @@
 &__button {
     letter-spacing: 0.54px;
     margin-right: 20px;
-    outline: 2px solid transparent;
-    transition: color 0.4s, outline-color 0.4s, background-color 0.4s;
-    &:hover{
-        color: $orange-900;
-        outline-color: rgba($orange-900, 0.7);
-        background-color: transparent;
-    }
-    &:focus{
-        color: $orange-900; 
-        outline-color: rgba($orange-900, 0.7);
-        background-color: rgba($orange-900, 0.10);
-    }
-    &:active{
-        color: $orange-900;
-        background-color: rgba($orange-900, 0.10);
-    }
 }
 
 &__link {
@@ -61,22 +45,5 @@
     line-height: 1.5;
     color: $darkBlue-900;
     position: relative;
-    outline: 2px solid transparent;
-    border-bottom: 2px solid $darkBlue-900;
-    transition: color 0.3s, outline-color 0.3s, text-shadow 0.3s, border-bottom-color 0.3s;
-
-    &:hover {
-        color: $orange-900;
-        border-bottom-color: transparent;
-    }
-    &:focus
-    {
-        border-radius: 5px;
-        outline-color: rgba($orange-900, 0.7);
-    }
-    &:active {
-        border-bottom-color: transparent;
-        text-shadow: 2px 2px 5px rgba($dark, 0.5);
-    }
 }
 }
