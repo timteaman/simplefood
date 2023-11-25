@@ -29,7 +29,8 @@ body {
 
 .logo {
     border-radius: 5px;
-    transition: opacity 0.3s, outline 0.3s;
+    transition: opacity 0.4s, outline 0.4s;
+    outline-offset: 3px;
     &:hover {
         opacity: 0.7;
     }
