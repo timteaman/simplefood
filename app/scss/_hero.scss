@@ -1,0 +1,58 @@
+.hero {
+    padding: 0;
+
+&__inner {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 155px 0;
+}
+
+&__content {
+    max-width: 476px;
+}
+
+&__title {
+    @extend %rubik-500;
+    font-size: 66px;
+    text-transform: uppercase;
+    color: $orange-900;
+    margin-bottom: 20px;
+}
+
+&__title--color {
+    display: block;
+    color: $darkBlue-900;
+}
+
+&__text {
+    max-width: 450px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+&__button {
+    letter-spacing: 0.54px;
+    margin-right: 20px;
+}
+
+&__link {
+    font-size: 20px;
+    line-height: 1.5;
+    color: $darkBlue-900;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid $darkBlue-900;
+        z-index: -1;
+        bottom: 3px;
+        left: 0;
+        width: 100%;
+    }
+}
+}

@@ -1,0 +1,47 @@
+dist/
+app/css/*
+
+# Игнорировать временные файлы
+.DC_Store
+*.tmp
+*.temp
+
+# Игнорировать файлы компиляции
+*.o
+*.out
+*.class
+
+# Игнорировать файлы настроек IDE
+.idea/
+.idea/*
+.vscode/
+*.suo
+*.ntvs*
+*.sublime*
+
+# Игнорировать зависимости и модули
+node_modules/
+bower_components/
+
+# Игнорировать файлы конфигурации
+.env
+*.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+package-lock.json
+
+# Игнорировать файлы логов и отчётов
+logs/
+*.log
+npm-debug.log*
+nmp-debug.*
+
+# Игнорировать файлы секретной информации
+*.key
+*.pem
+
+# Игнорировать временные директории
+/temp/
+/tmp/
