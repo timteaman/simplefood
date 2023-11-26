@@ -4,6 +4,10 @@
 &__inner {
     display: flex;
     align-items: center;
+    background-image: image-set(
+        url('../images/hero/guy@1x.png') type('image/png') 1x,
+        url('../images/hero/guy@2x.png') type('image/png') 2x
+        );
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
