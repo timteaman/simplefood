@@ -1,29 +1,46 @@
-const { src, dest, watch, parallel, series } = require("gulp");
+const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss = require("gulp-sass")(require("sass"));
-const concat = require("gulp-concat");
-const autoprefixer = require("gulp-autoprefixer");
-const uglify = require("gulp-uglify");
-const imagemin = require("gulp-imagemin");
-const browserSync = require("browser-sync").create();
+const scss = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+const browserSync = require('browser-sync').create();
 const del = require('del');
-const svgSprite = require("gulp-svg-sprite");
+const svgSprite = require('gulp-svg-sprite');
+const sourcemaps = require('gulp-sourcemaps');
 
-function cleanDist() {
-  return del("dist");
-}
+const notify = require('gulp-notify'); 
+const plumber = require('gulp-plumber'); 
 
 function browsersync() {
   browserSync.init({
     server: {
-      baseDir: "app/",
+      baseDir: "./src/",
     },
     notify: false,
   });
 }
 
+function watching() {
+  watch(["./src/scss/**/*.scss"], styles);
+  watch(["./src/js/**/*.js", "!src/js/main.min.js"], scripts);
+  watch(["./src/**/*.html"]).on("change", browserSync.reload);
+  watch(["./src/images/icons/*.svg"], svgSprites);
+}
+
 function styles() {
-  return src("app/scss/style.scss")
+  return src('./src/scss/style.scss')
+    .pipe(plumber({
+      errorHandler: notify.onError(function(err){
+        return {
+          title: 'Styles',
+          sound: false,
+          message: err.message
+        }
+      })
+    }))
+    .pipe(sourcemaps.init())
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(concat("style.min.css"))
     .pipe(
@@ -32,20 +49,21 @@ function styles() {
         grid: true,
       })
     )
-    .pipe(dest("app/css"))
+    .pipe(sourcemaps.write())
+    .pipe(dest("./src/css"))
     .pipe(browserSync.stream());
 }
 
 function scripts() {
-  return src(["node_modules/jquery/dist/jquery.js", "app/js/main.js"])
+  return src(["./node_modules/jquery/dist/jquery.js", "./src/js/main.js"])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
-    .pipe(dest("app/js"))
+    .pipe(dest("./src/js"))
     .pipe(browserSync.stream());
 }
 
 function images() {
-  return src("app/images/**/*.*")
+  return src("./src/images/**/*.*")
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
@@ -56,30 +74,28 @@ function images() {
         }),
       ])
     )
-    .pipe(dest("dist/images"));
+    .pipe(dest("./dist/images"));
 }
 
 function build() {
   return src(
     [
-      "app/css/style.min.css",
-      "app/fonts/**/*",
-      "app/js/main.min.js",
-      "app/*.html",
+      "./src/css/style.min.css",
+      "./src/fonts/**/*",
+      "./src/js/main.min.js",
+      "./src/*.html",
     ],
-    { base: "app" }
-  ).pipe(dest("dist"));
+    { base: "src" }
+  ).pipe(dest("./dist"));
 }
 
-function watching() {
-  watch(["app/scss/**/*.scss"], styles);
-  watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
-  watch(["app/**/*.html"]).on("change", browserSync.reload);
-  watch(["app/images/icons/*.svg"], svgSprites);
+function cleanDist() {
+  return del('./dist');
 }
+
 
 function svgSprites() {
-  return src("app/images/icons/sprites/**/*.svg") // выбираем в папке с иконками все файлы с расширением svg
+  return src("./src/images/icons/sprites/**/*.svg") // выбираем в папке с иконками все файлы с расширением svg
     .pipe(
       svgSprite({
         mode: {
@@ -89,7 +105,7 @@ function svgSprites() {
         },
       })
     )
-    .pipe(dest("app/images/icons")); // указываем, в какую папку поместить готовый файл спрайта
+    .pipe(dest("./src/images/icons")); // указываем, в какую папку поместить готовый файл спрайта
 }
 
 exports.styles = styles;
