@@ -11,13 +11,11 @@
     &__list {
         display: flex;
         margin: 0 50px 0 auto;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 40px;
+        gap: 40px;
     }
 
     &__link {
+        @extend .link;
         letter-spacing: 0.18px;
         border-radius: 5px;
 
@@ -31,8 +29,8 @@
     display: flex;
     margin-right: -5px;
 
-    &__item:not(:last-child) {
-        margin-right: 10px;
+    &__item {
+        gap: 10px;
     }
 
     &__btn {
@@ -43,6 +41,10 @@
         align-items: center;
         justify-content: center;
         transition: background-color 0.3s, outline-color 0.3s;
+
+        &--cart {
+            position: relative;
+        }
 
         &:hover {
             background-color: $orange-900;
@@ -56,10 +58,6 @@
         &:active {
             background-color: rgba($orange-900, 0.10);
         }
-    }
-
-    &__btn--cart {
-        position: relative;
     }
 
     &__number {
@@ -76,4 +74,9 @@
         align-items: center;
         justify-content: center;
     }
+}
+
+
+.icon-mask--header:hover {
+    background-color: $white;
 }

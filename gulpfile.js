@@ -24,7 +24,7 @@ function browsersync() {
 
 function watching() {
   watch(["./src/scss/**/*.scss"], styles);
-  watch(["./src/js/**/*.js", "!src/js/main.min.js"], scripts);
+  watch(["./src/js/**/*.js"]);
   watch(["./src/**/*.html"]).on("change", browserSync.reload);
   watch(["./src/images/icons/*.svg"], svgSprites);
 }
@@ -54,13 +54,13 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-function scripts() {
-  return src(["./node_modules/jquery/dist/jquery.js", "./src/js/main.js"])
-    .pipe(concat("main.min.js"))
-    .pipe(uglify())
-    .pipe(dest("./src/js"))
-    .pipe(browserSync.stream());
-}
+// function scripts() {
+//   return src(["./src/js/main.js"])
+//     .pipe(concat("main.min.js"))
+//     .pipe(uglify())
+//     .pipe(dest("./src/js"))
+//     .pipe(browserSync.stream());
+// }
 
 function images() {
   return src("./src/images/**/*.*")
@@ -82,7 +82,7 @@ function build() {
     [
       "./src/css/style.min.css",
       "./src/fonts/**/*",
-      "./src/js/main.min.js",
+      "./src/js/main.js",
       "./src/*.html",
     ],
     { base: "src" }
@@ -109,7 +109,7 @@ function svgSprites() {
 }
 
 exports.styles = styles;
-exports.scripts = scripts;
+// exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
@@ -119,4 +119,4 @@ exports.svgSprites = svgSprites;
 exports.build = series(cleanDist, images, build);
 
 exports.svg = svgSprites;
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, browsersync, watching);

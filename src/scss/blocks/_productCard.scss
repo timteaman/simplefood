@@ -1,0 +1,40 @@
+.product-card {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 15px;
+    height: 299px;
+    background-color: $white;
+    outline: 1px solid #ECECEC;
+    border-radius: 5px;
+    transition: outline-color 0.3s;
+
+    &:hover {
+        outline-color: rgba($orange-900, 0.7);
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        font-size: 15px;
+        line-height: normal;
+        min-height: 37px;
+    }
+
+    &__price {
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: $darkBlue-900;
+    }
+
+    &__btn {
+        padding: 7px 14px;
+        font-size: 14px;
+    }
+}

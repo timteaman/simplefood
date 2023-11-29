@@ -7,6 +7,7 @@
     &__title {
         margin-bottom: 60px;
     }
+
     &__filter {
         display: flex;
         margin-bottom: 45px;
@@ -14,14 +15,12 @@
     }
 
     &__item:not(:last-child) {
-    margin-right: 20px;
+        margin-right: 20px;
     }
-
-
 
     &__button {
         font-size: 20px;
-        color: $darkBlue-900; 
+        color: $darkBlue-900;
         background-color: $white;
         padding: 13px 32px;
         outline: 1px solid $silver-200;
@@ -37,9 +36,11 @@
             outline-color: rgba($orange-900, 0.7);
             background-color: rgba($orange-900, 0.10);
         }
+
         &:focus {
             outline-color: rgba($orange-900, 0.7);
         }
+
         &:active {
             box-shadow: 0 -5px 12px 0 rgba($orange-900, 0.20) inset;
         }
@@ -54,68 +55,30 @@
         &:hover {
             color: $orange-900;
         }
+
         &:focus {
             border-radius: 5px;
             outline-color: rgba($orange-900, 0.7);
         }
+
         &:active {
             text-shadow: 2px 2px 5px rgba($dark, 0.5);
         }
-
-
     }
 }
 
-.svg--categories {
+.icon-sprite--categories {
     width: 44px;
     height: 44px;
     margin-right: 10px;
 }
 
-.product {
-    &__list {
+.product-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 210px));
     grid-auto-rows: minmax(0, 300px);
     gap: 30px;
     margin-bottom: 60px;
     align-items: center;
-}
-
-    &__card {
-        font-size: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 20px 15px;
-        height: 299px;
-        background-color: $white;
-        outline: 1px solid #ECECEC;
-        border-radius: 5px;
-        transition: outline-color 0.3s;
-
-        &:hover {
-            outline-color: rgba($orange-900, 0.7);
-        }
-    }
-
-    &__title {
-        font-size: 15px;
-        line-height: normal;
-        min-height: 37px;
-    }
-    
-    &__price {
-        line-height: 1.4;
-        font-weight: 500;
-        color: $darkBlue-900;
-    }
-
-    &__btn {
-        padding: 7px 14px;
-        font-size: 14px;   
-    }
-
 }
 

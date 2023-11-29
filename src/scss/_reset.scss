@@ -30,16 +30,18 @@ ol,
 li,
 figure,
 figcaption,
-blockquote,
-dl,
-dd,
-label {
+blockquote
+{
     margin: 0;
-    font-weight: inherit;
-    line-height: inherit;
+    font: inherit;
 }
 
-ul {
+label {
+    display: inline-block;
+    font: inherit;
+}
+
+ul, ol {
     list-style: none;
 }
 
@@ -62,9 +64,11 @@ a {
     outline: transparent;
 }
 
+select,
 input,
 textarea,
 button {
+    appearance: none;
     background-color: transparent;
     border: none;
     color: inherit;
