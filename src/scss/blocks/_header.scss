@@ -1,24 +1,25 @@
 .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 61px 5px 59px 5px;
 
     &__inner {
         display: flex;
+        align-items: center;
     }
 
     &__list {
         display: flex;
-        margin: 0 50px 0 auto;
+        align-items: center;
+        margin: 0 53px 0 auto;
         gap: 40px;
     }
 
     &__link {
         @extend .link;
-        letter-spacing: 0.18px;
         border-radius: 5px;
-
+        font-size: 18px;
+        letter-spacing: 0.18px;
         &--active {
             color: $orange-900;
         }
@@ -27,56 +28,41 @@
 
 .user-nav {
     display: flex;
-    margin-right: -5px;
+    align-items: center;
+    margin-right: -3px;
+    gap: 15px;
 
-    &__item {
-        gap: 10px;
-    }
-
-    &__btn {
-        width: 44px;
-        height: 44px;
-        outline: 2px solid transparent;
+    &--btn {
+        position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
-        transition: background-color 0.3s, outline-color 0.3s;
-
-        &--cart {
-            position: relative;
-        }
-
-        &:hover {
-            background-color: $orange-900;
-        }
-
-        &:focus {
-            outline-color: rgba($orange-900, 0.7);
-            background-color: rgba($orange-900, 0.10);
-        }
-
-        &:active {
-            background-color: rgba($orange-900, 0.10);
-        }
+        padding: 10px;
     }
 
     &__number {
         position: absolute;
         border-radius: 50%;
         background-color: $orange-900;
-        right: 4px;
-        top: 7px;
+        right: 1px;
+        top: 5px;
         width: 14px;
         height: 14px;
         color: $white;
         font-size: 10px;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
     }
 }
 
+.icon-mask--icon-cart {
+    mask-image: url('../../images/icons/sprite.svg#icon-cart');
+    width: 19px;
+    height: 19px;
+}
 
-.icon-mask--header:hover {
-    background-color: $white;
+.icon-mask--icon-search {
+    mask-image: url('../../images/icons/sprite.svg#icon-search');
+    width: 19px;
+    height: 19px;
 }

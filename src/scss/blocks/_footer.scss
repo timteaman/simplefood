@@ -5,12 +5,23 @@
         margin-bottom: 61px;
     }
 
+    &__box {
+        margin-right: 70px;
+        max-width: 200px;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(3, auto);
+        grid-auto-rows: 23px;
         max-height: 152px;
-        gap: 0 90px;
-        margin-right: 88px;
+        gap: 20px 90px;
+        margin-right: 152px;
     }
 
     &__link {
@@ -39,21 +50,18 @@
 }
 
 .form {
-    margin-right: 98px;
-    &__logo {
-        margin-bottom: 30px;
-        display: block;
-    }
 
+    &__label {
+        width: 100%;
+    }
     &__input {
-        display: block;
         width: 100%;
         margin-bottom: 12px;
         padding: 13px 15px;
         font-size: 14px;
         outline: 1px solid $gray;
+        border-radius: 5px;
         background-color: $white;
-        outline: 2px solid transparent;
         transition: color 0.3s, background-color 0.3s, outline-color 0.3s;
 
         &::placeholder {
@@ -81,7 +89,7 @@
         }
     }
 
-    &__button {
+    &__btn {
         font-weight: 500;
         padding: 13px 0;
         width: 100%;
@@ -89,47 +97,47 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-}
 
-.svg__footer--button {
-    margin-right: 20px;
+        &--icon-telegram {
+            mask-image: url('../../images/icons/sprite.svg#icon-telegram');
+            margin-right: 20px;
+            background-color: $white;
+        }
+    }
 }
 
 .address {
-
     &__item {
         margin-bottom: 15px;
-        font-size: 16px;
-        line-height: 2;
-    }
-
-    &__link {
         display: flex;
         align-items: center;
     }
-}
 
-.svg--address {
-    margin-right: 7px;
+    &__icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 7px;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 2;
+    }
 }
 
 .social {
     display: flex;
+    gap: 13px;
 
-    &__item:not(:last-child) {
-        margin-right: 13px;
-    }
-
-    &__link {
+    &__item {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: 2px solid transparent;
         border-radius: 50%;
         background-color: $silver-200;
         width: 39px;
         height: 39px;
-        align-items: center;
-        justify-content: center;
-        outline: 2px solid transparent;
         transition: background-color 0.3s, outline-color 0.3s;
 
         &:hover {
@@ -146,4 +154,9 @@
         }
 
     }
+
+    &__icon {
+        height: 20.5px;
+    }
 }
+

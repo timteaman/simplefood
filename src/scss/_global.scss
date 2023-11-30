@@ -57,25 +57,25 @@ body {
     color: $darkBlue-900;
 }
 
-.button {
+.btn {
     display: inline-block;
     font-size: 20px;
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
     padding: 12px 32px;
     border-radius: 6px;
     background-color: $orange-900;
     color: $white;
-    transition: color 0.3s, border 0.3s, background-color 0.3s;
+    transition: color 0.3s, outline-color 0.3s, background-color 0.3s;
 
     &:focus {
         color: $orange-900;
-        border-color: $orange-900;
+        outline-color: $orange-900;
         background-color: rgba($orange-900, 0.1);
     }
 
     &:hover {
         color: $orange-900;
-        border-color: $orange-900;
+        outline-color: $orange-900;
         background-color: transparent;
     }
 
@@ -86,15 +86,14 @@ body {
 }
 
 .link {
-    display: inline-block;
     font-size: 20px;
     line-height: 1.5;
     color: $darkBlue-900;
-    border: 2px solid transparent;
-    transition: border 0.3s, border-radius 0.3s, color 0.3s, text-shadow 0.3s;
+    outline: 2px solid transparent;
+    transition: outline 0.3s, border-radius 0.3s, color 0.3s, text-shadow 0.3s;
 
     &:focus {
-        border-color: $orange-900;
+        outline-color: $orange-900;
         border-radius: 7px;
     }
 
@@ -107,14 +106,41 @@ body {
     }
 }
 
+.link--underline {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        width: 100%;
+        border-bottom: 1px solid $darkBlue-900;
+        transition: border-bottom-color 0.3s;
+    }
+
+    &:hover::after {
+        border-bottom-color: $orange-900;
+    }
+}
+
 .icon-mask {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     background-color: $darkBlue-900;
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
+}
+
+.btn--with-icon {
+    content: '';
+    // width: 18px;
+    // height: 18px;
+    background-color: $darkBlue-900;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
 }
 
 .sr-only {

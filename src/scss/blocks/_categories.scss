@@ -18,7 +18,7 @@
         margin-right: 20px;
     }
 
-    &__button {
+    &__btn {
         font-size: 20px;
         color: $darkBlue-900;
         background-color: $white;
@@ -49,8 +49,20 @@
     &__more {
         font-size: 20px;
         line-height: 1.5px;
-        text-decoration-line: underline;
         transition: color 0.3s, border-radius 0.3s, outline-color 0.3s, text-shadow 0.3s;
+
+        &--text {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                border-bottom: 1px solid $darkBlue-900;
+                width: 100%;
+                left: 0;
+                bottom: 2px;
+            }
+        }
 
         &:hover {
             color: $orange-900;
@@ -67,12 +79,6 @@
     }
 }
 
-.icon-sprite--categories {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-}
-
 .product-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 210px));
@@ -82,3 +88,28 @@
     align-items: center;
 }
 
+.icon-masc--category {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.icon-mask--icon-category-burger  {
+    mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
+}
+
+.icon-mask--icon-category-pizza  {
+    mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
+}
+
+.icon-mask--icon-category-sandvich  {
+    mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
+}
+
+.icon-mask--icon-category-asia  {
+    mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
+}
+
+.icon-mask--icon-category-dish  {
+    mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
+}

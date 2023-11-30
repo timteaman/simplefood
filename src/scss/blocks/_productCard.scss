@@ -1,8 +1,8 @@
 .product-card {
     font-size: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
     padding: 20px 15px;
     height: 299px;
     background-color: $white;
@@ -10,14 +10,16 @@
     border-radius: 5px;
     transition: outline-color 0.3s;
 
-    &:hover {
-        outline-color: rgba($orange-900, 0.7);
-    }
-
     &__link {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
 
+    &:hover {
+        outline-color: rgba($orange-900, 0.7);
     }
 
     &__title {
