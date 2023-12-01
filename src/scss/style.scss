@@ -2,8 +2,10 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
-@import 'blocks/header';
-@import 'blocks/hero';
+@import '../module/header/header';
+@import '../module/hero/hero';
 @import './blocks/_productCard';
-@import 'blocks/categories';
-@import 'blocks/footer';
+@import '../module/categories/categories';
+@import '../module/features/features';
+@import '../module/restaurant/restaurant';
+@import '../module/footer/footer';

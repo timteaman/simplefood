@@ -1,0 +1,33 @@
+.features {
+
+    padding-top: 0;
+
+&__inner {
+    padding: 0 70px;
+    display: flex;
+    justify-content: right;
+    background-repeat: no-repeat;
+    background-size: 440px 585px;
+    background-position: calc(0% + 70px);
+}
+
+&__content {
+    max-width: 470px;
+    margin-top: 58px;
+}
+
+&__title,
+&__text,
+&__list {
+    margin-bottom: 30px;
+}
+
+&__text {
+    font-size: 20px;
+}
+
+&__item {
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+}
