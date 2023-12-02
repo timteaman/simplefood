@@ -1,14 +1,14 @@
 .features {
 
-&__img {
-    max-width: 440px;
-    object-fit: contain;
-}
-
 &__inner {
     padding: 0 70px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: calc(0% + 70px);
+    background-size: contain;
+    min-height: 590px;
 }
 
 &__content {
@@ -34,30 +34,30 @@
     font-size: 24px;
 }
 
+&__icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 30px;
+
+    &--timer {
+        mask-image: url('../../images/icons/sprite.svg#icon-timer');
+        background-color: $orange-900;
+    }
+    
+    &--delivery {
+        mask-image: url('../../images/icons/sprite.svg#icon-delivery');
+        background-color: #00AAFF;
+    }
+    
+    &--restorant {
+        mask-image: url('../../images/icons/sprite.svg#icon-restorant');
+        background-color: #FF2222;
+    }
+}
+
 &__btn {
     letter-spacing: 0.54px;
     font-size: 18px;
 }
 
-}
-
-.icon-masc--features {
-    width: 34px;
-    height: 34px;
-    margin-right: 30px;
-}
-
-.icon-mask--icon-timer {
-    mask-image: url('../../images/icons/sprite.svg#icon-timer');
-    background-color: $orange-900;
-}
-
-.icon-mask--icon-delivery {
-    mask-image: url('../../images/icons/sprite.svg#icon-delivery');
-    background-color: #00AAFF;
-}
-
-.icon-mask--icon-restorant {
-    mask-image: url('../../images/icons/sprite.svg#icon-restorant');
-    background-color: #FF2222;
 }

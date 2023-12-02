@@ -21,7 +21,7 @@
         grid-auto-rows: 23px;
         max-height: 152px;
         gap: 20px 90px;
-        margin-right: 152px;
+        margin-right: 145px;
     }
 
     &__link {
@@ -54,6 +54,7 @@
     &__label {
         width: 100%;
     }
+
     &__input {
         width: 100%;
         margin-bottom: 12px;
@@ -98,28 +99,39 @@
         justify-content: center;
         align-items: center;
 
-        &--icon-telegram {
-            mask-image: url('../../images/icons/sprite.svg#icon-telegram');
-            margin-right: 20px;
-            background-color: $white;
+        &:hover .form__icon--telegram,
+        &:focus .form__icon--telegram,
+        &:active .form__icon--telegram {
+            background-color: $orange-900;
         }
+
+    }
+
+    &__icon--telegram {
+        mask-image: url('../../images/icons/sprite.svg#icon-telegram');
+        margin-right: 20px;
+        background-color: $white;
     }
 }
 
 .address {
-    &__item {
+    &__link {
         margin-bottom: 15px;
         display: flex;
         align-items: center;
+
+        &:hover .address__icon {
+            background-color: $orange-900;
+        }
     }
 
     &__icon {
-        width: 18px;
+        width: 20px;
         height: 18px;
         margin-right: 7px;
     }
 
-    &__link {
+    &__contact {
         font-size: 16px;
         line-height: 2;
     }
@@ -129,19 +141,23 @@
     display: flex;
     gap: 13px;
 
-    &__item {
+    &__link {
         display: flex;
         align-items: center;
         justify-content: center;
         outline: 2px solid transparent;
         border-radius: 50%;
         background-color: $silver-200;
+        transition: background-color 0.3s, outline-color 0.3s;
         width: 39px;
         height: 39px;
-        transition: background-color 0.3s, outline-color 0.3s;
 
         &:hover {
             background-color: $orange-900;
+        }
+
+        &:hover .social__icon {
+            background-color: $white;
         }
 
         &:focus {
@@ -153,10 +169,13 @@
             background-color: rgba($orange-900, 0.10);
         }
 
+        &:active .social__icon {
+            background-color: $orange-900;
+        }
+
     }
 
     &__icon {
         height: 20.5px;
     }
 }
-

@@ -32,34 +32,52 @@
     margin-right: -3px;
     gap: 15px;
 
-    &--btn {
+    &__btn {
         position: relative;
         display: flex;
         align-items: center;
         padding: 10px;
         border-radius: 5px;
+        outline: 2px solid transparent;
 
         &:hover {
             background-color: $orange-900;
         }
-    }
 
-    &--icon {
-        &:hover {
+        &:hover .user-nav__icon {
             background-color: $white;
         }
+
+        &:hover .user-nav__number{
+            background-color: $white;
+            color: $orange-900;
+        }
+
+        &:focus {
+            outline-color: rgba($orange-900, 0.70);
+            background-color: rgba($orange-900, 0.10);
+        }
+
+        &:active {
+            background-color: rgba($orange-900, 0.10);
+        }
+
     }
 
-    &--icon-search {
-        mask-image: url('../../images/icons/sprite.svg#icon-search');
-        width: 19px;
-        height: 19px;
-    }
+    &__icon {
 
-    &--icon-cart {
-        mask-image: url('../../images/icons/sprite.svg#icon-cart');
-        width: 19px;
-        height: 19px;
+        &--search {
+            mask-image: url('../../images/icons/sprite.svg#icon-search');
+            width: 19px;
+            height: 19px;
+        }
+
+        &--cart {
+            mask-image: url('../../images/icons/sprite.svg#icon-cart');
+            width: 19px;
+            height: 19px;
+        }
+
     }
 
     &__number {
@@ -75,10 +93,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        &:hover {
-            background-color: $white;
-            color: $orange-900;
-        }
     }
 }

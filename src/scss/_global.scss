@@ -65,17 +65,17 @@ body {
     border-radius: 6px;
     background-color: $orange-900;
     color: $white;
-    transition: color 0.3s, outline-color 0.3s, background-color 0.3s;
+    transition: color 0.3s, outline-color 0.3s, background-color 0.3s, margin 3s;
 
     &:focus {
         color: $orange-900;
-        outline-color: $orange-900;
+        outline-color: rgba($orange-900, 0.70);
         background-color: rgba($orange-900, 0.1);
     }
 
     &:hover {
         color: $orange-900;
-        outline-color: $orange-900;
+        outline-color: rgba($orange-900, 0.70);
         background-color: transparent;
     }
 
