@@ -1,14 +1,14 @@
 .features {
 
-    padding-top: 0;
+&__img {
+    max-width: 440px;
+    object-fit: contain;
+}
 
 &__inner {
     padding: 0 70px;
     display: flex;
-    justify-content: right;
-    background-repeat: no-repeat;
-    background-size: 440px 585px;
-    background-position: calc(0% + 70px);
+    justify-content: space-between;
 }
 
 &__content {
@@ -16,18 +16,48 @@
     margin-top: 58px;
 }
 
+&__text>p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 &__title,
 &__text,
 &__list {
-    margin-bottom: 30px;
-}
-
-&__text {
-    font-size: 20px;
+    margin-bottom: 31px;
 }
 
 &__item {
-    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
     font-size: 24px;
 }
+
+&__btn {
+    letter-spacing: 0.54px;
+    font-size: 18px;
+}
+
+}
+
+.icon-masc--features {
+    width: 34px;
+    height: 34px;
+    margin-right: 30px;
+}
+
+.icon-mask--icon-timer {
+    mask-image: url('../../images/icons/sprite.svg#icon-timer');
+    background-color: $orange-900;
+}
+
+.icon-mask--icon-delivery {
+    mask-image: url('../../images/icons/sprite.svg#icon-delivery');
+    background-color: #00AAFF;
+}
+
+.icon-mask--icon-restorant {
+    mask-image: url('../../images/icons/sprite.svg#icon-restorant');
+    background-color: #FF2222;
 }

@@ -25,8 +25,10 @@ function browsersync() {
 
 function watching() {
   watch(["./src/scss/**/*.scss"], styles);
+  watch(["./src/module/**/*.scss"], styles);
   watch(["./src/js/**/*.js"]);
   watch(["./src/**/*.html"]).on("change", browserSync.reload);
+  watch(["./src/module/**/*.html"]).on("change", browserSync.reload);
   watch(["./src/images/icons/*.svg"], svgSprites);
   watch(['./src/module/**/*.html'], htmlInclude);
 }

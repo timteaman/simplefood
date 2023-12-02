@@ -1,0 +1,31 @@
+.application {
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__box {
+        max-width: 470px;
+        margin-right: 130px;
+    }
+
+    &__title {
+        margin-bottom: 45px;
+    }
+
+    &__paragraph>p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 1.5;
+        opacity: 0.9;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 30px;
+    }
+}
