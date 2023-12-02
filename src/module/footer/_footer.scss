@@ -115,10 +115,16 @@
 }
 
 .address {
-    &__link {
+
+    &__item {
         margin-bottom: 15px;
+    }
+
+    &__link {
         display: flex;
         align-items: center;
+        font-size: 16px;
+        line-height: 2;
 
         &:hover .address__icon {
             background-color: $orange-900;
@@ -131,10 +137,6 @@
         margin-right: 7px;
     }
 
-    &__contact {
-        font-size: 16px;
-        line-height: 2;
-    }
 }
 
 .social {
