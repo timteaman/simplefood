@@ -46,6 +46,45 @@
         }
     }
 
+    &__icon {
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+
+        &:hover {
+            background-color: $orange-900;
+        }
+
+        &:focus {
+
+        }
+
+        &:active {
+
+        }
+
+    }
+    
+    &__icon-burger  {
+        mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
+    }
+    
+    &__icon-pizza  {
+        mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
+    }
+    
+    &__icon-sandvich  {
+        mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
+    }
+    
+    &__icon-asia  {
+        mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
+    }
+    
+    &__icon-dish  {
+        mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
+    }
+
     &__more {
         font-size: 20px;
         line-height: 1.5px;
@@ -86,30 +125,4 @@
     gap: 30px;
     margin-bottom: 60px;
     align-items: center;
-}
-
-.icon-masc--category {
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-}
-
-.icon-mask--icon-category-burger  {
-    mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
-}
-
-.icon-mask--icon-category-pizza  {
-    mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
-}
-
-.icon-mask--icon-category-sandvich  {
-    mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
-}
-
-.icon-mask--icon-category-asia  {
-    mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
-}
-
-.icon-mask--icon-category-dish  {
-    mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
 }
