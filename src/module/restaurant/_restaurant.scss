@@ -17,6 +17,7 @@
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.10);
     max-width: 370px;
+    background-color: $white;
 
     &:hover {
         background: $white;
@@ -39,6 +40,7 @@
         display: block;
         width: 100%;
         margin-bottom: 20px;
+        @include line-clamp(1);
     }
 
     &__icon--time {
