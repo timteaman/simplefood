@@ -4,18 +4,12 @@
         text-align: center;
     }
 
-    &__title {
-        margin-bottom: 60px;
-    }
-
     &__filter {
+        flex-wrap: wrap;
         display: flex;
         margin-bottom: 45px;
+        gap: 20px;
         justify-content: center;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 20px;
     }
 
     &__btn {
@@ -26,6 +20,7 @@
         outline: 1px solid $silver-200;
         display: flex;
         align-items: center;
+        word-wrap: nowrap;
 
         &--active {
             color: $white;
@@ -35,11 +30,12 @@
         &:hover {
             outline-color: rgba($orange-900, 0.7);
             background-color: rgba($orange-900, 0.10);
+
+            .categories__icon {
+                background-color: $orange-900;
+            }
         }
 
-        &:hover .categories__icon {
-            background-color: $orange-900;
-        }
 
         &:focus {
             outline-color: rgba($orange-900, 0.7);
@@ -59,30 +55,30 @@
         height: 44px;
         margin-right: 10px;
 
-        &-burger  {
+        &--burger {
             mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
         }
 
-        &-pizza  {
+        &--pizza {
             mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
         }
-        
-        &-sandvich  {
+
+        &--sandvich {
             mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
         }
-        
-        &-asia  {
+
+        &--asia {
             mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
         }
-        
-        &-dish  {
+
+        &--dish {
             mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
         }
     }
-    
-    &__btn-more {
+
+    &__more {
         @extend .link;
-        @extend  .link--underline;
+        @extend .link--underline;
         border-radius: 5px;
 
         &::after {
@@ -98,13 +94,4 @@
             border-bottom-color: $darkBlue-900;
         }
     }
-}
-
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 210px));
-    grid-auto-rows: minmax(0, 300px);
-    gap: 30px;
-    margin-bottom: 60px;
-    align-items: center;
 }

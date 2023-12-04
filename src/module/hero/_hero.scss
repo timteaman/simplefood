@@ -1,57 +1,45 @@
 .hero {
     font-size: 20px;
 
-&__inner {
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    min-height: 655px;
-}
-
-&__content {
-    max-width: 476px;
-}
-
-&__title {
-    font-weight: 500;
-    font-size: 66px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: $darkBlue-900;
-
-    &__color {
-        display: block;
-        margin-bottom: 10px;
-        color: $orange-900;
-    }
-}
-
-&__text {
-    max-width: 450px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-&__btn {
-    letter-spacing: 0.54px;
-    margin-right: 20px;
-    font-size: 18px;
-}
-
-&__link {
-    &:hover::after {
-        border-bottom-color: transparent;
+    &__inner {
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        min-height: 655px;
     }
 
-    &:focus::after {
-        border-bottom-color: transparent;
+    &__content {
+        max-width: 476px;
     }
 
-    &:active::after {
-        border-bottom-color: transparent;
+    &__title {
+        font-weight: 500;
+        font-size: 66px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $darkBlue-900;
     }
-}
+
+    &__text {
+        max-width: 450px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        letter-spacing: 0.01em;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    &__link {
+        &:hover::after,
+        &:focus::after,
+        &:active::after {
+            border-bottom-color: transparent;
+        }
+    }
 
 }

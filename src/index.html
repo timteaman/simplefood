@@ -44,11 +44,11 @@
                 </li>
 
                 <li class="user-nav__item">
-                    <button class="user-nav__btn" type="button">
+                    <button class="user-nav__btn icon icon--cart" type="button">
                         <span class="sr-only">
                             Відкрити корзину
                         </span>
-                        <span class="icon-mask user-nav__icon user-nav__icon--cart"></span>
+                        <!-- <span class="icon-mask user-nav__icon user-nav__icon--cart"></span> -->
                         <span class="user-nav__number">4</span>
                     </button>
                 </li>
@@ -61,20 +61,21 @@
             <section class="hero section" id="hero">
     <div class="container">
 
-        <div class="hero__inner"
-            style="background-image: url('../images/hero/guy@1x.webp');">
+        <div class="hero__inner" style="background-image: url('../images/hero/guy@1x.webp');">
 
             <div class="hero__content">
 
                 <h2 class="hero__title">
                     Доставка
-                    <span class="hero__title__color">за 15 ХВИЛИН</span>
+                    <span class="color-orange">за 15 ХВИЛИН</span>
                 </h2>
 
-                <p class="hero__text">
-                    Найшвидший сервіс доставки їжі у вашому місті. Якщо запізнемось - то доставка за наш
-                    рахунок
-                </p>
+                <div class="hero__text">
+                    <p>
+                        Найшвидший сервіс доставки їжі у вашому місті. Якщо запізнемось - то доставка за наш
+                        рахунок
+                    </p>
+                </div>
 
                 <button class="btn hero__btn" type="button">
                     Замовити
@@ -98,189 +99,193 @@
             <ul class="categories__filter">
 
                 <li class="categories__item">
-                    <button class="btn categories__btn categories__button--active" type="button">
-                        <span class="icon-mask categories__icon categories__icon-burger"></span>
+                    <button class="btn categories__btn categories__btn--active" type="button">
+                        <span class="icon-mask categories__icon categories__icon--burger"></span>
                         Бургери
                     </button>
                 </li>
 
                 <li class="categories__item">
                     <button class="btn categories__btn" type="button">
-                        <span class="icon-mask categories__icon categories__icon-pizza"></span>
+                        <span class="icon-mask categories__icon categories__icon--pizza"></span>
                         Піца
                     </button>
                 </li>
 
                 <li class="categories__item">
-                    <button class="btn categories__btn categories__icon--sandvich" type="button">
-                        <span class="icon-mask categories__icon categories__icon-sandvich"></span>
+                    <button class="btn categories__btn" type="button">
+                        <span class="icon-mask categories__icon categories__icon--sandvich"></span>
                         Сендвічі
                     </button>
                 </li>
 
                 <li class="categories__item">
                     <button class="btn categories__btn" type="button">
-                        <span class="icon-mask categories__icon categories__icon-asia"></span>
+                        <span class="icon-mask categories__icon categories__icon--asia"></span>
                         Азійська кухня
                     </button>
                 </li>
 
                 <li class="categories__item">
                     <button class="btn categories__btn" type="button">
-                        <span class="icon-mask categories__icon categories__icon-dish"></span>
+                        <span class="icon-mask categories__icon categories__icon--dish"></span>
                         Cети
                     </button>
                 </li>
             </ul>
 
-            <ul class="product-list">
-
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/2@1x.webp"
-                                alt="фотографія чізбургера з листям салату" width="140" height="140">
-                            <h3 class="link product-card__title">Чізбургер з листям салату</h3>
-                            <span class="product-card__price">160 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/1@1x.webp"
-                                alt="фотографія Біфбургера" width="140" height="140">
-                            <h3 class="link product-card__title">Біфбургер</h3>
-                            <span class="product-card__price">190 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/3@1x.webp"
-                                alt="фотографія королівського чізбургера" width="140" height="140">
-                            <h3 class="link product-card__title">Королівський чізбургер</h3>
-                            <span class="product-card__price">260 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/4@1x.webp"
-                                alt="фотографія чорного гамбургера" width="140" height="140">
-                            <h3 class="link product-card__title">Чорний гамбургер</h3>
-                            <span class="product-card__price">199 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/5@1x.webp"
-                                alt="фотографія чікен бургера" width="140" height="140">
-                            <h3 class="link product-card__title">Чікен бургер</h3>
-                            <span class="product-card__price">180 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/2@1x.webp"
-                                alt="фотографія чізбургера з листям салату" width="140" height="140">
-                            <h3 class="link product-card__title">Чізбургер з листям салату</h3>
-                            <span class="product-card__price">160 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/1@1x.webp"
-                                alt="фотографія Біфбургера" width="140" height="140">
-                            <h3 class="link product-card__title">Біфбургер</h3>
-                            <span class="product-card__price">190 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/3@1x.webp"
-                                alt="фотографія королівського чізбургера" width="140" height="140">
-                            <h3 class="link product-card__title">Королівський чізбургер</h3>
-                            <span class="product-card__price">260 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/4@1x.webp"
-                                alt="фотографія чорного гамбургера" width="140" height="140">
-                            <h3 class="link product-card__title">Чорний гамбургер</h3>
-                            <span class="product-card__price">199 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-                <li class="product-list__item">
-
-                    <article class="product-card">
-                        <a class="link product-card__link" href="#">
-                            <img class="product-card__img" src="./images/categories/5@1x.webp"
-                                alt="фотографія чікен бургера" width="140" height="140">
-                            <h3 class="link product-card__title">Чікен бургер</h3>
-                            <span class="product-card__price">180 грн.</span>
-                        </a>
-                        <button class="btn product-card__btn" type="button">До кошика</button>
-                    </article>
-
-                </li>
-            </ul>
-
-            <button class="categories__btn-more" type="button">
-                <span class="categories__text">Показати ще</span>
+            <button class="categories__more link link--underline" type="button">
+                Показати ще
             </button>
 
         </div>
     </div>
 </section>
+            <ul class="product-list">
+
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/2@1x.webp"
+                    alt="фотографія чізбургера з листям салату" width="140" height="140">
+                <h3 class="link product-card__title">Чізбургер з листям салату</h3>
+                <span class="product-card__price">160 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/1@1x.webp" alt="фотографія Біфбургера"
+                    width="140" height="140">
+                <h3 class="link product-card__title">Біфбургер</h3>
+                <span class="product-card__price">190 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/3@1x.webp"
+                    alt="фотографія королівського чізбургера" width="140" height="140">
+                <h3 class="link product-card__title">Королівський чізбургер</h3>
+                <span class="product-card__price">260 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/4@1x.webp" alt="фотографія чорного гамбургера"
+                    width="140" height="140">
+                <h3 class="link product-card__title">Чорний гамбургер</h3>
+                <span class="product-card__price">199 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/5@1x.webp" alt="фотографія чікен бургера"
+                    width="140" height="140">
+                <h3 class="link product-card__title">Чікен бургер</h3>
+                <span class="product-card__price">180 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/2@1x.webp"
+                    alt="фотографія чізбургера з листям салату" width="140" height="140">
+                <h3 class="link product-card__title">Чізбургер з листям салату</h3>
+                <span class="product-card__price">160 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/1@1x.webp" alt="фотографія Біфбургера"
+                    width="140" height="140">
+                <h3 class="link product-card__title">Біфбургер</h3>
+                <span class="product-card__price">190 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/3@1x.webp"
+                    alt="фотографія королівського чізбургера" width="140" height="140">
+                <h3 class="link product-card__title">Королівський чізбургер</h3>
+                <span class="product-card__price">260 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/4@1x.webp" alt="фотографія чорного гамбургера"
+                    width="140" height="140">
+                <h3 class="link product-card__title">Чорний гамбургер</h3>
+                <span class="product-card__price">199 грн.</span>
+            </a>
+            <button class="btn product-card__btn" type="button">До кошика</button>
+        </article>
+
+    </li>
+    <li class="product-list__item">
+
+        <article class="product-card">
+            <a class="link product-card__link" href="#">
+                <img class="product-card__img" src="./images/categories/5@1x.webp" alt="фотографія чікен бургера"
+                    width="140" height="140">
+                <h3 class="link product-card__title">
+                    Чікен бургер
+                </h3>
+                <span class="product-card__price">
+                    180 грн.
+                </span>
+            </a>
+            <button class="btn product-card__btn" type="button">
+                До кошика
+            </button>
+        </article>
+
+    </li>
+</ul>
             <section class="features section" id="features">
     <div class="container">
-        <div class="features__inner"
-            style="background-image: url('../../images/features/food_delivery@1x.webp')">
+        <div class="features__inner" style="background-image: url('../../images/features/food_delivery@1x.webp')">
 
             <div class="features__content">
 
@@ -299,19 +304,16 @@
                 <ul class="features__list">
                     <li class="features__item">
                         <span class="icon-mask features__icon features__icon--timer"></span>
-                        <span class="features__des"></span>
                         Швидка доставка за 15 хвилин
                     </li>
 
                     <li class="features__item">
                         <span class="icon-mask features__icon features__icon--delivery"></span>
-                        <span class="features__des"></span>
                         Чемні кур’єри
                     </li>
 
                     <li class="features__item">
                         <span class="icon-mask features__icon features__icon--restorant"></span>
-                        <span class="features__desc"></span>
                         Більше 500 закладів
                     </li>
                 </ul>
@@ -339,8 +341,8 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">Blaze Pizza</span>
-                        <span class="icon-mask rest-card__icon--time"></span>
-                        <span class="rest-card__time">11:00 - 22:00</span>
+                        <span class="icon-mask rest-card__icon rest-card__icon--time"></span>
+                        <span class="rest-card__time"><time datetime="T11:00">11:00</time> - <time datetime="T22:00">22:00</time></span>
                         <button class="btn rest-card__btn" type="button">
                             <span class="sr-only">Додати товар до корзини</span>
                             <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span>
@@ -357,8 +359,8 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">Pizza Runcho</span>
-                        <span class="icon-mask rest-card__icon--time"></span>
-                        <span class="rest-card__time">12:00 - 21:00</span>
+                        <span class="icon-mask rest-card__icon rest-card__icon--time"></span>
+                        <span class="rest-card__time"><time datetime="T12:00">12:00</time> - <time datetime="T21:00">21:00</time></span>
                         <button class="btn rest-card__btn">
                             <span class="sr-only">Додати товар до корзини</span>
                             <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span>
@@ -375,8 +377,8 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">Pizza Hut</span>
-                        <span class="icon-mask rest-card__icon--time"></span>
-                        <span class="rest-card__time">11:00 - 22:00</span>
+                        <span class="icon-mask rest-card__icon rest-card__icon--time"></span>
+                        <span class="rest-card__time"><time datetime="T11:00">11:00</time> - <time datetime="T22:00">22:00</time></span>
                         <button class="btn rest-card__btn">
                             <span class="sr-only">Додати товар до корзини</span>
                             <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span>
@@ -393,8 +395,8 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">McDonald`s</span>
-                        <span class="icon-mask rest-card__icon--time"></span>
-                        <span class="rest-card__time">06:00 - 23:00</span>
+                        <span class="icon-mask rest-card__icon rest-card__icon--time"></span>
+                        <span class="rest-card__time"><time datetime="T06:00">06:00</time> - <time datetime="T23:00">23:00</time></span>
                         <button class="btn rest-card__btn">
                             <span class="sr-only">Додати товар до корзини</span>
                             <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span>
@@ -411,8 +413,8 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">KFC</span>
-                        <span class="icon-mask rest-card__icon--time"></span>
-                        <span class="rest-card__time">06:00 - 23:30</span>
+                        <span class="icon-mask rest-card__icon rest-card__icon--time"></span>
+                        <span class="rest-card__time"><time datetime="T06:00">06:00</time> - <time datetime="T23:00">23:00</time></span>
                         <button class="btn rest-card__btn">
                             <span class="sr-only">Додати товар до корзини</span>
                             <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span>
@@ -429,8 +431,8 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">Star Burgers</span>
-                        <span class="icon-mask rest-card__icon--time"></span>
-                        <span class="rest-card__time">09:00 - 21:00</span>
+                        <span class="icon-mask rest-card__icon rest-card__icon--time"></span>
+                        <span class="rest-card__time"><time datetime="T09:00">09:00</time> - <time datetime="T21:00">21:00</time></span>
                         <button class="btn rest-card__btn">
                             <span class="sr-only">Додати товар до корзини</span>
                             <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span>
@@ -449,25 +451,27 @@
         <div class="review__inner">
             <div class="review__content">
                 <img class="review__img" src="../../images/review/daryna@1x.webp" alt="Щаслива дівчина з гамбургером"
-                    srcset="../../images/review/daryna@2x.webp 2000w" width="300" height="300" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
+                    srcset="../../images/review/daryna@2x.webp 2000w" width="300" height="300"
+                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
                 <blockquote class="review__blockquote">
 
-                    <p class="review__paragraph">
-                        SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт
-                        та
-                        застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та
-                        дарує
-                        знижки на доставку - однозначно рекомендую!
-                    </p>
+                    <div class="review__paragraph">
+                        <p>
+                            SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний
+                            сайт
+                            та
+                            застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та
+                            дарує
+                            знижки на доставку - однозначно рекомендую!
+                        </p>
+                    </div>
 
-                    <footer>
-                        <cite class="review__author">
-                            Дарина
-                        </cite>
-                        <span class="review__caption">
-                            Поціновувачка смачної їжі
-                        </span>
-                    </footer>
+                    <cite class="review__author">
+                        Дарина
+                    </cite>
+                    <span class="review__caption">
+                        Поціновувачка смачної їжі
+                    </span>
                 </blockquote>
             </div>
 
@@ -490,8 +494,7 @@
 </section>
             <section class="application section" id="application">
     <div class="container">
-        <div class="application__inner"
-            style="background-image: url('../../images/application/get_app@1x.webp')">
+        <div class="application__inner" style="background-image: url('../../images/application/get_app@1x.webp')">
 
             <div class="application__box">
 
@@ -499,23 +502,19 @@
                     Завантажте мобільний застосунок
                 </h2>
 
-                <div class="application__paragraph">
+                <div class="application__text">
                     <p>Ресторани, які ви любите - у ваших руках. Встановлюйте застосунок та замовляйте їжу в зручному
                         місці в зручний час</p>
                 </div>
 
                 <ul class="application__list">
                     <li class="application__item">
-                        <a class="application__link" href="#">
-                            <img class="application__marketplace-link" src="../../images/application/app_store@1x.webp"
-                                alt="єпл стор" srcset="../../images/application/app_store@2x.webp 2000w" width="120" height="40" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
+                        <a class="application__link application__apple" href="#">
                         </a>
                     </li>
 
                     <li class="application__item">
-                        <a class="application__link" href="#">
-                            <img class="application__marketplace-link" src="../../images/application/play_store@2x.webp"
-                                alt="єпл стор" srcset="../../images/application/play_store@2x.webp 2000w" width="135" height="40" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
+                        <a class="application__link application__google" href="#">
                         </a>
                     </li>
                 </ul>
@@ -547,7 +546,7 @@
                     </label>
 
                     <button class="btn form__btn" type="submit">
-                        <span class="icon-mask form__icon--telegram"></span>
+                        <span class="icon-mask form__btn--icon"></span>
                         Підписатися
                     </button>
 
@@ -622,7 +621,7 @@
                 <ul class="address__list">
 
                     <li class="address__item">
-                        <a class="address__link link">
+                        <a class="address__link link" href="#">
                             <span class="icon-mask address__icon"
                                 style="-webkit-mask-image: url('images/icons/sprite.svg#icon-location');"></span>
                             вул. Т.Г.Шевченка, 1
@@ -651,32 +650,32 @@
 
                     <li class="social__item">
                         <a class="social__link" href="#">
+                            <span class="sr-only">
+                                Відкрити сторінку Facebook
+                            </span>
                             <span class="icon-mask social__icon"
                                 style="-webkit-mask-image: url('images/icons/sprite.svg#icon-facebook');"></span>
                         </a>
-                        <span class="sr-only">
-                            Відкрити сторінку Facebook
-                        </span>
                     </li>
 
                     <li class="social__item">
                         <a class="social__link" href="#">
+                            <span class="sr-only">
+                                Відкрити сторінку Twitter
+                            </span>
                             <span class="icon-mask social__icon"
                                 style="-webkit-mask-image: url('images/icons/sprite.svg#icon-twitter');"></span>
                         </a>
-                        <span class="sr-only">
-                            Відкрити сторінку Twitter
-                        </span>
                     </li>
 
                     <li class="social__item">
                         <a class="social__link" href="#">
+                            <span class="sr-only">
+                                Відкрити сторінку Instagram
+                            </span>
                             <span class="icon-mask social__icon"
                                 style="-webkit-mask-image: url('images/icons/sprite.svg#icon-instagram');"></span>
                         </a>
-                        <span class="sr-only">
-                            Відкрити сторінку Instagram
-                        </span>
                     </li>
 
                 </ul>

@@ -2,6 +2,7 @@
 
     &__title {
         margin-bottom: 60px;
+        text-align: center;
     }
 
     &__content {
@@ -9,10 +10,6 @@
         padding: 0 90px;
         align-items: center;
         margin-bottom: 30px;
-    }
-
-    &__title {
-        text-align: center;
     }
 
     &__img {
@@ -23,16 +20,11 @@
     &__blockquote {
         max-width: 570px;
         font-size: 20px;
-    }
-
-    &__paragraph {
-        margin-bottom: 30px;
-        font-style: italic;
-        line-height: 1.5;
         position: relative;
 
         &::before,
         &::after {
+            content: '';
             position: absolute;
             @extend .icon-mask;
             width: 24px;
@@ -41,18 +33,22 @@
         }
 
         &::before {
-            content: '';
             mask-image: url('../../images/icons/sprite.svg#icon-quote-open');
             left: -40px;
             top: 0;
         }
 
         &::after {
-            content: '';
             mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
             bottom: 0;
             right: -40px;
         }
+    }
+
+    &__paragraph {
+        margin-bottom: 30px;
+        font-style: italic;
+        line-height: 1.5;
     }
 
     &__author {
@@ -102,6 +98,7 @@
             }
         }
     }
+
     &__dots {
         display: flex;
         gap: 17px;

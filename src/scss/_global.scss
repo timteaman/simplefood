@@ -55,6 +55,7 @@ body {
     font-weight: 500;
     font-size: 36px;
     color: $darkBlue-900;
+    margin-bottom: 60px;
 }
 
 .btn {
@@ -85,20 +86,57 @@ body {
     }
 }
 
-.btn--with-icon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+// .btn--with-icon {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+// }
+
+// .btn--with-icon::before {
+//     content: '';
+//     width: 18px;
+//     height: 18px;
+//     background-color: $darkBlue-900;
+//     mask-size: contain;
+//     mask-position: center;
+//     mask-repeat: no-repeat;
+// }
+
+.icon {
+    &::before {
+        content: '';
+        display: block;
+        mask-image: url('../images/icons/sprite.svg#iocn-cart');
+        min-width: 18px;
+        height: 18px;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-position: center;
+        background-color: $orange-900;
+        transition: background-color 0.3s;
+    }
+
+    &:hover {
+        &::before {
+            background-color: $white;
+        }
+    }
+
+    &:active {
+        &::before {
+            background-color: $white;
+        }
+    }
 }
 
-.btn--with-icon::before {
-    content: '';
-    // width: 18px;
-    // height: 18px;
+.icon-mask {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
     background-color: $darkBlue-900;
+    mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
-    mask-repeat: no-repeat;
 }
 
 .link {
@@ -124,6 +162,7 @@ body {
 
 .link--underline {
     position: relative;
+
     &::after {
         content: '';
         position: absolute;
@@ -139,16 +178,6 @@ body {
     }
 }
 
-.icon-mask {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: $darkBlue-900;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-}
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -160,4 +189,10 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.color-orange {
+    display: block;
+    margin-bottom: 10px;
+    color: $orange-900;
 }

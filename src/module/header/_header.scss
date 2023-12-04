@@ -1,11 +1,15 @@
-.header__logo {
-    margin-right: 50px;
+.header {
+    padding: 60px 0;
+    &__logo {
+        display: block;
+    }
+
 }
 
 .menu {
     display: flex;
     align-items: center;
-    padding: 61px 5px 59px 5px;
+    gap: 50px;
 
     &__inner {
         display: flex;
@@ -16,7 +20,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin: 0 53px 0 auto;
+        margin-left: auto;
         gap: 40px;
     }
 
@@ -69,25 +73,25 @@
 
     }
 
-    &__icon {
+    // &__icon {
 
-        &--search {
-            mask-image: url('../../images/icons/sprite.svg#icon-search');
-            width: 19px;
-            height: 19px;
-        }
+    //     &--search {
+    //         mask-image: url('../../images/icons/sprite.svg#icon-search');
+    //         width: 19px;
+    //         height: 19px;
+    //     }
 
-        &--cart {
-            mask-image: url('../../images/icons/sprite.svg#icon-cart');
-            width: 19px;
-            height: 19px;
-        }
+    //     &--cart {
+    //         mask-image: url('../../images/icons/sprite.svg#icon-cart');
+    //         width: 19px;
+    //         height: 19px;
+    //     }
 
-    }
+    // }
 
     &__number {
         position: absolute;
-        border-radius: 50%;
+        border-radius: 15px;
         background-color: $orange-900;
         right: 1px;
         top: 5px;
@@ -99,4 +103,8 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.icon--cart {
+    mask-image: url('../../images/icons/sprite.svg#icon-cart');
 }

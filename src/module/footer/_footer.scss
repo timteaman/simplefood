@@ -8,6 +8,7 @@
     &__box {
         margin-right: 70px;
         max-width: 200px;
+        flex-shrink: 0;
     }
 
     &__logo {
@@ -18,10 +19,7 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-auto-rows: 23px;
-        max-height: 152px;
         gap: 20px 90px;
-        margin-right: 145px;
     }
 
     &__link {
@@ -101,23 +99,25 @@
         justify-content: center;
         align-items: center;
 
-        &:hover .form__icon--telegram,
-        &:focus .form__icon--telegram,
-        &:active .form__icon--telegram {
+        &--icon {
+            mask-image: url('../../images/icons/sprite.svg#icon-telegram');
+            margin-right: 20px;
+            background-color: $white;
+        }
+
+        &:hover &--icon,
+        &:focus &--icon,
+        &:active &--icon {
             background-color: $orange-900;
         }
 
     }
 
-    &__icon--telegram {
-        mask-image: url('../../images/icons/sprite.svg#icon-telegram');
-        margin-right: 20px;
-        background-color: $white;
-    }
 }
 
 .address {
-
+    margin-left: auto;
+    margin-right: 80px;
     &__item {
         margin-bottom: 15px;
     }
