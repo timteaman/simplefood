@@ -50,32 +50,6 @@
         }
     }
 
-    &__icon {
-        width: 44px;
-        height: 44px;
-        margin-right: 10px;
-
-        &--burger {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
-        }
-
-        &--pizza {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
-        }
-
-        &--sandvich {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
-        }
-
-        &--asia {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
-        }
-
-        &--dish {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
-        }
-    }
-
     &__more {
         @extend .link;
         @extend .link--underline;
@@ -94,4 +68,50 @@
             border-bottom-color: $darkBlue-900;
         }
     }
+}
+
+.icon {
+    &--categories {
+        &::before {
+            width: 44px;
+            height: 44px;
+            margin-right: 10px;
+        }
+    }
+
+    &--burger {
+        &::before {
+            content: '';
+            mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
+        }
+    }
+
+    &--pizza {
+        &::before {
+            content: '';
+            mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
+        }
+    }
+
+    &--sandvich {
+        &::before {
+            content: '';
+            mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
+        }
+    }
+
+    &--asia {
+        &::before {
+            content: '';
+            mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
+        }
+    }
+
+    &--dish {
+        &::before {
+            content: '';
+            mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
+        }
+    }
+
 }

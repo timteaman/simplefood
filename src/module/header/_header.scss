@@ -1,5 +1,6 @@
 .header {
     padding: 60px 0;
+
     &__logo {
         display: block;
     }
@@ -29,6 +30,7 @@
         border-radius: 5px;
         font-size: 18px;
         letter-spacing: 0.18px;
+
         &--active {
             color: $orange-900;
         }
@@ -57,7 +59,7 @@
             background-color: $white;
         }
 
-        &:hover .user-nav__number{
+        &:hover .user-nav__number {
             background-color: $white;
             color: $orange-900;
         }
@@ -72,22 +74,6 @@
         }
 
     }
-
-    // &__icon {
-
-    //     &--search {
-    //         mask-image: url('../../images/icons/sprite.svg#icon-search');
-    //         width: 19px;
-    //         height: 19px;
-    //     }
-
-    //     &--cart {
-    //         mask-image: url('../../images/icons/sprite.svg#icon-cart');
-    //         width: 19px;
-    //         height: 19px;
-    //     }
-
-    // }
 
     &__number {
         position: absolute;
@@ -106,5 +92,15 @@
 }
 
 .icon--cart {
-    mask-image: url('../../images/icons/sprite.svg#icon-cart');
+    &::before {
+        content: '';
+        mask-image: url('../../images/icons/sprite.svg#icon-cart');
+    }
+}
+
+.icon--search {
+    &::before {
+        content: '';
+        mask-image: url('../../images/icons/sprite.svg#icon-search');
+    }
 }

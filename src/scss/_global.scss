@@ -103,28 +103,17 @@ body {
 // }
 
 .icon {
+    transition: background-color 0.3s;
+
     &::before {
         content: '';
-        display: block;
+        display: inline-block;
+        background-color: $darkBlue-900;
         min-width: 18px;
         height: 18px;
         mask-repeat: no-repeat;
         mask-size: contain;
         mask-position: center;
-        background-color: $orange-900;
-        transition: background-color 0.3s;
-    }
-
-    &:hover {
-        &::before {
-            background-color: $white;
-        }
-    }
-
-    &:active {
-        &::before {
-            background-color: $white;
-        }
     }
 }
 

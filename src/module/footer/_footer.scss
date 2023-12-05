@@ -98,19 +98,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        &--icon {
-            mask-image: url('../../images/icons/sprite.svg#icon-telegram');
-            margin-right: 20px;
-            background-color: $white;
-        }
-
-        &:hover &--icon,
-        &:focus &--icon,
-        &:active &--icon {
-            background-color: $orange-900;
-        }
-
     }
 
 }
@@ -118,6 +105,7 @@
 .address {
     margin-left: auto;
     margin-right: 80px;
+
     &__item {
         margin-bottom: 15px;
     }
@@ -128,18 +116,7 @@
         font-size: 16px;
         line-height: 2;
         white-space: nowrap;
-
-        &:hover .address__icon {
-            background-color: $orange-900;
-        }
     }
-
-    &__icon {
-        width: 20px;
-        height: 18px;
-        margin-right: 7px;
-    }
-
 }
 
 .social {
@@ -161,9 +138,9 @@
             background-color: $orange-900;
         }
 
-        &:hover .social__icon {
-            background-color: $white;
-        }
+        // &:hover .social__icon {
+        //     background-color: $white;
+        // }
 
         &:focus {
             outline-color: rgba($orange-900, 0.7);
@@ -174,13 +151,77 @@
             background-color: rgba($orange-900, 0.10);
         }
 
-        &:active .social__icon {
-            background-color: $orange-900;
-        }
+        // &:active .social__icon {
+        //     background-color: $orange-900;
+        // }
 
     }
 
-    &__icon {
-        height: 20.5px;
+}
+
+
+.icon {
+    &--telegram {
+        &::before {
+        mask-image: url('../../images/icons/sprite.svg#icon-telegram');
+        width: 16px;
+        height: 16px;
+        margin-right: 20px;
+        background-color: $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $orange-900;
+        }
+    }
+    }
+
+    &--address {
+        &::before {
+            width: 20px;
+            height: 18px;
+            margin-right: 7px;
+        }
+    }
+
+    &--location {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-location');
+        }
+    }
+
+    &--call {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-call');
+        }
+    }
+
+    &--message {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-message');
+        }
+    }
+
+    &--social {
+        &::before {
+            height: 20px;
+        }
+    }
+
+    &--facebook {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-facebook');
+        }
+    }
+    &--twitter {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-twitter');
+        }
+    }
+    &--instagram {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-instagram');
+        }
     }
 }
