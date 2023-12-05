@@ -106,7 +106,6 @@ body {
     &::before {
         content: '';
         display: block;
-        mask-image: url('../images/icons/sprite.svg#iocn-cart');
         min-width: 18px;
         height: 18px;
         mask-repeat: no-repeat;
