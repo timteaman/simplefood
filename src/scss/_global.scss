@@ -35,7 +35,7 @@ body {
 
 .logo {
     border-radius: 5px;
-    transition: opacity 0.4s, outline 0.4s;
+    transition: opacity 0.3s, outline 0.3s;
     outline-offset: 3px;
 
     &:hover {
@@ -66,18 +66,18 @@ body {
     border-radius: 6px;
     background-color: $orange-900;
     color: $white;
-    transition: color 0.3s, outline-color 0.3s, background-color 0.3s, margin 3s;
-
-    &:focus {
-        color: $orange-900;
-        outline-color: rgba($orange-900, 0.70);
-        background-color: rgba($orange-900, 0.1);
-    }
+    transition: color 0.3s, outline-color 0.3s, background-color 0.3s;
 
     &:hover {
         color: $orange-900;
         outline-color: rgba($orange-900, 0.70);
         background-color: transparent;
+    }
+
+    &:focus {
+        color: $orange-900;
+        outline-color: rgba($orange-900, 0.70);
+        background-color: rgba($orange-900, 0.1);
     }
 
     &:active {
@@ -86,26 +86,9 @@ body {
     }
 }
 
-// .btn--with-icon {
-//     display: flex;
-//     align-items: center;
-//     gap: 10px;
-// }
-
-// .btn--with-icon::before {
-//     content: '';
-//     width: 18px;
-//     height: 18px;
-//     background-color: $darkBlue-900;
-//     mask-size: contain;
-//     mask-position: center;
-//     mask-repeat: no-repeat;
-// }
-
 .icon {
-    transition: background-color 0.3s;
-
     &::before {
+        transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
         content: '';
         display: inline-block;
         background-color: $darkBlue-900;
@@ -117,16 +100,6 @@ body {
     }
 }
 
-.icon-mask {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: $darkBlue-900;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-}
-
 .link {
     font-size: 20px;
     line-height: 1.5;
@@ -134,13 +107,13 @@ body {
     outline: 2px solid transparent;
     transition: outline 0.3s, border-radius 0.3s, color 0.3s, text-shadow 0.3s;
 
+    &:hover {
+        color: $orange-900;
+    }
+
     &:focus {
         outline-color: rgba($orange-900, 0.7);
         border-radius: 7px;
-    }
-
-    &:hover {
-        color: $orange-900;
     }
 
     &:active {

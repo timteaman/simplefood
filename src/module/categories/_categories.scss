@@ -30,12 +30,8 @@
         &:hover {
             outline-color: rgba($orange-900, 0.7);
             background-color: rgba($orange-900, 0.10);
-
-            .categories__icon {
-                background-color: $orange-900;
-            }
+            color: $orange-900;
         }
-
 
         &:focus {
             outline-color: rgba($orange-900, 0.7);
@@ -71,47 +67,54 @@
 }
 
 .icon {
+
     &--categories {
         &::before {
             width: 44px;
             height: 44px;
             margin-right: 10px;
         }
+
+        &:hover {
+            &::before {
+                background-color: $orange-900;
+            }
+        }
+    }
+
+    &--categories-active {
+        &::before {
+            background-color: $white;
+        }
     }
 
     &--burger {
         &::before {
-            content: '';
             mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
         }
     }
 
     &--pizza {
         &::before {
-            content: '';
             mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
         }
     }
 
     &--sandvich {
         &::before {
-            content: '';
             mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
         }
     }
 
     &--asia {
         &::before {
-            content: '';
             mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
         }
     }
 
     &--dish {
         &::before {
-            content: '';
             mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
         }
     }
-
 }

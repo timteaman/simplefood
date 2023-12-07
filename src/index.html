@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Food</title>
     <link rel="icon" type="image/x-icon" sizes="16x16" href="./images/icons/favicon.ico">
+
     <link href="./css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -35,7 +37,7 @@
 
             <ul class="user-nav">
                 <li class="user-nav__item">
-                    <button class="user-nav__btn icon icon--search" type="button">
+                    <button class="user-nav__btn icon icon--user-nav icon--search" type="button">
                         <span class="sr-only">
                             Почати пошук
                         </span>
@@ -43,7 +45,7 @@
                 </li>
 
                 <li class="user-nav__item">
-                    <button class="user-nav__btn icon icon--cart" type="button">
+                    <button class="user-nav__btn icon icon--user-nav icon--cart" type="button">
                         <span class="sr-only">
                             Відкрити корзину
                         </span>
@@ -97,8 +99,7 @@
             <ul class="categories__filter">
 
                 <li class="categories__item">
-                    <button class="btn categories__btn categories__btn--active icon icon--categories icon--burger"
-                        type="button">
+                    <button class="btn categories__btn categories__btn--active icon icon--categories icon--burger icon--categories-active" type="button">
                         Бургери
                     </button>
                 </li>
@@ -297,18 +298,15 @@
                 </div>
 
                 <ul class="features__list">
-                    <li class="features__item">
-                        <span class="icon icon--features icon--timer"></span>
+                    <li class="features__item icon icon--features icon--timer">
                         Швидка доставка за 15 хвилин
                     </li>
 
-                    <li class="features__item">
-                        <span class="icon icon--features icon--delivery"></span>
+                    <li class="features__item icon icon--features icon--delivery">
                         Чемні кур’єри
                     </li>
 
-                    <li class="features__item">
-                        <span class="icon icon--features icon--restorant"></span>
+                    <li class="features__item icon icon--features icon--restorant">
                         Більше 500 закладів
                     </li>
                 </ul>
@@ -330,20 +328,18 @@
         <ul class="restaurant__list">
             <li class="restaurant__item">
                 <article class="rest-card">
-                    <a class="rest-card__link" href="#">
-                        <img class="rest-card__img" src="./images/restaurant/resto_1@x1.webp" alt="Піцца Блейз"
-                            width="370" height="300">
-                    </a>
-                    <div class="rest-card__box">
-                        <span class="rest-card__title">Blaze Pizza</span>
-                        <!-- <span class="icon-mask rest-card__icon rest-card__icon--time"></span> -->
-                        <span class="rest-card__time"><time datetime="T11:00">11:00</time> - <time datetime="T22:00">22:00</time></span>
-                        <button class="btn rest-card__btn" type="button">
-                            <span class="sr-only">Додати товар до корзини</span>
-                            <!-- <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span> -->
-                        </button>
-                    </div>
-                </article>
+    <a class="rest-card__link" href="#">
+        <img class="rest-card__img" src="./images/restaurant/resto_1@x1.webp" alt="Піцца Блейз"
+            width="370" height="300">
+    </a>
+    <div class="rest-card__box">
+        <span class="rest-card__title">Blaze Pizza</span>
+        <span class="rest-card__time icon icon--time"><time datetime="T11:00">11:00</time> - <time datetime="T22:00">22:00</time></span>
+        <button class="btn rest-card__btn icon icon--arrow" type="button">
+            <span class="sr-only">Додати товар до корзини</span>
+        </button>
+    </div>
+</article>
             </li>
 
             <li class="restaurant__item">
@@ -354,11 +350,9 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">Pizza Runcho</span>
-                        <!-- <span class="icon-mask rest-card__icon rest-card__icon--time"></span> -->
-                        <span class="rest-card__time"><time datetime="T12:00">12:00</time> - <time datetime="T21:00">21:00</time></span>
-                        <button class="btn rest-card__btn">
+                        <span class="rest-card__time icon icon--time"><time datetime="T12:00">12:00</time> - <time datetime="T21:00">21:00</time></span>
+                        <button class="btn rest-card__btn icon icon--arrow">
                             <span class="sr-only">Додати товар до корзини</span>
-                            <!-- <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span> -->
                         </button>
                     </div>
                 </article>
@@ -372,11 +366,9 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">Pizza Hut</span>
-                        <!-- <span class="icon-mask rest-card__icon rest-card__icon--time"></span> -->
-                        <span class="rest-card__time"><time datetime="T11:00">11:00</time> - <time datetime="T22:00">22:00</time></span>
-                        <button class="btn rest-card__btn">
+                        <span class="rest-card__time icon icon--time"><time datetime="T11:00">11:00</time> - <time datetime="T22:00">22:00</time></span>
+                        <button class="btn rest-card__btn icon icon--arrow">
                             <span class="sr-only">Додати товар до корзини</span>
-                            <!-- <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span> -->
                         </button>
                     </div>
                 </article>
@@ -390,11 +382,9 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">McDonald`s</span>
-                        <!-- <span class="icon-mask rest-card__icon rest-card__icon--time"></span> -->
-                        <span class="rest-card__time"><time datetime="T06:00">06:00</time> - <time datetime="T23:00">23:00</time></span>
-                        <button class="btn rest-card__btn">
+                        <span class="rest-card__time icon icon--time"><time datetime="T06:00">06:00</time>-<time datetime="T23:00">23:00</time></span>
+                        <button class="btn rest-card__btn icon icon--arrow">
                             <span class="sr-only">Додати товар до корзини</span>
-                            <!-- <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span> -->
                         </button>
                     </div>
                 </article>
@@ -408,11 +398,9 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">KFC</span>
-                        <!-- <span class="icon-mask rest-card__icon rest-card__icon--time"></span> -->
-                        <span class="rest-card__time"><time datetime="T06:00">06:00</time> - <time datetime="T23:00">23:00</time></span>
-                        <button class="btn rest-card__btn">
+                        <span class="rest-card__time icon icon--time"><time datetime="T06:00">06:00</time> - <time datetime="T23:00">23:00</time></span>
+                        <button class="btn rest-card__btn icon icon--arrow">
                             <span class="sr-only">Додати товар до корзини</span>
-                            <!-- <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span> -->
                         </button>
                     </div>
                 </article>
@@ -426,11 +414,9 @@
                     </a>
                     <div class="rest-card__box">
                         <span class="rest-card__title">Star Burgers</span>
-                        <!-- <span class="icon-mask rest-card__icon rest-card__icon--time"></span> -->
-                        <span class="rest-card__time"><time datetime="T09:00">09:00</time> - <time datetime="T21:00">21:00</time></span>
-                        <button class="btn rest-card__btn">
+                        <span class="rest-card__time icon icon--time"><time datetime="T09:00">09:00</time> - <time datetime="T21:00">21:00</time></span>
+                        <button class="btn rest-card__btn icon icon--arrow">
                             <span class="sr-only">Додати товар до корзини</span>
-                            <!-- <span class="icon-mask rest-card__icon rest-card__icon--arrow"></span> -->
                         </button>
                     </div>
                 </article>
@@ -444,46 +430,144 @@
             Відгуки клієнтів
         </h2>
         <div class="review__inner">
-            <div class="review__content">
-                <img class="review__img" src="../../images/review/daryna@1x.webp" alt="Щаслива дівчина з гамбургером"
-                    srcset="../../images/review/daryna@2x.webp 2000w" width="300" height="300"
-                    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
-                <blockquote class="review__blockquote">
 
-                    <div class="review__paragraph">
-                        <p>
-                            SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний
-                            сайт
-                            та
-                            застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та
-                            дарує
-                            знижки на доставку - однозначно рекомендую!
-                        </p>
+            <div class="swiper" id='mswiper'>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="review__content">
+                            <img class="review__img" src="../../images/review/daryna@1x.webp"
+                                alt="Щаслива дівчина з гамбургером" srcset="../../images/review/daryna@2x.webp 2000w"
+                                width="300" height="300"
+                                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
+                            <blockquote class="review__blockquote">
+
+                                <div class="review__paragraph">
+                                    <p>
+                                        SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті.
+                                        Дуже зручний
+                                        сайт
+                                        та
+                                        застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто
+                                        проводить акції та
+                                        дарує
+                                        знижки на доставку - однозначно рекомендую!
+                                    </p>
+                                </div>
+
+                                <cite class="review__author">
+                                    Дарина
+                                </cite>
+                                <span class="review__caption">
+                                    Поціновувачка смачної їжі
+                                </span>
+                            </blockquote>
+                        </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="review__content">
+                            <img class="review__img" src="../../images/review/daryna@1x.webp"
+                                alt="Щаслива дівчина з гамбургером" srcset="../../images/review/daryna@2x.webp 2000w"
+                                width="300" height="300"
+                                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
+                            <blockquote class="review__blockquote">
 
-                    <cite class="review__author">
-                        Дарина
-                    </cite>
-                    <span class="review__caption">
-                        Поціновувачка смачної їжі
-                    </span>
-                </blockquote>
+                                <div class="review__paragraph">
+                                    <p>
+                                        SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті.
+                                        Дуже зручний
+                                        сайт
+                                        та
+                                        застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто
+                                        проводить акції та
+                                        дарує
+                                        знижки на доставку - однозначно рекомендую!
+                                    </p>
+                                </div>
+
+                                <cite class="review__author">
+                                    Дарина
+                                </cite>
+                                <span class="review__caption">
+                                    Поціновувачка смачної їжі
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review__content">
+                            <img class="review__img" src="../../images/review/daryna@1x.webp"
+                                alt="Щаслива дівчина з гамбургером" srcset="../../images/review/daryna@2x.webp 2000w"
+                                width="300" height="300"
+                                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
+                            <blockquote class="review__blockquote">
+
+                                <div class="review__paragraph">
+                                    <p>
+                                        SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті.
+                                        Дуже зручний
+                                        сайт
+                                        та
+                                        застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто
+                                        проводить акції та
+                                        дарує
+                                        знижки на доставку - однозначно рекомендую!
+                                    </p>
+                                </div>
+
+                                <cite class="review__author">
+                                    Дарина
+                                </cite>
+                                <span class="review__caption">
+                                    Поціновувачка смачної їжі
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review__content">
+                            <img class="review__img" src="../../images/review/daryna@1x.webp"
+                                alt="Щаслива дівчина з гамбургером" srcset="../../images/review/daryna@2x.webp 2000w"
+                                width="300" height="300"
+                                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
+                            <blockquote class="review__blockquote">
+
+                                <div class="review__paragraph">
+                                    <p>
+                                        SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті.
+                                        Дуже зручний
+                                        сайт
+                                        та
+                                        застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто
+                                        проводить акції та
+                                        дарує
+                                        знижки на доставку - однозначно рекомендую!
+                                    </p>
+                                </div>
+
+                                <cite class="review__author">
+                                    Дарина
+                                </cite>
+                                <span class="review__caption">
+                                    Поціновувачка смачної їжі
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                    ...
+                </div>
+
+                <div class="swiper__navigation">
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
 
-            <div class="review-slider">
-                <span class="review-slider__navigation review-slider__navigation--left">
-                    <span class="sr-only">Перейти до попереднього відгуку клієнта</span>
-                </span>
-                <ul class="review-slider__dots">
-                    <li class="review-slider__item"></li>
-                    <li class="review-slider__item"></li>
-                    <li class="review-slider__item"></li>
-                    <li class="review-slider__item"></li>
-                </ul>
-                <span class="review-slider__navigation review-slider__navigation--right">
-                    <span class="sr-only">Перейти до наступного відгуку клієнта</span>
-                </span>
-            </div>
+
+
         </div>
     </div>
 </section>
@@ -645,8 +729,6 @@
                             <span class="sr-only">
                                 Відкрити сторінку Facebook
                             </span>
-                            <!-- <span class="icon-mask social__icon"
-                                style="-webkit-mask-image: url('images/icons/sprite.svg#icon-facebook');"></span> -->
                         </a>
                     </li>
 
@@ -655,8 +737,6 @@
                             <span class="sr-only">
                                 Відкрити сторінку Twitter
                             </span>
-                            <!-- <span class="icon-mask social__icon"
-                                style="-webkit-mask-image: url('images/icons/sprite.svg#icon-twitter');"></span> -->
                         </a>
                     </li>
 
@@ -665,8 +745,6 @@
                             <span class="sr-only">
                                 Відкрити сторінку Instagram
                             </span>
-                            <!-- <span class="icon-mask social__icon"
-                                style="-webkit-mask-image: url('images/icons/sprite.svg#icon-instagram');"></span> -->
                         </a>
                     </li>
 
@@ -681,7 +759,8 @@
         &copy; 2023 Simple Food
     </a>
 </footer>
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>

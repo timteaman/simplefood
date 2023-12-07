@@ -19,7 +19,7 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(3, auto);
-        gap: 20px 90px;
+        gap: 15px 90px;
     }
 
     &__link {
@@ -138,10 +138,6 @@
             background-color: $orange-900;
         }
 
-        // &:hover .social__icon {
-        //     background-color: $white;
-        // }
-
         &:focus {
             outline-color: rgba($orange-900, 0.7);
             background-color: rgba($orange-900, 0.10);
@@ -151,14 +147,9 @@
             background-color: rgba($orange-900, 0.10);
         }
 
-        // &:active .social__icon {
-        //     background-color: $orange-900;
-        // }
-
     }
 
 }
-
 
 .icon {
     &--telegram {
@@ -168,10 +159,9 @@
         height: 16px;
         margin-right: 20px;
         background-color: $white;
-
-        &:hover,
-        &:focus,
-        &:active {
+    }
+    &:hover {
+        &::before {
             background-color: $orange-900;
         }
     }
@@ -182,6 +172,12 @@
             width: 20px;
             height: 18px;
             margin-right: 7px;
+        }
+
+        &:hover {
+            &::before {
+                background-color: $orange-900;
+            }
         }
     }
 
@@ -206,6 +202,17 @@
     &--social {
         &::before {
             height: 20px;
+        }
+        &:hover {
+            &::before {
+                background-color: $white;
+            }
+        }
+
+        &:active {
+            &::before {
+                background-color: $orange-900;
+            }
         }
     }
 

@@ -26,10 +26,10 @@
         &::after {
             content: '';
             position: absolute;
-            @extend .icon-mask;
             width: 24px;
             height: 19px;
             background-color: $gray;
+            mask-repeat: no-repeat;
         }
 
         &::before {
@@ -40,12 +40,13 @@
 
         &::after {
             mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
-            bottom: 0;
+            bottom: 50%;
             right: -40px;
         }
     }
 
-    &__paragraph {
+    &__paragraph > p {
+        font-size: 20px;
         margin-bottom: 30px;
         font-style: italic;
         line-height: 1.5;
@@ -64,54 +65,3 @@
 
 }
 
-.review-slider {
-    display: flex;
-    align-items: center;
-    max-width: 220px;
-    justify-content: space-between;
-    margin: 0 auto;
-
-    &__navigation {
-        &::before {
-            content: '';
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            outline: 2px solid $gray;
-            width: 38px;
-            height: 38px;
-            font-weight: 700;
-            font-size: 28px;
-            color: $gray;
-        }
-
-        &--left {
-            &::before {
-                content: '<';
-            }
-        }
-
-        &--right {
-            &::before {
-                content: '>';
-            }
-        }
-    }
-
-    &__dots {
-        display: flex;
-        gap: 17px;
-    }
-
-    &__item {
-        &::before {
-            content: '';
-            display: block;
-            border-radius: 50%;
-            width: 14px;
-            height: 14px;
-            background-color: $orange-900;
-        }
-    }
-}

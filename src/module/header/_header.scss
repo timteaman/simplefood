@@ -10,7 +10,7 @@
 .menu {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 54px;
 
     &__inner {
         display: flex;
@@ -34,13 +34,14 @@
         &--active {
             color: $orange-900;
         }
+
     }
 }
 
 .user-nav {
     display: flex;
     align-items: center;
-    margin-right: -3px;
+    margin-right: 5px;
     gap: 15px;
 
     &__btn {
@@ -50,13 +51,10 @@
         padding: 10px;
         border-radius: 5px;
         outline: 2px solid transparent;
+        transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
 
         &:hover {
             background-color: $orange-900;
-        }
-
-        &:hover .user-nav__icon {
-            background-color: $white;
         }
 
         &:hover .user-nav__number {
@@ -88,19 +86,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
     }
 }
 
-.icon--cart {
-    &::before {
-        content: '';
-        mask-image: url('../../images/icons/sprite.svg#icon-cart');
-    }
-}
+.icon {
 
-.icon--search {
-    &::before {
-        content: '';
-        mask-image: url('../../images/icons/sprite.svg#icon-search');
+    &--user-nav {
+        &:hover {
+            &::before {
+                background-color: $white;
+            }
+        }
+    }
+    &--cart {
+        &::before {
+            width: 19px;
+            height: 19px;
+            mask-image: url('../../images/icons/sprite.svg#icon-cart');
+        }
+    }
+
+    &--search {
+        &::before {
+            width: 19px;
+            height: 19px;
+            mask-image: url('../../images/icons/sprite.svg#icon-search');
+        }
     }
 }
