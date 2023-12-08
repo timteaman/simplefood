@@ -119,23 +119,23 @@ body {
     &:active {
         text-shadow: 2px 2px 5px rgba($dark, 0.5);
     }
-}
 
-.link--underline {
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 3px;
-        width: 100%;
-        border-bottom: 1px solid $darkBlue-900;
-        transition: border-bottom-color 0.3s;
-    }
-
-    &:hover::after {
-        border-bottom-color: $orange-900;
+    &--underline {
+        position: relative;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+            width: 100%;
+            border-bottom: 1px solid $darkBlue-900;
+            transition: border-bottom-color 0.3s;
+        }
+    
+        &:hover::after {
+            border-bottom-color: $orange-900;
+        }
     }
 }
 

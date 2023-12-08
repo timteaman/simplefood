@@ -1,50 +1,43 @@
-#mswiper .swiper-pagination {
+.review-slider {
+
+    &__actions {
+        .review-slider__dots {
+            width: fit-content;
+        }
+    }
+}
+
+.slider-actions {
     display: flex;
-    gap: 15px;
     justify-content: center;
-
-}
-
-#mswiper .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    background-color: $gray;
-    opacity: 1;
-}
-
-#mswiper .swiper-pagination-bullet-active {
-    background-color: $orange-900;
-}
-
-#mswiper .swiper-button-next,
-#mswiper .swiper-button-prev {
-    display: block;
-}
-
-#mswiper .swiper-button-next::after,
-#mswiper .swiper-button-prev::after {
-    background-color: $darkBlue-900;
-    height: 34px;
-    width: 34px;
-    display: inline-block;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-}
-
-
-#mswiper .swiper-button-next::after {
-    mask-image: url('../../images/icons/nextarrow.svg');
-}
-
-#mswiper .swiper-button-prev::after {
-    mask-image: url('../../images/icons/prevarrow.svg');
-}
-
-#mswiper .swiper__navigation {
-    height: 34px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    
+    &__btn {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        &--next {
+
+        }
+
+        &--prev {
+
+        }
+    }
+
+    &__dots {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    &__dot {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: black;
+        &--active {
+            background-color: red;
+        }
+    }
 }

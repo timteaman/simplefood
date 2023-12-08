@@ -57,7 +57,6 @@
         }
         &--apple {
             &::before {
-                content: '';
                 width: 120px;
                 background-image: url('../../images/application/app_store.svg');
 
@@ -66,7 +65,6 @@
         
         &--google {
             &::before {
-                content: '';
                 width: 135px;
                 background-image: url('../../images/application/play_store.svg');
 

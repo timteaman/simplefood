@@ -1,15 +1,13 @@
-.review {
+.review-card {
 
+    display: flex;
+    padding: 0 90px;
+    align-items: center;
+    margin-bottom: 30px;
+    
     &__title {
         margin-bottom: 60px;
         text-align: center;
-    }
-
-    &__content {
-        display: flex;
-        padding: 0 90px;
-        align-items: center;
-        margin-bottom: 30px;
     }
 
     &__img {
@@ -45,11 +43,13 @@
         }
     }
 
-    &__paragraph > p {
-        font-size: 20px;
-        margin-bottom: 30px;
-        font-style: italic;
-        line-height: 1.5;
+    &__text {
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-style: italic;
+            line-height: 1.5;
+        }
     }
 
     &__author {
@@ -64,4 +64,3 @@
     }
 
 }
-

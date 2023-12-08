@@ -1,4 +1,4 @@
-const swiper = new Swiper("#mswiper", {
+const swiper = new Swiper(".review-slider", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -8,19 +8,14 @@ const swiper = new Swiper("#mswiper", {
     disableOnIteraction: false
   },
 
-  // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".review-slider__dots",
+    bulletClass: 'slider-actions__dot',
+    bulletActiveClass: 'slider-actions__dot--active',
+    clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+    nextEl: ".review-slider__btn--next",
+    prevEl: ".review-slider__btn--prev",
   },
 });
