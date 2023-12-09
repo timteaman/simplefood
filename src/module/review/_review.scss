@@ -1,18 +1,43 @@
+.review {
+
+    &__inner {
+        @include r(576) {
+            position: relative;
+        }
+    }
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+
+        
+    @include r(576) {
+        margin-bottom: 30px;
+    }
+    }
+}
+
 .review-card {
 
     display: flex;
     padding: 0 90px;
     align-items: center;
     margin-bottom: 30px;
-    
-    &__title {
-        margin-bottom: 60px;
-        text-align: center;
+
+    @include r(576) {
+        padding: 0 40px;
+        justify-content: center;
+        flex-direction: column;
     }
 
     &__img {
         border-radius: 50%;
         margin-right: 80px;
+
+        @include r(576) {
+            margin: 0 50px 30px 50px;
+            width: 100px;
+            height: 100px;
+        }
     }
 
     &__blockquote {
@@ -38,7 +63,7 @@
 
         &::after {
             mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
-            bottom: 50%;
+            bottom: 120px;
             right: -40px;
         }
     }
@@ -49,6 +74,11 @@
             margin-bottom: 30px;
             font-style: italic;
             line-height: 1.5;
+
+            @include r(576) {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -57,6 +87,11 @@
         display: block;
         color: $orange-900;
         margin-bottom: 15px;
+
+        @include r(576) {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
     }
 
     &__caption {

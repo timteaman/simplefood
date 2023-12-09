@@ -8,19 +8,33 @@
         background-repeat: no-repeat;
         background-position: calc(0% + 70px);
         background-size: contain;
-        min-height: 590px;
+        min-height: 585px;
+        position: relative;
+        z-index: 999;
+        
+        @include r(576) {
+            min-height: 462px;
+            padding: 0;
+            align-items: center;
+
+            &::before {
+                content: "";
+                background-color: rgba(255, 255, 255, 0.85);
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 
     &__content {
         max-width: 470px;
         margin-top: 58px;
-    }
-
-    &__text {
-        
-        p {
-            font-size: 20px;
-            line-height: 1.5;
+        @include r(576) {
+            margin-top: 0;
         }
     }
 
@@ -30,48 +44,48 @@
         margin-bottom: 30px;
     }
 
+    &__text {
+
+        @include r(576) {
+    margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            @include r(576) {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    &__list {
+        margin-bottom: 20px;
+    }
+
     &__item {
         display: flex;
         align-items: center;
         margin-bottom: 22px;
         font-size: 24px;
         gap: 30px;
-    }
+        @include r(576) {
+            font-size: 18px;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
 
-    &__btn {
-        font-size: 18px;
-    }
-}
-
-.icon {
-
-    &--features {
-        display: flex;
         &::before {
-            content: '';
             width: 34px;
             height: 34px;
         }
     }
 
-    &--timer {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-timer');
-            background-color: $orange-900;
-        }
-    }
-
-    &--delivery {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-delivery');
-            background-color: $blue;
-        }
-    }
-
-    &--restorant {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-restorant');
-            background-color: $red;
+    &__btn {
+        font-size: 18px;
+        @include r(576) {
+            font-size: 14px;
         }
     }
 }

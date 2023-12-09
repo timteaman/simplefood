@@ -10,17 +10,37 @@
         margin-bottom: 45px;
         gap: 20px;
         justify-content: center;
+
+        @include r(576) {
+            gap: 10px;
+            margin-bottom: 30px;
+        }
     }
 
     &__btn {
         font-size: 20px;
         color: $darkBlue-900;
         background-color: $white;
-        padding: 13px 32px;
+        padding: 12px 32px;
         outline: 1px solid $silver-200;
         display: flex;
         align-items: center;
         word-wrap: nowrap;
+        gap: 10px;
+
+        @include r(576) {
+            font-size: 14px;
+            padding: 12px 16px;
+        }
+
+        &::before {
+            width: 44px;
+            height: 44px;
+            @include r(576) {
+                width: 20px;
+                height: 20px;
+            }
+        }
 
         &--active {
             color: $white;
@@ -31,6 +51,10 @@
             outline-color: rgba($orange-900, 0.7);
             background-color: rgba($orange-900, 0.10);
             color: $orange-900;
+
+            &::before {
+                background-color: $orange-900;
+            }
         }
 
         &:focus {
@@ -62,59 +86,6 @@
 
         &:focus::after {
             border-bottom-color: $darkBlue-900;
-        }
-    }
-}
-
-.icon {
-
-    &--categories {
-        &::before {
-            width: 44px;
-            height: 44px;
-            margin-right: 10px;
-        }
-
-        &:hover {
-            &::before {
-                background-color: $orange-900;
-            }
-        }
-    }
-
-    &--categories-active {
-        &::before {
-            background-color: $white;
-        }
-    }
-
-    &--burger {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-burger');
-        }
-    }
-
-    &--pizza {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-pizza');
-        }
-    }
-
-    &--sandvich {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-sandvich');
-        }
-    }
-
-    &--asia {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-asia');
-        }
-    }
-
-    &--dish {
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-category-dish');
         }
     }
 }

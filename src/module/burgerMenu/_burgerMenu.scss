@@ -1,0 +1,35 @@
+.burger {
+    @include burger;
+    $burgerWidth: 30px;
+    $burgerHeight: 20px;
+    $burgerLineHeight: 2px;
+    $burgerColor: $darkBlue-900;
+    margin-right: 8px;
+
+    @include r(300) {
+        display: none;
+    }
+}
+
+.lock {
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0, 0.5);
+    }
+  }
+
+.menu--active {
+    // background-color: red;
+    // position: fixed;
+    // height: 100vh;
+    // width: 80vw;
+    // z-index: 1000;
+    
+}

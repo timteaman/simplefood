@@ -7,6 +7,11 @@
         background-position: right;
         background-size: contain;
         min-height: 380px;
+
+        @include r(576) {
+            background-image: none !important;
+            min-height: 195px;
+        }
     }
 
     &__box {
@@ -15,13 +20,24 @@
 
     &__title {
         margin-bottom: 45px;
+
+        @include r(576) {
+            margin-bottom: 15px;
+        }
     }
 
-    &__text > p {
-        margin-bottom: 30px;
-        font-size: 20px;
-        line-height: 1.5;
-        opacity: 0.9;
+    &__text {
+        p {
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 1.5;
+            opacity: 0.9;
+
+            @include r(576) {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+        }
     }
 
     &__list {
@@ -32,9 +48,10 @@
         margin-right: 30px;
     }
 
-    &__link{
+    &__link {
         display: flex;
         border-radius: 5px;
+
         &:hover {
             box-shadow: 0 3px 15px 0 rgba($orange-900, 0.50);
         }
@@ -55,6 +72,7 @@
             background-size: cover;
             height: 40px;
         }
+
         &--apple {
             &::before {
                 width: 120px;
@@ -62,7 +80,7 @@
 
             }
         }
-        
+
         &--google {
             &::before {
                 width: 135px;
@@ -71,5 +89,5 @@
             }
         }
 
-    } 
+    }
 }

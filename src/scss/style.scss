@@ -3,7 +3,9 @@
 @import 'vars';
 @import 'mixins';
 @import 'global';
+@import 'icons';
 @import '../module/header/header';
+@import '../module/burgerMenu/burgerMenu';
 @import '../module/hero/hero';
 @import '../module/categories/categories';
 @import '../module/productlist/prosuctlist';
@@ -14,4 +16,5 @@
 @import '../module/review/review';
 @import '../module/application/application';
 @import '../module/footer/footer';
+@import '../module/form/form';
 @import '../module/swiperjs/swiperjs';

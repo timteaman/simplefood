@@ -9,19 +9,7 @@
                     <img class="logo__img" src="./images/logo.svg" alt="Логотип компанії" width="200" height="39">
                 </a>
 
-                <form class="form" action="#">
-
-                    <label class="form__label" for="email">
-                        <input class="form__input" type="email" name="email" id="email" placeholder="Ваш email"
-                            required>
-                        <span class="sr-only">Впишіть ваш імейл</span>
-                    </label>
-
-                    <button class="btn form__btn icon icon--telegram" type="submit">
-                        Підписатися
-                    </button>
-
-                </form>
+                @include('../form/_form.html')
 
             </div>
 
@@ -92,25 +80,19 @@
                 <ul class="address__list">
 
                     <li class="address__item">
-                        <a class="address__link link icon icon--address icon--location" href="#">
-                            <!-- <span class="icon-mask address__icon"
-                                style="-webkit-mask-image: url('images/icons/sprite.svg#icon-location');"></span> -->
+                        <a class="address__link link icon icon--location" href="#">
                             вул. Т.Г.Шевченка, 1
                         </a>
                     </li>
 
                     <li class="address__item">
-                        <a class="address__link link icon icon--address icon--call" href="tel:+380501112233">
-                            <!-- <span class="icon-mask address__icon"
-                                style="-webkit-mask-image: url('images/icons/sprite.svg#icon-call');"></span> -->
+                        <a class="address__link link icon icon--call" href="tel:+380501112233">
                             380501112233
                         </a>
                     </li>
 
                     <li class="address__item">
-                        <a class="address__link link icon icon--address icon--message" href="mailto:support@sfood.com">
-                            <!-- <span class="icon-mask address__icon"
-                                style="-webkit-mask-image: url('images/icons/sprite.svg#icon-message');"></span> -->
+                        <a class="address__link link icon icon--message" href="mailto:support@sfood.com">
                             support@sfood.com
                         </a>
                     </li>

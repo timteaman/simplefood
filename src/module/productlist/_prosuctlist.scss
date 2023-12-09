@@ -5,4 +5,9 @@
     gap: 30px;
     margin-bottom: 60px;
     align-items: center;
+    @include r(576) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 5px;
+        margin-bottom: 30px;
+    }
 }

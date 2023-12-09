@@ -1,0 +1,135 @@
+.icon {
+
+    &::before {
+        background-color: $dark;
+    }
+
+    &--burger {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-category-burger');
+        }
+    }
+
+    &--pizza {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-category-pizza');
+        }
+    }
+
+    &--sandvich {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-category-sandvich');
+        }
+    }
+
+    &--asia {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-category-asia');
+        }
+    }
+
+    &--dish {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-category-dish');
+        }
+    }
+
+    &--timer {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-timer');
+            background-color: $orange-900;
+        }
+    }
+
+    &--delivery {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-delivery');
+            background-color: $blue;
+        }
+    }
+
+    &--restorant {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-restorant');
+            background-color: $red;
+        }
+    }
+
+    &--cart {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-cart');
+        }
+    }
+
+    &--search {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-search');
+        }
+    }
+
+    &--facebook {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-facebook');
+        }
+    }
+
+    &--twitter {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-twitter');
+        }
+    }
+
+    &--instagram {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-instagram');
+        }
+    }
+
+    &--telegram {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-telegram');
+        }
+    }
+
+    &--location {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-location');
+        }
+    }
+
+    &--call {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-call');
+        }
+    }
+
+    &--message {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-message');
+        }
+    }
+
+    &--arrow {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-arrow-right');
+        }
+    }
+
+    &--time {
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-time');
+        }
+    }
+
+    &--prev {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-left');
+        }
+    }
+
+    &--next {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-right');
+        }
+    }
+}

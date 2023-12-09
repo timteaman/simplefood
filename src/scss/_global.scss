@@ -31,6 +31,10 @@ body {
 
 .section {
     padding: 0 0 120px 0;
+
+    @include r(576) {
+        padding: 0 0 40px 0;
+    }
 }
 
 .logo {
@@ -56,6 +60,10 @@ body {
     font-size: 36px;
     color: $darkBlue-900;
     margin-bottom: 60px;
+    @include r(576) {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
 }
 
 .btn {
@@ -67,6 +75,11 @@ body {
     background-color: $orange-900;
     color: $white;
     transition: color 0.3s, outline-color 0.3s, background-color 0.3s;
+
+    @include r(576) {
+        font-size: 14px;
+        padding: 8px 24px;
+    }
 
     &:hover {
         color: $orange-900;
@@ -106,6 +119,10 @@ body {
     color: $darkBlue-900;
     outline: 2px solid transparent;
     transition: outline 0.3s, border-radius 0.3s, color 0.3s, text-shadow 0.3s;
+
+    @include r(576) {
+        font-size: 16px;
+    }
 
     &:hover {
         color: $orange-900;

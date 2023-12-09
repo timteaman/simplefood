@@ -1,16 +1,36 @@
 .header {
     padding: 60px 0;
 
-    &__logo {
-        display: block;
+    @include r(576) {
+        padding: 14px 0;
     }
 
+    &__logo {
+        display: block;
+        margin-left: 5px;
+
+        @include r(576) {
+
+            & {
+                margin: 0 auto 0 0;
+            }
+
+            .logo__img {
+                width: 115px;
+                height: 23px;
+            }
+        }
+    }
 }
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 54px;
+    gap: 51px;
+
+    @include r(576) {
+        gap: 20px;
+    }
 
     &__inner {
         display: flex;
@@ -23,6 +43,11 @@
         flex-wrap: wrap;
         margin-left: auto;
         gap: 40px;
+
+        @include r(576) {
+            display: none;
+        }
+    
     }
 
     &__link {
@@ -41,20 +66,28 @@
 .user-nav {
     display: flex;
     align-items: center;
-    margin-right: 5px;
-    gap: 15px;
+    gap: 10px;
 
     &__btn {
         position: relative;
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 12px;
         border-radius: 5px;
         outline: 2px solid transparent;
         transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
 
+        &::before {
+            width: 19px;
+            height: 19px;
+        }
+
         &:hover {
             background-color: $orange-900;
+
+            &::before {
+                background-color: $white;
+            }
         }
 
         &:hover .user-nav__number {
@@ -87,31 +120,5 @@
         justify-content: center;
         align-items: center;
         transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
-    }
-}
-
-.icon {
-
-    &--user-nav {
-        &:hover {
-            &::before {
-                background-color: $white;
-            }
-        }
-    }
-    &--cart {
-        &::before {
-            width: 19px;
-            height: 19px;
-            mask-image: url('../../images/icons/sprite.svg#icon-cart');
-        }
-    }
-
-    &--search {
-        &::before {
-            width: 19px;
-            height: 19px;
-            mask-image: url('../../images/icons/sprite.svg#icon-search');
-        }
     }
 }
