@@ -54,10 +54,89 @@
                 </li>
             </ul>
 
-            <button class="burger" type="button"> 
-    <span class="burger__line"></span> 
-    <span class="sr-only">Відкрити меню</span>
-</button>
+            <div class="burger__inner">
+
+    <button class="burger" type="button">
+        <span class="burger__line"></span>
+        <span class="sr-only">Відкрити меню</span>
+    </button>
+
+        <nav class="burger__nav">
+            <div class="burger__container">
+
+            <a class="logo burger__logo" href="#header">
+                <img class="logo__img" src="./images/logo.svg" alt="Логотип компанії" width="200" height="39">
+            </a>
+
+            <ul class="burger__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="#header">Головна</a>
+                </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="#categories">Страви</a>
+                </li>
+
+                <li class="menu__item">
+                    <a class="menu__link" href="#footer">Контакти</a>
+                </li>
+            </ul>
+
+                <address class="address">
+                    <ul class="address__list">
+
+                        <li class="address__item">
+                            <a class="address__link link icon icon--location" href="#">
+                                вул. Т.Г. Шевченка, 1
+                            </a>
+                        </li>
+
+                        <li class="address__item">
+                            <a class="address__link link icon icon--call" href="tel:+380501112233">
+                                380501112233
+                            </a>
+                        </li>
+
+                        <li class="address__item">
+                            <a class="address__link link icon icon--message" href="mailto:support@sfood.com">
+                                support@sfood.com
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="social">
+
+                        <li class="social__item">
+                            <a class="social__link icon icon--social icon--facebook" href="#">
+                                <span class="sr-only">
+                                    Відкрити сторінку Facebook
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social__link icon icon--social icon--twitter" href="#">
+                                <span class="sr-only">
+                                    Відкрити сторінку Twitter
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social__link icon icon--social icon--instagram" href="#">
+                                <span class="sr-only">
+                                    Відкрити сторінку Instagram
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </address>
+            </div>
+        </nav>
+
+</div>
 
         </nav>
     </div>
@@ -731,7 +810,7 @@
 
                     <li class="address__item">
                         <a class="address__link link icon icon--location" href="#">
-                            вул. Т.Г.Шевченка, 1
+                            вул. Т.Г. Шевченка, 1
                         </a>
                     </li>
 

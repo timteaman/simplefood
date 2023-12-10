@@ -1,3 +1,9 @@
+@mixin r($width) {
+    @media (max-width: #{$width}px) {
+        @content;
+    }
+}
+
 .footer {
 
     &__inner {
@@ -33,6 +39,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            order: 1;
         }
     }
 
@@ -101,6 +108,10 @@
     display: flex;
     gap: 13px;
 
+    @include r(576) {
+        margin-bottom: 30px;
+    }
+
     &__link {
         display: flex;
         align-items: center;
@@ -108,9 +119,9 @@
         outline: 2px solid transparent;
         border-radius: 50%;
         background-color: $silver-200;
-        transition: background-color 0.3s, outline-color 0.3s;
         width: 39px;
         height: 39px;
+        transition: background-color 3s, outline-color 3s;
 
         &::before {
             height: 20px;

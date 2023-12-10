@@ -19,6 +19,7 @@
     }
 
     &__title {
+        text-align: left;
         margin-bottom: 45px;
 
         @include r(576) {
@@ -51,6 +52,7 @@
     &__link {
         display: flex;
         border-radius: 5px;
+        transition: box-shadow 0.4s, outline 0.4s;
 
         &:hover {
             box-shadow: 0 3px 15px 0 rgba($orange-900, 0.50);

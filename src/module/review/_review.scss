@@ -5,14 +5,12 @@
             position: relative;
         }
     }
-    &__title {
-        margin-bottom: 60px;
-        text-align: center;
 
-        
-    @include r(576) {
-        margin-bottom: 30px;
-    }
+    &__title {
+
+        @include r(576) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -34,7 +32,7 @@
         margin-right: 80px;
 
         @include r(576) {
-            margin: 0 50px 30px 50px;
+            margin: 0 0 30px 0;
             width: 100px;
             height: 100px;
         }
@@ -43,29 +41,6 @@
     &__blockquote {
         max-width: 570px;
         font-size: 20px;
-        position: relative;
-
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            width: 24px;
-            height: 19px;
-            background-color: $gray;
-            mask-repeat: no-repeat;
-        }
-
-        &::before {
-            mask-image: url('../../images/icons/sprite.svg#icon-quote-open');
-            left: -40px;
-            top: 0;
-        }
-
-        &::after {
-            mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
-            bottom: 120px;
-            right: -40px;
-        }
     }
 
     &__text {
@@ -74,6 +49,30 @@
             margin-bottom: 30px;
             font-style: italic;
             line-height: 1.5;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 19px;
+                background-color: $gray;
+                mask-repeat: no-repeat;
+            }
+
+            &::before {
+                mask-image: url('../../images/icons/sprite.svg#icon-quote-open');
+                left: -30px;
+                top: 0;
+            }
+
+            &::after {
+                mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
+                bottom: 0px;
+                right: -30px;
+            }
+
 
             @include r(576) {
                 font-size: 14px;

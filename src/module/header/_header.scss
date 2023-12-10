@@ -1,3 +1,9 @@
+@mixin r($width) {
+    @media (max-width: #{$width}px) {
+        @content;
+    }
+}
+
 .header {
     padding: 60px 0;
 

@@ -60,6 +60,8 @@ body {
     font-size: 36px;
     color: $darkBlue-900;
     margin-bottom: 60px;
+    text-align: center;
+
     @include r(576) {
         font-size: 24px;
         margin-bottom: 30px;
@@ -74,7 +76,8 @@ body {
     border-radius: 6px;
     background-color: $orange-900;
     color: $white;
-    transition: color 0.3s, outline-color 0.3s, background-color 0.3s;
+    letter-spacing: 0.021em;
+    transition: color 0.9s, outline-color 0.9s, background-color 0.9s;
 
     @include r(576) {
         font-size: 14px;
@@ -139,7 +142,7 @@ body {
 
     &--underline {
         position: relative;
-    
+
         &::after {
             content: '';
             position: absolute;
@@ -149,9 +152,15 @@ body {
             border-bottom: 1px solid $darkBlue-900;
             transition: border-bottom-color 0.3s;
         }
-    
+
         &:hover::after {
             border-bottom-color: $orange-900;
+        }
+    }
+
+    @include r(576) {
+        &::after {
+            bottom: 2px;
         }
     }
 }

@@ -1,9 +1,6 @@
 .restaurant {
 
     &__title {
-        text-align: center;
-        margin-bottom: 60px;
-
         @include r(576) {
             margin-bottom: 30px;
         }

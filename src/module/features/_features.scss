@@ -10,8 +10,8 @@
         background-size: contain;
         min-height: 585px;
         position: relative;
-        z-index: 999;
-        
+        z-index: 1;
+
         @include r(576) {
             min-height: 462px;
             padding: 0;
@@ -33,9 +33,14 @@
     &__content {
         max-width: 470px;
         margin-top: 58px;
+
         @include r(576) {
             margin-top: 0;
         }
+    }
+
+    &__title {
+        text-align: left;
     }
 
     &__title,
@@ -47,12 +52,13 @@
     &__text {
 
         @include r(576) {
-    margin-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 20px;
             line-height: 1.5;
+
             @include r(576) {
                 font-size: 18px;
             }
@@ -70,6 +76,7 @@
         margin-bottom: 22px;
         font-size: 24px;
         gap: 30px;
+
         @include r(576) {
             font-size: 18px;
             gap: 10px;
@@ -84,6 +91,7 @@
 
     &__btn {
         font-size: 18px;
+
         @include r(576) {
             font-size: 14px;
         }

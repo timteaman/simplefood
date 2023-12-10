@@ -1,3 +1,9 @@
+@mixin r($width) {
+    @media (max-width: #{$width}px) {
+        @content;
+    }
+}
+
 .product-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
