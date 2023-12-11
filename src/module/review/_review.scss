@@ -44,35 +44,34 @@
     }
 
     &__text {
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 19px;
+            background-color: $gray;
+            mask-repeat: no-repeat;
+        }
+
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-quote-open');
+            left: -30px;
+            top: 0;
+        }
+
+        &::after {
+            mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
+            bottom: 0px;
+            right: -30px;
+        }
+
         p {
             font-size: 20px;
             margin-bottom: 30px;
             font-style: italic;
             line-height: 1.5;
-            position: relative;
-
-            &::before,
-            &::after {
-                content: '';
-                position: absolute;
-                width: 24px;
-                height: 19px;
-                background-color: $gray;
-                mask-repeat: no-repeat;
-            }
-
-            &::before {
-                mask-image: url('../../images/icons/sprite.svg#icon-quote-open');
-                left: -30px;
-                top: 0;
-            }
-
-            &::after {
-                mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
-                bottom: 0px;
-                right: -30px;
-            }
-
 
             @include r(576) {
                 font-size: 14px;
@@ -94,6 +93,7 @@
     }
 
     &__caption {
+        display: block;
         font-size: 14px;
     }
 

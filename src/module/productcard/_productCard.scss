@@ -1,9 +1,3 @@
-@mixin r($width) {
-    @media (max-width: #{$width}px) {
-        @content;
-    }
-}
-
 .product-card {
     font-size: 15px;
     padding: 20px 15px;

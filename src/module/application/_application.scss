@@ -50,7 +50,7 @@
     }
 
     &__link {
-        display: flex;
+        display: inline-block;
         border-radius: 5px;
         transition: box-shadow 0.4s, outline 0.4s;
 

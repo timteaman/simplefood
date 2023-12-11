@@ -7,10 +7,10 @@
 .product-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    // grid-auto-rows: minmax(0, 300px);
     gap: 30px;
     margin-bottom: 60px;
     align-items: center;
+
     @include r(576) {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px 5px;

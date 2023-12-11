@@ -10,10 +10,10 @@
         margin-bottom: 45px;
         gap: 20px;
         justify-content: center;
-        padding: 0.5px 0;
+        padding: 0.5px 0.5px;
 
         @include r(576) {
-            // display: inline-flex;
+            justify-content: flex-start;
             flex-wrap: nowrap;
             gap: 10px;
             margin-bottom: 30px;

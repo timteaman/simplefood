@@ -10,6 +10,7 @@
     max-width: 370px;
     background-color: $white;
     border-radius: 10px;
+    // overflow: hidden;
     @include r(576) {
         margin-bottom: 30px;
     }
@@ -19,10 +20,15 @@
         box-shadow: 0 3px 15px 0 rgba($orange-900, 0.50);
     }
 
+    &__link {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
     &__img {
         object-fit: cover;
         margin-bottom: 15px;
-        border-radius: 10px 0 0 0;
     }
 
     &__box {
