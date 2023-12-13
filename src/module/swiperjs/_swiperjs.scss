@@ -62,6 +62,10 @@
 
 .review-slider {
 
+    &__item {
+        display: flex;
+    }
+
     &__actions {
 
         @include r(576) {
