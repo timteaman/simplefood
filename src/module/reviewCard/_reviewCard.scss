@@ -1,0 +1,85 @@
+.review-card {
+
+    display: flex;
+    padding: 0 90px;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include r(576) {
+        padding: 0 40px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__img {
+        border-radius: 50%;
+        margin-right: 80px;
+
+        @include r(576) {
+            margin: 0 0 30px 0;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__blockquote {
+        max-width: 570px;
+        font-size: 20px;
+    }
+
+    &__text {
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 19px;
+            background-color: $gray;
+            mask-repeat: no-repeat;
+        }
+
+        &::before {
+            mask-image: url('../../images/icons/sprite.svg#icon-quote-open');
+            left: -30px;
+            top: 0;
+        }
+
+        &::after {
+            mask-image: url('../../images/icons/sprite.svg#icon-quote-close');
+            bottom: 0px;
+            right: -30px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-style: italic;
+            line-height: 1.5;
+
+            @include r(576) {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__author {
+        font-weight: 500;
+        display: block;
+        color: $orange-900;
+        margin-bottom: 15px;
+
+        @include r(576) {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__caption {
+        display: block;
+        font-size: 14px;
+    }
+
+}

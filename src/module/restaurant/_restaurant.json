@@ -1,0 +1,10 @@
+[
+    {
+        "restImageUrl": "../../images/restaurant/resto_1@x1.webp",
+        "resttAlt": "Піцца Блейз",
+        "restTitle": "Blaze Pizza",
+        "restFirstTime": "11:00",
+        "restSecondTime": "22:00",
+        "productClass": "product-list__item"
+    }
+]
