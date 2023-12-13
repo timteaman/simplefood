@@ -1,12 +1,10 @@
 .review-card {
 
     display: flex;
-    padding: 0 90px;
     align-items: center;
     margin-bottom: 30px;
 
     @include r(576) {
-        padding: 0 40px;
         justify-content: center;
         flex-direction: column;
     }
@@ -25,6 +23,7 @@
     &__blockquote {
         max-width: 570px;
         font-size: 20px;
+        padding: 0 40px;
     }
 
     &__text {

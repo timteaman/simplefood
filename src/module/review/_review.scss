@@ -1,8 +1,10 @@
 .review {
 
     &__inner {
+        padding: 0 90px;
         @include r(576) {
             position: relative;
+            padding: 0;
         }
     }
 

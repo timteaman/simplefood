@@ -1,10 +1,8 @@
 .rest-card {
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.10);
     max-width: 370px;
-    background-color: $white;
     border-radius: 10px;
-    // overflow: hidden;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.10);
+    background-color: $white;
     @include r(576) {
         margin-bottom: 30px;
     }
@@ -18,11 +16,11 @@
         display: block;
         overflow: hidden;
         border-radius: 10px;
+        margin-bottom: 15px;
     }
 
     &__img {
         object-fit: cover;
-        margin-bottom: 15px;
     }
 
     &__box {

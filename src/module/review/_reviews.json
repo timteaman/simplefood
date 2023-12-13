@@ -5,7 +5,7 @@
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",
         "reviewCaption": "Поціновувачка смачної їжі",
-        "reviewClass": "review-card"
+        "reviewClass": "swiper-slide review-card"
     },
     {
         "reviewImageUrl": "../../images/review/daryna@2x.webp",
@@ -13,7 +13,7 @@
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",
         "reviewCaption": "Поціновувачка смачної їжі",
-        "reviewClass": "review-card"
+        "reviewClass": "swiper-slide review-card"
     },
     {
         "reviewImageUrl": "../../images/review/daryna@2x.webp",
@@ -21,7 +21,7 @@
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",
         "reviewCaption": "Поціновувачка смачної їжі",
-        "reviewClass": "review-card"
+        "reviewClass": "swiper-slide review-card"
     },
     {
         "reviewImageUrl": "../../images/review/daryna@2x.webp",
@@ -29,6 +29,6 @@
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",
         "reviewCaption": "Поціновувачка смачної їжі",
-        "reviewClass": "review-card"
+        "reviewClass": "swiper-slide review-card"
     }
 ]

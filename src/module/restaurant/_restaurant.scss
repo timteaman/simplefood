@@ -12,7 +12,8 @@
         gap: 30px;
 
         @include r(576) {
-            grid-template-columns: repeat(1, auto);
+            display: flex;
+            gap: 0;
         }
     }
 }

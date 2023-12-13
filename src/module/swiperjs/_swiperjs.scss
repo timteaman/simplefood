@@ -1,28 +1,37 @@
-@mixin r($width) {
-    @media (max-width: #{$width}px) {
-        @content;
-    }
-}
-
-.review-slider {
-
-    &__actions {
-        .review-slider__dots {
-            width: fit-content;
-        }
-    }
-}
-
 .slider-actions {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 0.5px;
     
     &__btn {
         border-radius: 50%;
         border: 3px solid $gray;
+        outline: 2px solid transparent;
         padding: 8px;
+        transition: border-color 0.4s, background-color 0.4s, outline-color 0.4s;
+
+        &:hover {
+            border-color: rgba($orange-900, 0.5);
+            background-color: $orangeLight;
+
+        &::before {
+            background-color: rgba($orange-900, 0.5);
+        }
+    }
+
+    &:focus {
+        outline-color: $orange-900;
+    }
+
+    &:active {
+        background-color: $orangeLight;
+        border-color: transparent;
+        &::before {
+            background-color: $orange-900;
+        }
+    }
 
         &::before {
             display: block;
@@ -30,16 +39,14 @@
             height: 18px;
             background-color: $gray;
         }
-        &--next {
-            &::before {
 
-            }
+
+        &--next {
+
         }
 
         &--prev {
-            &::before {
 
-            }
         }
     }
 
@@ -54,19 +61,39 @@
         width: 15px;
         height: 15px;
         background-color: $gray;
+        outline: 2px solid transparent;
+        cursor: pointer;
+        transition: outline-color 0.4s, background-color 0.4s;
         &--active {
             background-color: $orange-900;
+        }
+
+        &:hover {
+            outline-color: rgba($orange-900, 0.5);
+            background-color: $orangeLight;
+        }
+
+        &:focus {
+            outline-color: $orange-900;
+        }
+
+        &:active {
+            background-color: rgba($orange-900, 0.5);
         }
     }
 }
 
+.restaurant-slider {
+    overflow: visible;
+}
+
 .review-slider {
 
-    &__item {
-        display: flex;
-    }
-
     &__actions {
+
+        .review-slider__dots {
+            width: fit-content;
+        }
 
         @include r(576) {
             display: flex;
@@ -79,6 +106,7 @@
             z-index: 1;
         }
     }
+
     &__dots {
         @include r(576) {
             display: none;

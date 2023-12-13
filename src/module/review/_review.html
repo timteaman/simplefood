@@ -7,41 +7,20 @@
         <div class="review__inner">
 
             <div class="swiper review-slider">
-                <div class="swiper-wrapper review-slider__wrapper">
-                    <ul>
 
-                    <li class="swiper-slide review-slider__item">
+                <ul class="swiper-wrapper review-slider__wrapper review__list">
 
-                        @loop('../reviewCard/_reviewCard.html', './review/_reviews.json')
+                    @loop('../reviewCard/_reviewCard.html', './review/_reviews.json')
 
-                    </li>
-
-                    <li class="swiper-slide review-slider__item">
-
-                        @loop('../reviewCard/_reviewCard.html', './review/_reviews.json')
-
-                    </li>
-
-                    <li class="swiper-slide review-slider__item">
-
-                        @loop('../reviewCard/_reviewCard.html', './review/_reviews.json')
-
-                    </li>
-
-                    <li class="swiper-slide review-slider__item">
-
-                        @loop('../reviewCard/_reviewCard.html', './review/_reviews.json')
-
-                    </li>
                 </ul>
-                
-                </div>
 
                 <div class="review-slider__actions slider-actions">
                     <button
                         class="review-slider__btn review-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
                         type="button"></button>
+
                     <div class="review-slider__dots slider-actions__dots"></div>
+                    
                     <button
                         class="review-slider__btn review-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
                         type="button"></button>
