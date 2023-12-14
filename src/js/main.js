@@ -1,3 +1,5 @@
+// swiperJS
+
 function createSlider(selector, paginationEl, nextBtn, prevBtn) {
   return new Swiper(selector, {
     direction: "horizontal",
@@ -36,6 +38,8 @@ if (window.innerWidth <= 576) {
   );
 }
 
+// burger menu
+
 // document.addEventListener("DOMContentLoaded", () => {
 
 //   const burger = document.querySelector(".burger"); //наша кнопка
@@ -65,36 +69,21 @@ if (window.innerWidth <= 576) {
 
 // filter
 
-const filterButton = document.querySelectorAll(".categories__btn");
-const workItem = document.querySelectorAll(".product-list__item");
+const filterButtons = document.querySelectorAll(".categories__btn");
+const workItems = document.querySelectorAll(".product-list__item");
 
-filterButton.forEach(link => link.addEventListener("click", () => {
-  document.querySelector(".categories__btn--active").classList.remove("categories__btn--active");
-  link.classList.add("categories__btn--active");
-  let filter = link.getAttribute("data-name");
-  
-  workItem.forEach(project => {
-    const projectName = project.getAttribute("data-name");
-    if(projectName === filter || filter === "filter--all") {
-      project.style.display = "block";
-    } else {
-      project.style.display = "none";
-    }
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelector(".categories__btn--active").classList.remove("categories__btn--active");
+    button.classList.add("categories__btn--active");
+
+    const filter = button.getAttribute("data-name") || button.getAttribute("data-filter");
+
+    workItems.forEach(item => {
+      const itemName = item.getAttribute("data-name") || item.getAttribute("data-category");
+
+      item.style.display = (itemName === filter || filter === "filter--all") ? "block" : "none";
+    });
   });
-  
-}));
+});
 
-filterButton.forEach(link => link.addEventListener("click", () => {
-  document.querySelector(".categories__btn--active").classList.remove("categories__btn--active");
-  link.classList.add("categories__btn--active");
-  let filter = link.getAttribute("data-filter"); // Изменено на data-filter
-
-  workItem.forEach(project => {
-    const categoryName = project.getAttribute("data-category"); // Изменено на data-category
-    if (categoryName === filter || filter === "filter--all") {
-      project.style.display = "block";
-    } else {
-      project.style.display = "none";
-    }
-  });
-}));

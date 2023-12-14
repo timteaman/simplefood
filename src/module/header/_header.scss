@@ -1,6 +1,10 @@
 .header {
     padding: 60px 0;
 
+    @include r(768px) {
+
+    }
+
     @include r(576) {
         padding: 14px 0;
     }
