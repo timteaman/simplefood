@@ -48,15 +48,6 @@
             }
         }
 
-        &--active {
-            color: $white;
-            background-color: $orange-900;
-
-            &::before {
-                background-color: $white;
-            }
-        }
-
         &:hover {
             outline-color: rgba($orange-900, 0.7);
             background-color: rgba($orange-900, 0.10);
@@ -78,6 +69,26 @@
             background-color: $white;
             box-shadow: 0 -5px 12px 0 rgba($orange-900, 0.20) inset;
         }
+
+        
+        &--active {
+            color: $white;
+            background-color: $orange-900;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:focus {
+                color: $white;
+                background-color: $orange-900;
+                &::before {
+                    background-color: $white;
+                }
+            }
+
+            &::before {
+                background-color: $white;
+            }
+        }
+
     }
 
     &__more {

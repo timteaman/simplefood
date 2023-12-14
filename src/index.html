@@ -106,31 +106,31 @@
             <ul class="categories__filter">
 
                 <li class="categories__item">
-                    <button class="btn categories__btn categories__btn--active icon icon--burger" type="button">
+                    <button class="btn categories__btn categories__btn--active icon icon--burger" type="button" data-filter="burgers">
                         Бургери
                     </button>
                 </li>
 
                 <li class="categories__item">
-                    <button class="btn categories__btn icon icon--pizza" type="button">
+                    <button class="btn categories__btn icon icon--pizza" type="button" data-filter="pizzas">
                         Піца
                     </button>
                 </li>
 
                 <li class="categories__item">
-                    <button class="btn categories__btn icon icon--sandvich" type="button">
+                    <button class="btn categories__btn icon icon--sandvich" type="button" data-filter="sandviches">
                         Сендвічі
                     </button>
                 </li>
 
                 <li class="categories__item">
-                    <button class="btn categories__btn icon icon--asia" type="button">
+                    <button class="btn categories__btn icon icon--asia" type="button" data-filter="asians">
                         Азійська кухня
                     </button>
                 </li>
 
                 <li class="categories__item">
-                    <button class="btn categories__btn icon icon--dish" type="button">
+                    <button class="btn categories__btn icon icon--dish" type="button" data-filter="dishes">
                         Cети
                     </button>
                 </li>
@@ -138,7 +138,7 @@
 
             <ul class="product-list">
 
-    <li class="product-list__item">
+    <li class="product-list__item" data-category="burgers">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/1@1x.webp" alt="фотографія чізбургера з листям салату" width="140" height="140">
@@ -147,7 +147,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="pizzas">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/2@1x.webp" alt="фотографія Біфбургера" width="140" height="140">
@@ -156,7 +156,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="sandviches">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/3@1x.webp" alt="фотографія королівського чізбургера" width="140" height="140">
@@ -165,7 +165,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="sandviches">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/4@1x.webp" alt="фотографія чорного гамбургера" width="140" height="140">
@@ -174,7 +174,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="pizzas">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/5@1x.webp" alt="фотографія чікен бургера" width="140" height="140">
@@ -183,7 +183,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="asians">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/1@1x.webp" alt="фотографія чізбургера з листям салату" width="140" height="140">
@@ -192,7 +192,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="dishes">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/2@1x.webp" alt="фотографія Біфбургера" width="140" height="140">
@@ -201,7 +201,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="burgers">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/3@1x.webp" alt="фотографія королівського чізбургера" width="140" height="140">
@@ -210,7 +210,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="burgers">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/4@1x.webp" alt="фотографія чорного гамбургера" width="140" height="140">
@@ -219,7 +219,7 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
-</li><li class="product-list__item">
+</li><li class="product-list__item" data-category="asians">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/5@1x.webp" alt="фотографія чікен бургера" width="140" height="140">
