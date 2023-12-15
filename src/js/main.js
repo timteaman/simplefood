@@ -41,30 +41,33 @@ if (window.innerWidth <= 768) {
 // burger menu
 
 document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger"); //наша кнопка
-  const mobileMenu = document.querySelector(".burger__nav"); //мобильное меню
-  const bodyLock = document.querySelector("body"); //ищем как селектор ТЕГА
-  const closeBtn = document.querySelector(".close-btn");
+  const burger = document.querySelector(".burger"); // Наша кнопка
+  const mobileMenu = document.querySelector(".mobile-menu__nav"); // Мобильное меню
+  const bodyLock = document.querySelector("body"); // Тег body
+  const closeBtn = document.querySelector(".burger--close");
 
   burger.addEventListener("click", () => {
-    mobileMenu.classList.add("burger__nav--active");
+    burger.classList.add("burger--active"); // Добавляем класс для активации кнопки
+    mobileMenu.classList.add("mobile-menu__nav--active");
     bodyLock.classList.add("lock");
   });
 
   closeBtn.addEventListener("click", () => {
-    mobileMenu.classList.remove("burger__nav--active");
+    burger.classList.remove("burger--active"); // Удаляем класс активации кнопки при закрытии меню
+    mobileMenu.classList.remove("mobile-menu__nav--active");
     bodyLock.classList.remove("lock");
+  });
+
+  // Клик вне таргета
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".burger") && !e.target.closest(".mobile-menu__nav")) {
+      burger.classList.remove("burger--active"); // Удаляем класс активации кнопки
+      mobileMenu.classList.remove("mobile-menu__nav--active");
+      bodyLock.classList.remove("lock");
+    }
   });
 });
 
-//Клик вне таргета
-document.addEventListener("click", function (e) {
-  if (e.target !== mobileMenu) {
-    burger.classList.remove("burger--active");
-    mobileMenu.classList.remove("burger__nav--active");
-    bodyLock.classList.remove("lock");
-  }
-});
 
 // filter
 

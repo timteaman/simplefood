@@ -1,7 +1,6 @@
 <div class="mobile-menu">
 
-    <button class="burger icon icon--burger" type="button">
-        <!-- <span class="burger__line"></span> -->
+    <button class="burger icon icon--burger-open" type="button">
         <span class="sr-only">Відкрити меню</span>
     </button>
 
@@ -13,28 +12,27 @@
                 <img class="logo__img" src="./images/logo.svg" alt="Логотип компанії" width="200" height="39">
             </a>
 
-            <button class="close-btn icon icon--close" type="button">
-                <!-- <span class="burger__line"></span> -->
+            <button class="burger--close icon icon--burger-close" type="button">
                 <span class="sr-only">Закрити меню</span>
             </button>
 
         </div>
 
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#header">Головна</a>
+        <ul class="menu__list mobile-menu__list">
+            <li class="menu__item mobile-menu__item">
+                <a class="menu__link menu__link--active mobile-menu__link" href="#header">Головна</a>
             </li>
 
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#categories">Страви</a>
+            <li class="menu__item  mobile-menu__item">
+                <a class="menu__link mobile-menu__link" href="#categories">Страви</a>
             </li>
 
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#footer">Контакти</a>
+            <li class="menu__item  mobile-menu__item">
+                <a class="menu__link mobile-menu__link" href="#footer">Контакти</a>
             </li>
         </ul>
 
-        <address class="address">
+        <address class="address mobile-menu__address">
             <ul class="address__list">
 
                 <li class="address__item">
@@ -57,9 +55,9 @@
 
             </ul>
 
-            <ul class="social">
+            <ul class="social mobile-menu__social">
 
-                <li class="social__item">
+                <li class="social__item mobile-menu__social-list">
                     <a class="social__link icon icon--social icon--facebook" href="#">
                         <span class="sr-only">
                             Відкрити сторінку Facebook

@@ -2,7 +2,7 @@
     padding: 60px 0;
 
     @include r(992) {
-        padding: 24px 0;
+        padding: 15px 0;
     }
 
     &__logo {
@@ -32,7 +32,7 @@
     gap: 51px;
 
     @include r(576) {
-        gap: 20px;
+        gap: 10px;
     }
 
     &__inner {

@@ -132,4 +132,16 @@
             mask-image: url('../images/icons/sprite.svg#icon-right');
         }
     }
+
+    &--burger-open {
+        &::before {
+            mask-image: url('../images/icons/burger-menu.svg');
+        }
+    }
+
+    &--burger-close {
+        &::before {
+            mask-image: url('../images/icons/burger-close.svg');
+        }
+    }
 }

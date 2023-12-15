@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Food</title>
 
-    <link href="../../images/icons/favicon/favicon.ico" rel="icon" sizes="48x48" >
+    <link href="../../images/icons/favicon/favicon.ico" rel="icon" sizes="48x48">
     <link href="../../images/icons/favicon/favicon.svg" rel="icon" sizes="any" type="image/svg+xml">
-    <link href="../../images/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon"/>
-    <link href="../../images/icons/favicon/site.webmanifest" rel="manifest"/>
+    <link href="../../images/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../../images/icons/favicon/site.webmanifest" rel="manifest" />
     <link href="../../images/icons/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#ff6838" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -59,6 +59,95 @@
                 </li>
             </ul>
 
+            <div class="mobile-menu">
+
+    <button class="burger icon icon--burger-open" type="button">
+        <span class="sr-only">Відкрити меню</span>
+    </button>
+
+    <nav class="mobile-menu__nav">
+
+        <div class="mobile-menu__header">
+
+            <a class="logo mobile-menu__logo" href="#header">
+                <img class="logo__img" src="./images/logo.svg" alt="Логотип компанії" width="200" height="39">
+            </a>
+
+            <button class="burger--close icon icon--burger-close" type="button">
+                <span class="sr-only">Закрити меню</span>
+            </button>
+
+        </div>
+
+        <ul class="menu__list mobile-menu__list">
+            <li class="menu__item mobile-menu__item">
+                <a class="menu__link menu__link--active mobile-menu__link" href="#header">Головна</a>
+            </li>
+
+            <li class="menu__item  mobile-menu__item">
+                <a class="menu__link mobile-menu__link" href="#categories">Страви</a>
+            </li>
+
+            <li class="menu__item  mobile-menu__item">
+                <a class="menu__link mobile-menu__link" href="#footer">Контакти</a>
+            </li>
+        </ul>
+
+        <address class="address mobile-menu__address">
+            <ul class="address__list">
+
+                <li class="address__item">
+                    <a class="address__link link icon icon--location" href="#">
+                        вул. Т.Г. Шевченка, 1
+                    </a>
+                </li>
+
+                <li class="address__item">
+                    <a class="address__link link icon icon--call" href="tel:+380501112233">
+                        380501112233
+                    </a>
+                </li>
+
+                <li class="address__item">
+                    <a class="address__link link icon icon--message" href="mailto:support@sfood.com">
+                        support@sfood.com
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="social mobile-menu__social">
+
+                <li class="social__item mobile-menu__social-list">
+                    <a class="social__link icon icon--social icon--facebook" href="#">
+                        <span class="sr-only">
+                            Відкрити сторінку Facebook
+                        </span>
+                    </a>
+                </li>
+
+                <li class="social__item">
+                    <a class="social__link icon icon--social icon--twitter" href="#">
+                        <span class="sr-only">
+                            Відкрити сторінку Twitter
+                        </span>
+                    </a>
+                </li>
+
+                <li class="social__item">
+                    <a class="social__link icon icon--social icon--instagram" href="#">
+                        <span class="sr-only">
+                            Відкрити сторінку Instagram
+                        </span>
+                    </a>
+                </li>
+
+            </ul>
+        </address>
+    </nav>
+
+</div>
+
         </nav>
     </div>
 </header>
@@ -104,7 +193,8 @@
             <ul class="categories__filter">
 
                 <li class="categories__item">
-                    <button class="btn categories__btn categories__btn--active icon icon--burger" type="button" data-filter="burgers">
+                    <button class="btn categories__btn categories__btn--active icon icon--burger" type="button"
+                        data-filter="burgers">
                         Бургери
                     </button>
                 </li>
@@ -290,8 +380,7 @@
                 <li class="swiper-slide restaurant__item">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_1@2x.webp" alt="Піцца Блейз" width="370"
-                height="300">
+            <img class="rest-card__img" src="../../images/restaurant/resto_1@2x.webp" alt="Піцца Блейз" width="370" height="300">
         </a>
         <div class="rest-card__box">
             <span class="rest-card__title">Blaze Pizza</span>
@@ -306,8 +395,7 @@
 </li><li class="swiper-slide restaurant__item">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_2@2x.webp" alt="Піцца Ранчо" width="370"
-                height="300">
+            <img class="rest-card__img" src="../../images/restaurant/resto_2@2x.webp" alt="Піцца Ранчо" width="370" height="300">
         </a>
         <div class="rest-card__box">
             <span class="rest-card__title">Pizza Runcho</span>
@@ -322,8 +410,7 @@
 </li><li class="swiper-slide restaurant__item">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_3@2x.webp" alt="Pizza Hut" width="370"
-                height="300">
+            <img class="rest-card__img" src="../../images/restaurant/resto_3@2x.webp" alt="Pizza Hut" width="370" height="300">
         </a>
         <div class="rest-card__box">
             <span class="rest-card__title">Pizza Hut</span>
@@ -338,8 +425,7 @@
 </li><li class="swiper-slide restaurant__item">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_4@2x.webp" alt="Гамбургер Макдональдз" width="370"
-                height="300">
+            <img class="rest-card__img" src="../../images/restaurant/resto_4@2x.webp" alt="Гамбургер Макдональдз" width="370" height="300">
         </a>
         <div class="rest-card__box">
             <span class="rest-card__title">McDonald`s</span>
@@ -354,8 +440,7 @@
 </li><li class="swiper-slide restaurant__item">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_5@2x.webp" alt="Картопля фрі з КФС" width="370"
-                height="300">
+            <img class="rest-card__img" src="../../images/restaurant/resto_5@2x.webp" alt="Картопля фрі з КФС" width="370" height="300">
         </a>
         <div class="rest-card__box">
             <span class="rest-card__title">KFC</span>
@@ -370,8 +455,7 @@
 </li><li class="swiper-slide restaurant__item">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_6@2x.webp" alt="зображення Стар Бургеру" width="370"
-                height="300">
+            <img class="rest-card__img" src="../../images/restaurant/resto_6@2x.webp" alt="зображення Стар Бургеру" width="370" height="300">
         </a>
         <div class="rest-card__box">
             <span class="rest-card__title">Star Burgers</span>
@@ -493,7 +577,7 @@
                         type="button"></button>
 
                     <div class="review-slider__dots slider-actions__dots"></div>
-                    
+
                     <button
                         class="review-slider__btn review-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
                         type="button"></button>
