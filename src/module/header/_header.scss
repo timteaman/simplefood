@@ -1,24 +1,23 @@
 .header {
     padding: 60px 0;
 
-    @include r(768px) {
-
-    }
-
-    @include r(576) {
-        padding: 14px 0;
+    @include r(992) {
+        padding: 24px 0;
     }
 
     &__logo {
         display: block;
         margin-left: 5px;
 
-        @include r(576) {
+        @include r(992) {
 
             & {
                 margin: 0 auto 0 0;
             }
 
+        }
+
+        @include r(576) {
             .logo__img {
                 width: 115px;
                 height: 23px;
@@ -48,7 +47,7 @@
         margin-left: auto;
         gap: 40px;
 
-        @include r(576) {
+        @include r(992) {
             display: none;
         }
 

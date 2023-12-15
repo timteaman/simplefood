@@ -3,7 +3,8 @@
     border-radius: 10px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.10);
     background-color: $white;
-    @include r(576) {
+
+    @include r(768) {
         margin-bottom: 30px;
     }
 
@@ -36,6 +37,10 @@
         display: block;
         width: 100%;
         @include line-clamp(1);
+
+        @include r(992) {
+            font-size: 18px;
+        }
     }
 
     &__time {
@@ -46,6 +51,10 @@
             margin-right: 10px;
             width: 22px;
             height: 22px;
+        }
+
+        @include r(992) {
+            font-size: 14px;
         }
     }
 
@@ -73,6 +82,10 @@
                 transition: transform 1s ease-in-out, background-color 0.3s;
                 transform: translateX(25px);
                 background-color: $orange-900;
+
+                @include r(992) {
+                    transform: translateX(12px);
+                }
             }
         }
 
@@ -83,6 +96,11 @@
                 transition: background-color 0.3s;
                 background-color: $orange-900;
             }
+        }
+
+        @include r(992) {
+            width: 52px;
+            height: 25px;
         }
     }
 

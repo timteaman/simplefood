@@ -1,9 +1,3 @@
-@mixin r($width) {
-    @media (max-width: #{$width}px) {
-        @content;
-    }
-}
-
 .product-list {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -11,9 +5,14 @@
     margin-bottom: 60px;
     align-items: center;
 
-    @include r(576) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px 5px;
+    @include r(1200) {
+        gap: 20px;
         margin-bottom: 30px;
+    }
+
+    @include r(992) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-bottom: 30px;
+        gap: 10px 5px;
     }
 }

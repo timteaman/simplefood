@@ -8,9 +8,14 @@
         background-size: contain;
         min-height: 380px;
 
-        @include r(576) {
+        @include r(1200) {
             background-image: none !important;
-            min-height: 195px;
+            min-height: fit-content;
+            justify-content: center;
+        }
+
+        @include r(576) {
+            justify-content: flex-start;
         }
     }
 
@@ -50,7 +55,7 @@
     }
 
     &__link {
-        display: inline-block;
+        display: flex;
         border-radius: 5px;
         transition: box-shadow 0.4s, outline 0.4s;
 
@@ -68,7 +73,7 @@
 
         &::before {
             content: '';
-            display: inline-block;
+            display: block;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -79,7 +84,6 @@
             &::before {
                 width: 120px;
                 background-image: url('../../images/application/app_store.svg');
-
             }
         }
 

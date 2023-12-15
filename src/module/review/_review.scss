@@ -2,7 +2,8 @@
 
     &__inner {
         padding: 0 90px;
-        @include r(576) {
+
+        @include r(768) {
             position: relative;
             padding: 0;
         }
@@ -10,7 +11,7 @@
 
     &__title {
 
-        @include r(576) {
+        @include r(768) {
             margin-bottom: 30px;
         }
     }

@@ -12,14 +12,10 @@
         position: relative;
         z-index: 1;
 
-        @include r(576) {
-            min-height: 462px;
-            padding: 0;
-            align-items: center;
-
+        @include r(1200) {
             &::before {
                 content: "";
-                background-color: rgba(255, 255, 255, 0.85);
+                background-color: rgba($white, 0.85);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -28,13 +24,23 @@
                 height: 100%;
             }
         }
+
+        @include r(992) {
+            align-items: center;
+            justify-content: center;
+            min-height: 462px;
+        }
+
+        @include r(576) {
+            padding: 0;
+        }
     }
 
     &__content {
         max-width: 470px;
         margin-top: 58px;
 
-        @include r(576) {
+        @include r(992) {
             margin-top: 0;
         }
     }
@@ -59,7 +65,7 @@
             font-size: 20px;
             line-height: 1.5;
 
-            @include r(576) {
+            @include r(992) {
                 font-size: 18px;
             }
         }
@@ -77,7 +83,7 @@
         font-size: 24px;
         gap: 30px;
 
-        @include r(576) {
+        @include r(992) {
             font-size: 18px;
             gap: 10px;
             margin-bottom: 15px;
@@ -92,7 +98,7 @@
     &__btn {
         font-size: 18px;
 
-        @include r(576) {
+        @include r(992) {
             font-size: 14px;
         }
     }

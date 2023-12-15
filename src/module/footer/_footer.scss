@@ -4,7 +4,7 @@
         display: flex;
         margin-bottom: 61px;
 
-        @include r(576) {
+        @include r(976) {
             flex-direction: column;
         }
     }
@@ -14,7 +14,12 @@
         max-width: 200px;
         flex-shrink: 0;
 
-        @include r(576) {
+        @include r(1200) {
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        @include r(976) {
             margin-right: 0;
             margin-bottom: 30px;
         }
@@ -30,7 +35,12 @@
         grid-template-columns: repeat(3, auto);
         gap: 15px 90px;
 
-        @include r(576) {
+        @include r(1200) {
+            margin-right: 45px;
+            gap: 15px 45px;
+        }
+
+        @include r(976) {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -135,7 +145,11 @@
     margin-left: auto;
     margin-right: 80px;
 
-    @include r(576) {
+    @include r(1200) {
+        margin-right: 30px;
+    }
+
+    @include r(976) {
         margin-left: 0;
         margin-right: 0;
     }
@@ -169,7 +183,7 @@
     display: flex;
     gap: 13px;
 
-    @include r(576) {
+    @include r(976) {
         margin-bottom: 30px;
     }
 

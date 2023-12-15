@@ -12,12 +12,12 @@
         justify-content: center;
         padding: 0.5px 0.5px;
 
-        @include r(576) {
-            justify-content: flex-start;
+        @include r(1200) {
             flex-wrap: nowrap;
             gap: 10px;
             margin-bottom: 30px;
             overflow-y: auto;
+            justify-content: flex-start;
         }
     }
 
@@ -32,7 +32,7 @@
         white-space: nowrap;
         gap: 10px;
 
-        @include r(576) {
+        @include r(768) {
             font-size: 14px;
             padding: 12px 16px;
             gap: 5px;
@@ -42,7 +42,7 @@
             width: 44px;
             height: 44px;
 
-            @include r(576) {
+            @include r(768) {
                 width: 20px;
                 height: 20px;
             }
@@ -70,7 +70,7 @@
             box-shadow: 0 -5px 12px 0 rgba($orange-900, 0.20) inset;
         }
 
-        
+
         &--active {
             color: $white;
             background-color: $orange-900;
@@ -79,6 +79,7 @@
             &:focus {
                 color: $white;
                 background-color: $orange-900;
+
                 &::before {
                     background-color: $white;
                 }
@@ -92,8 +93,6 @@
     }
 
     &__more {
-        @extend .link;
-        @extend .link--underline;
         border-radius: 5px;
 
         &::after {
@@ -109,7 +108,7 @@
             border-bottom-color: $darkBlue-900;
         }
 
-        @include r(576) {
+        @include r(768) {
             &::after {
                 bottom: 2px;
             }

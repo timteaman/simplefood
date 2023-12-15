@@ -11,9 +11,19 @@
         grid-template-columns: repeat(3, auto);
         gap: 30px;
 
-        @include r(576) {
+        @include r(992) {
+            gap: 10px;
+        }
+
+        @include r(768) {
             display: flex;
             gap: 0;
+        }
+
+        @include r(576) {
+            // display: flex;
+            // flex-wrap: nowrap;
+            // gap: 0;
         }
     }
 }
