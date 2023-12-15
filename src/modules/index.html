@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+    @include('./head/_head.html')
+
+<body>
+    <div class="wrapper">
+        @include('./mainPage/header/_header.html')
+        <main class="main">
+            @include('./mainPage/hero/_hero.html')
+            @include('./mainPage/categories/_categories.html')
+            @include('./mainPage/features/_features.html')
+            @include('./mainPage/restaurant/_restaurant.html')
+            @include('./mainPage/review/_review.html')
+            @include('./mainPage/application/_application.html')
+        </main>
+    </div>
+    @include('./mainPage/footer/_footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../js/main.js"></script> 
+</body>
+
+</html>
