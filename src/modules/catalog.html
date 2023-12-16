@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+@include('./head/_head.html')
+
+<body>
+
+    <div class="wrapper">
+        @include('./mainPage/header/_header.html')
+
+        @include('./catalogPage/breadcrumbs/_breadcrumbs.html')
+
+        <main class="main">
+
+            @include('./catalogPage/_productCatalog.html')
+
+            @include('./mainPage/application/_application.html')
+
+            @include('./catalogPage/catalogPromo/_catalogPromo.html')
+
+        </main>
+
+    </div>
+
+    @include('./mainPage/footer/_footer.html')
+
+</body>
+
+</html>

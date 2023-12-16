@@ -144,4 +144,28 @@
             mask-image: url('../images/icons/burger-close.svg');
         }
     }
+
+    &--chevron-left {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-chevron-left');
+        }
+    }
+
+    &--chevron-right {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-chevron-right');
+        }
+    }
+
+    &--chevron-down {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-chevron-down');
+        }
+    }
+
+    &--check {
+        &::before {
+            mask-image: url('../images/icons/sprite.svg#icon-check');
+        }
+    }
 }

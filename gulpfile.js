@@ -25,12 +25,12 @@ function browsersync() {
 
 function watching() {
   watch(["./src/scss/**/*.scss"], styles);
-  watch(["./src/module/**/*.scss"], styles);
+  watch(["./src/modules/**/*.scss"], styles);
   watch(["./src/js/**/*.js"]).on("change", browserSync.reload);
   watch(["./src/**/*.html"]).on("change", browserSync.reload);
-  watch(["./src/module/**/*.html"]).on("change", browserSync.reload);
+  watch(["./src/modules/**/*.html"]).on("change", browserSync.reload);
   watch(["./src/images/icons/*.svg"], svgSprites);
-  watch(['./src/module/**/*.html'], htmlInclude);
+  watch(['./src/modules/**/*.html'], htmlInclude);
 }
 
 function styles() {
@@ -82,7 +82,7 @@ function images() {
 }
 
 const htmlInclude = () => {
-  return src(['./src/module/*.html']) // Находит любой .html файл в папке "html", куда будем подключать другие .html файлы
+  return src(['./src/modules/*.html']) // Находит любой .html файл в папке "html", куда будем подключать другие .html файлы
   .pipe(fileInclude({
     prefix: '@',
     basepath: '@file',

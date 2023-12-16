@@ -32,6 +32,7 @@
         font-size: 15px;
         line-height: normal;
         min-height: 37px;
+        text-align: center;
         @include line-clamp(3);
 
         @include r(576) {

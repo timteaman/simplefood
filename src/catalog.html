@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Food</title>
@@ -16,6 +17,7 @@
 </head>
 
 <body>
+
     <div class="wrapper">
         <header class="header" id="header">
     <div class="container">
@@ -151,86 +153,228 @@
         </nav>
     </div>
 </header>
-        <main class="main">
-            <section class="hero section" id="hero">
+
+        <section class="breadcrumbs">
+
     <div class="container">
 
-        <div class="hero__inner" style="background-image: url('../images/hero/guy@1x.webp');">
+    <div class="breadcrumbs__inner">
 
-            <div class="hero__content">
+        <ul class="breadcrumbs__list">
 
-                <h1 class="sr-only">
-                    Кращий сайт з доставки їжі
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                    Головна
+                    <span class="breadcrumb__separator">&gt;</span>
+                </a>
+            </li>
+
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                    Каталог продуктів
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+        <main class="main">
+
+            <section class="catalog section">
+
+    <div class="container">
+
+        <div class="catalog__inner">
+
+            <div class="catalog__top">
+
+                <h1 class="title catalog__title">
+                    Каталог продуктів
                 </h1>
 
-                <h2 class="hero__title">
-                    Доставка
-                    <span class="color-orange">за 15 ХВИЛИН</span>
-                </h2>
+                <div class="filters-top">
 
-                <div class="hero__text">
-                    <p>
-                        Найшвидший сервіс доставки їжі у вашому місті. Якщо запізнемось - то доставка за наш
-                        рахунок
-                    </p>
+                    <form class="top-filter" action="#">
+
+    <label class="top-filter__label icon icon--chevron-down" for="sortingByType">
+
+        <select class="top-filter__sort" id="sortingByType" name="sortingByType" aria-label="Сортувати за">
+            <option value="name">За назвою</option>
+            <option value="price">За ціною</option>
+            <option value="size">За розміром</option>
+        </select>
+
+    </label>
+
+    <label class="top-filter__label icon icon--chevron-down" for="sortingByCount">
+
+        <select class="top-filter__sort" id="sortingByCount" name="sortingByCount"
+            aria-label="Показувати кількість плиток">
+            <option value="12">По 12</option>
+            <option value="8">По 8</option>
+            <option value="4">По 4</option>
+        </select>
+
+    </label>
+
+</form>
+
                 </div>
-
-                <button class="btn hero__btn" type="button">
-                    Замовити
-                </button>
-
-                <a class="link link--underline hero__link" href="#">Детальніше</a>
 
             </div>
 
+            <div class="catalog__wrapper">
+
+                <div class="filters-right">
+
+                    <div class="catalog-categories">
+
+    <h3 class="catalog__subtitle">
+        Категорії
+    </h3>
+
+    <ul class="catalog-categories__list">
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Бургери
+            </button>
+        </li>
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Піца
+            </button>
+        </li>
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Сендвічі
+            </button>
+        </li>
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Азійська кухня
+            </button>
+        </li>
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Сети
+            </button>
+        </li>
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Європейська кухня
+            </button>
+        </li>
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Напої
+            </button>
+        </li>
+
+        <li class="catalog-categories__item">
+            <button class="catalog-categories__btn link">
+                Алкоголь
+            </button>
+        </li>
+
+    </ul>
+
+</div>
+
+                    <div class="catalog-offers">
+
+    <h2 class="catalog__subtitle">
+        Пропозиції
+    </h2>
+
+    <form class="catalog-offers__form" action="#">
+
+        <ul class="catalog-offers__list">
+
+            <li class="catalog-checkbox">
+                <label class="catalog-checkbox__label" for="discountCheckbox1">
+                    <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox1"
+                        name="discountCheckbox1">
+                    <span class="catalog-checkbox__checkmark"></span>
+                    <span class="catalog-checkbox__text">Зі знижкою</span>
+                </label>
+            </li>
+
+            <li class="catalog-checkbox">
+                <label class="catalog-checkbox__label" for="discountCheckbox2">
+                    <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox2"
+                        name="discountCheckbox2" checked>
+                    <span class="catalog-checkbox__checkmark"></span>
+                    <span class="catalog-checkbox__text">Новинка</span>
+                </label>
+            </li>
+
+            <li class="catalog-checkbox">
+                <label class="catalog-checkbox__label" for="discountCheckbox3">
+                    <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox3"
+                        name="discountCheckbox3">
+                    <span class="catalog-checkbox__checkmark"></span>
+                    <span class="catalog-checkbox__text">Хіт сезону</span>
+                </label>
+            </li>
+
+        </ul>
+
+    </form>
+
+</div>
+
+                    <div class="catalog-price">
+
+    <h3 class="catalog__subtitle">Ціна</h3>
+
+    <div class="catalog-price__wrapper">
+
+        <form class="catalog-price__form" action="#">
+
+            <div class="catalog-price__box">
+
+            <label class="catalog-price__lable" for="minPrice">
+                <span class="catalog-price__text">від</span>
+                <input class="catalog-price__input" type="number" id="minPrice" name="minPrice" min="1" step="1" max="9999" value="100">
+                <span class="catalog-price__text">&#8372;</span>
+            </label>
+
+            <label class="catalog-price__lable" for="maxPrice">
+                <span class="catalog-price__text">до</span>
+                <input class="catalog-price__input" type="number" id="maxPrice" name="maxPrice" min="1" step="1" max="9999" value="1000">
+                <span class="catalog-price__text">&#8372;</span>
+            </label>
         </div>
+
+            <label class="catalog-price__range" for="priceRange">
+                <input class="catalog-price__input-range" type="range" id="priceRange" name="priceRange" min="1" max="9999" step="1">
+            </label>
+
+        </form>
+
     </div>
-</section>
-            <section class="categories section" id="categories">
-    <div class="container">
-        <div class="categories__inner">
 
-            <h2 class="title categories__title">
-                Популярне в категоріях
-            </h2>
+</div>
+                    
+                </div>
 
-            <ul class="categories__filter">
+                <div class="catalog__box">
 
-                <li class="categories__item">
-                    <button class="btn categories__btn categories__btn--active icon icon--burger" type="button"
-                        data-filter="burgers">
-                        Бургери
-                    </button>
-                </li>
+                    <ul class="catalog__list">
 
-                <li class="categories__item">
-                    <button class="btn categories__btn icon icon--pizza" type="button" data-filter="pizzas">
-                        Піца
-                    </button>
-                </li>
-
-                <li class="categories__item">
-                    <button class="btn categories__btn icon icon--sandvich" type="button" data-filter="sandviches">
-                        Сендвічі
-                    </button>
-                </li>
-
-                <li class="categories__item">
-                    <button class="btn categories__btn icon icon--asia" type="button" data-filter="asians">
-                        Азійська кухня
-                    </button>
-                </li>
-
-                <li class="categories__item">
-                    <button class="btn categories__btn icon icon--dish" type="button" data-filter="dishes">
-                        Cети
-                    </button>
-                </li>
-            </ul>
-
-            <ul class="product-list">
-
-    <li class="product-list__item" data-category="burgers">
+                        <li class="product-list__item" data-category="burgers">
     <article class="product-card">
         <a class="link product-card__link" href="#">
             <img class="product-card__img" src="../../images/categories/1@1x.webp" alt="фотографія чізбургера з листям салату" width="140" height="140">
@@ -322,66 +466,134 @@
     </article>
 </li>
 
-</ul>
+                    </ul>
 
-            <button class="categories__more link link--underline" type="button">
-                Показати ще
+                    <div class="pagination">
+
+    <button class="pagination__btn btn icon icon--chevron-left"></button>
+
+    <ul class="pagination__list">
+
+        <li class="pagination__item">
+            <button class="pagination__btn pagination__btn--active btn">
+                1
             </button>
+        </li>
 
-        </div>
-    </div>
-</section>
-            <section class="features section" id="features">
-    <div class="container">
-        <div class="features__inner" style="background-image: url('../../images/features/food_delivery@1x.webp')">
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                2
+            </button>
+        </li>
 
-            <div class="features__content">
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                ...
+            </button>
+        </li>
 
-                <h2 class="title features__title">
-                    Залишайтеся вдома, а ми потурбуємося про їжу
-                </h2>
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                3
+            </button>
+        </li>
 
-                <div class="features__text">
-                    <p>
-                        У нас є смачна їжа і ми готові доставити її до вас додому! Скористайтеся нашою
-                        доставкою прямо
-                        зараз та отримайте знижку!
-                    </p>
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                4
+            </button>
+        </li>
+
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                5
+            </button>
+        </li>
+
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                6
+            </button>
+        </li>
+
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                7
+            </button>
+        </li>
+
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                8
+            </button>
+        </li>
+
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                9
+            </button>
+        </li>
+
+        <li class="pagination__item">
+            <button class="pagination__btn btn">
+                10
+            </button>
+        </li>
+        
+    </ul>
+
+    <button class="pagination__btn btn icon icon--chevron-right"></button>
+
+</div>
+
                 </div>
 
-                <ul class="features__list">
-                    <li class="features__item icon icon--timer">
-                        Швидка доставка за 15 хвилин
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+            <section class="application section" id="application">
+    <div class="container">
+        <div class="application__inner" style="background-image: url('../../images/application/get_app@1x.webp')">
+
+            <div class="application__box">
+
+                <h2 class="title application__title">
+                    Завантажте мобільний застосунок
+                </h2>
+
+                <div class="application__text">
+                    <p>Ресторани, які ви любите - у ваших руках. Встановлюйте застосунок та замовляйте їжу в зручному
+                        місці в зручний час</p>
+                </div>
+
+                <ul class="application__list">
+                    <li class="application__item">
+                        <a class="application__link application__link--apple" href="#"></a>
                     </li>
 
-                    <li class="features__item icon icon--delivery">
-                        Чемні кур’єри
-                    </li>
-
-                    <li class="features__item icon icon--restorant">
-                        Більше 500 закладів
+                    <li class="application__item">
+                        <a class="application__link application__link--google" href="#"></a>
                     </li>
                 </ul>
 
-                <button class="btn features__btn">
-                    Детальніше
-                </button>
-
             </div>
+
         </div>
     </div>
 </section>
-            <section class="restaurant section" id="restaurant">
-    <div class="container">
-        <h2 class="title restaurant__title">
-            Найкращі ресторани
-        </h2>
 
-        <div class="swiper restaurant-slider">
+            <div class="promo__inner">
+    <h2 class="title">Акції та знижки</h2>
 
-            <ul class="swiper-wrapper restaurant-slider__wrapper restaurant__list">
+    <div class="promo__content">
 
-                <li class="swiper-slide restaurant__item">
+        <li class="swiper-slide restaurant__item">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
             <img class="rest-card__img" src="../../images/restaurant/resto_1@2x.webp" alt="Піцца Блейз" width="370" height="300">
@@ -473,156 +685,14 @@
     </article>
 </li>
 
-            </ul>
-
-        </div>
-
-        <div class="restaurant-slider__actions slider-actions">
-            <div class="restaurant-slider__dots slider-actions__dots"></div>
-        </div>
     </div>
-    </div>
-</section>
-            <section class="review section" id="review">
-    <div class="container">
-        <h2 class="title review__title">
-            Відгуки клієнтів
-        </h2>
 
-        <div class="review__inner">
+</div>
 
-            <div class="swiper review-slider">
-
-                <ul class="swiper-wrapper review-slider__wrapper review__list">
-
-                    <li class="swiper-slide review-card">
-    <img class="review-card__img" src="../../images/review/daryna@2x.webp" alt="Щаслива дівчина з гамбургером"
-        srcset="../../images/review/daryna@2x.webp 2000w" width="300" height="300"
-        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
-    <blockquote class="review-card__blockquote">
-
-        <div class="review-card__text">
-            <p>
-                SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!
-            </p>
-        </div>
-
-        <cite class="review-card__author">
-            Дарина
-        </cite>
-        <span class="review-card__caption">
-            Поціновувачка смачної їжі
-        </span>
-    </blockquote>
-</li><li class="swiper-slide review-card">
-    <img class="review-card__img" src="../../images/review/daryna@2x.webp" alt="Щаслива дівчина з гамбургером"
-        srcset="../../images/review/daryna@2x.webp 2000w" width="300" height="300"
-        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
-    <blockquote class="review-card__blockquote">
-
-        <div class="review-card__text">
-            <p>
-                SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!
-            </p>
-        </div>
-
-        <cite class="review-card__author">
-            Дарина
-        </cite>
-        <span class="review-card__caption">
-            Поціновувачка смачної їжі
-        </span>
-    </blockquote>
-</li><li class="swiper-slide review-card">
-    <img class="review-card__img" src="../../images/review/daryna@2x.webp" alt="Щаслива дівчина з гамбургером"
-        srcset="../../images/review/daryna@2x.webp 2000w" width="300" height="300"
-        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
-    <blockquote class="review-card__blockquote">
-
-        <div class="review-card__text">
-            <p>
-                SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!
-            </p>
-        </div>
-
-        <cite class="review-card__author">
-            Дарина
-        </cite>
-        <span class="review-card__caption">
-            Поціновувачка смачної їжі
-        </span>
-    </blockquote>
-</li><li class="swiper-slide review-card">
-    <img class="review-card__img" src="../../images/review/daryna@2x.webp" alt="Щаслива дівчина з гамбургером"
-        srcset="../../images/review/daryna@2x.webp 2000w" width="300" height="300"
-        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1000px">
-    <blockquote class="review-card__blockquote">
-
-        <div class="review-card__text">
-            <p>
-                SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!
-            </p>
-        </div>
-
-        <cite class="review-card__author">
-            Дарина
-        </cite>
-        <span class="review-card__caption">
-            Поціновувачка смачної їжі
-        </span>
-    </blockquote>
-</li>
-
-                </ul>
-
-                <div class="review-slider__actions slider-actions">
-                    <button
-                        class="review-slider__btn review-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
-                        type="button"></button>
-
-                    <div class="review-slider__dots slider-actions__dots"></div>
-
-                    <button
-                        class="review-slider__btn review-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
-                        type="button"></button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-            <section class="application section" id="application">
-    <div class="container">
-        <div class="application__inner" style="background-image: url('../../images/application/get_app@1x.webp')">
-
-            <div class="application__box">
-
-                <h2 class="title application__title">
-                    Завантажте мобільний застосунок
-                </h2>
-
-                <div class="application__text">
-                    <p>Ресторани, які ви любите - у ваших руках. Встановлюйте застосунок та замовляйте їжу в зручному
-                        місці в зручний час</p>
-                </div>
-
-                <ul class="application__list">
-                    <li class="application__item">
-                        <a class="application__link application__link--apple" href="#"></a>
-                    </li>
-
-                    <li class="application__item">
-                        <a class="application__link application__link--google" href="#"></a>
-                    </li>
-                </ul>
-
-            </div>
-
-        </div>
-    </div>
-</section>
         </main>
+
     </div>
+
     <footer class="footer" id="footer">
     <div class="container">
 
@@ -773,8 +843,7 @@
         &copy; 2023 Simple Food
     </a>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../../js/main.js"></script> 
+
 </body>
 
 </html>
