@@ -22,9 +22,11 @@
 @import '../modules/catalogPage/productCatalog';
 @import '../modules/catalogPage/catalogCategories/catalogCategories';
 @import '../modules/catalogPage/catalogPromo/catalogPromo';
-@import '../modules/catalogPage/catalogPromo/promoCard.scss';
+@import '../modules/catalogPage/catalogPromo/promoCard';
 @import '../modules/catalogPage/catalogPrice/catalogPrice';
 @import '../modules/catalogPage/pagination/paginaion.scss';
 @import '../modules/catalogPage/catalogOffers/catalogOffers';
 @import '../modules/catalogPage/TopFilter/TopFilter.scss';
 @import '../modules/catalogPage/breadcrumbs/breadcrumbs';
+
+@import '../modules/productPage/productGalellery/productgallery';

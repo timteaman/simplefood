@@ -95,7 +95,7 @@
             width: fit-content;
         }
 
-        @include r(576) {
+        @include r($r-xs) {
             display: flex;
             justify-content: space-around;
             width: 100%;
@@ -108,7 +108,7 @@
     }
 
     &__dots {
-        @include r(576) {
+        @include r($r-xs) {
             display: none;
         }
     }

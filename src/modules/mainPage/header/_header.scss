@@ -1,7 +1,7 @@
 .header {
     padding: 60px 0;
 
-    @include r(992) {
+    @include r($r-md) {
         padding: 15px 0;
     }
 
@@ -9,7 +9,7 @@
         display: block;
         margin-left: 5px;
 
-        @include r(992) {
+        @include r($r-md) {
 
             & {
                 margin: 0 auto 0 0;
@@ -17,7 +17,7 @@
 
         }
 
-        @include r(576) {
+        @include r($r-xs) {
             .logo__img {
                 width: 115px;
                 height: 23px;
@@ -31,7 +31,7 @@
     align-items: center;
     gap: 51px;
 
-    @include r(576) {
+    @include r($r-xs) {
         gap: 10px;
     }
 
@@ -47,7 +47,7 @@
         margin-left: auto;
         gap: 40px;
 
-        @include r(992) {
+        @include r($r-md) {
             display: none;
         }
 

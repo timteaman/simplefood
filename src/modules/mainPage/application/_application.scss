@@ -8,13 +8,13 @@
         background-size: contain;
         min-height: 380px;
 
-        @include r(1200) {
+        @include r($r-lg) {
             background-image: none !important;
             min-height: fit-content;
             justify-content: center;
         }
 
-        @include r(576) {
+        @include r($r-xs) {
             justify-content: flex-start;
         }
     }
@@ -27,7 +27,7 @@
         text-align: left;
         margin-bottom: 45px;
 
-        @include r(576) {
+        @include r($r-xs) {
             margin-bottom: 15px;
         }
     }
@@ -39,7 +39,7 @@
             line-height: 1.5;
             opacity: 0.9;
 
-            @include r(576) {
+            @include r($r-xs) {
                 font-size: 14px;
                 margin-bottom: 15px;
             }
@@ -48,10 +48,8 @@
 
     &__list {
         display: flex;
-    }
-
-    &__item {
-        margin-right: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     &__link {

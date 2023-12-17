@@ -1,9 +1,9 @@
 .review {
 
     &__inner {
-        padding: 0 90px;
+        padding: 0px 90px;
 
-        @include r(768) {
+        @include r($r-sm) {
             position: relative;
             padding: 0;
         }
@@ -11,7 +11,7 @@
 
     &__title {
 
-        @include r(768) {
+        @include r($r-sm) {
             margin-bottom: 30px;
         }
     }

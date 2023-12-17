@@ -4,7 +4,11 @@
         display: flex;
         margin-bottom: 61px;
 
-        @include r(976) {
+        @include r($r-md) {
+            justify-content: center;
+        }
+
+        @include r($r-md) {
             flex-direction: column;
         }
     }
@@ -14,12 +18,12 @@
         max-width: 200px;
         flex-shrink: 0;
 
-        @include r(1200) {
+        @include r($r-lg) {
             margin-right: 30px;
             margin-bottom: 30px;
         }
 
-        @include r(976) {
+        @include r($r-md) {
             margin-right: 0;
             margin-bottom: 30px;
         }
@@ -35,12 +39,18 @@
         grid-template-columns: repeat(3, auto);
         gap: 15px 90px;
 
-        @include r(1200) {
+        @include r($r-lg) {
             margin-right: 45px;
             gap: 15px 45px;
         }
 
-        @include r(976) {
+        @include r($r-md) {
+            flex-wrap: wrap;
+            grid-template-columns: repeat(2, auto);
+            gap: 2vw;
+        }
+
+        @include r($r-sm) {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -74,7 +84,7 @@
             color: $orange-900;
         }
 
-        @include r(768) {
+        @include r($r-sm) {
             padding: 20px 0;
         }
     }
@@ -150,12 +160,16 @@
     margin-left: auto;
     margin-right: 80px;
 
-    @include r(1200) {
+    @include r($r-lg) {
         margin-right: 30px;
     }
 
-    @include r(976) {
+    @include r($r-md) {
         margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include r($r-sm) {
         margin-right: 0;
     }
 
@@ -188,7 +202,7 @@
     display: flex;
     gap: 13px;
 
-    @include r(976) {
+    @include r($r-sm) {
         margin-bottom: 30px;
     }
 

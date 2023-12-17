@@ -8,13 +8,20 @@
 
         <ul class="catalog-offers__list">
 
-            <li class="catalog-checkbox">
-                <label class="catalog-checkbox__label" for="discountCheckbox1">
+            <li class="catalog-offers__checkbox">
+                <!-- <label class="catalog-checkbox__label" for="discountCheckbox1">
                     <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox1"
                         name="discountCheckbox1">
                     <span class="catalog-checkbox__checkmark"></span>
                     <span class="catalog-checkbox__text">Зі знижкою</span>
-                </label>
+                </label> -->
+
+                <div class="checkbox">
+                    <input class="checkbox__input sr-only" type="checkbox" id="catalog-checkbox[sale]">
+                    <label class="checkbox__label" for="catalog-checkbox[sale]">
+                        Зі знижкою
+                    </label>
+                </div>
             </li>
 
             <li class="catalog-checkbox">

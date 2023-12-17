@@ -1,7 +1,7 @@
 .restaurant {
 
     &__title {
-        @include r(576) {
+        @include r($r-xs) {
             margin-bottom: 30px;
         }
     }
@@ -11,19 +11,24 @@
         grid-template-columns: repeat(3, auto);
         gap: 30px;
 
-        @include r(992) {
+        @include r($r-md) {
             gap: 10px;
         }
 
-        @include r(768) {
+        @include r($r-sm) {
             display: flex;
             gap: 0;
         }
 
-        @include r(576) {
+        @include r($r-xs) {
             // display: flex;
             // flex-wrap: nowrap;
             // gap: 0;
         }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
     }
 }

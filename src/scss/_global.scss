@@ -42,7 +42,7 @@ body {
 .section {
     padding: 0 0 120px 0;
 
-    @include r(992) {
+    @include r($r-md) {
         padding: 0 0 40px 0;
     }
 }
@@ -83,7 +83,7 @@ body {
     margin-bottom: 60px;
     text-align: center;
 
-    @include r(768) {
+    @include r($r-sm) {
         font-size: 24px;
         margin-bottom: 30px;
     }
@@ -100,7 +100,7 @@ body {
     letter-spacing: 0.021em;
     transition: color 0.9s, outline-color 0.9s, background-color 0.9s;
 
-    @include r(768) {
+    @include r($r-sm) {
         font-size: 14px;
         padding: 8px 24px;
     }
@@ -144,7 +144,7 @@ body {
     outline: 2px solid transparent;
     transition: outline 0.3s, border-radius 0.3s, color 0.3s, text-shadow 0.3s;
 
-    @include r(768) {
+    @include r($r-sm) {
         font-size: 16px;
     }
 
@@ -179,7 +179,7 @@ body {
         }
     }
 
-    @include r(768) {
+    @include r($r-sm) {
         &::after {
             bottom: 2px;
         }

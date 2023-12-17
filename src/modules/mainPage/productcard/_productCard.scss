@@ -35,7 +35,7 @@
         text-align: center;
         @include line-clamp(3);
 
-        @include r(576) {
+        @include r($r-xs) {
             @include line-clamp(2);
         }
     }

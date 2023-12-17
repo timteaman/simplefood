@@ -19,6 +19,8 @@ function createSlider(selector, paginationEl, nextBtn, prevBtn) {
       nextEl: nextBtn,
       prevEl: prevBtn,
     },
+    spaceBetween: 20,
+    centeredSLiders: true
   });
 }
 
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".burger"); // Наша кнопка
   const mobileMenu = document.querySelector(".mobile-menu__nav"); // Мобильное меню
   const bodyLock = document.querySelector("body"); // Тег body
-  const closeBtn = document.querySelector(".burger--close");
+  const closeBtn = document.querySelector(".burger__close");
 
   burger.addEventListener("click", () => {
     burger.classList.add("burger--active"); // Добавляем класс для активации кнопки

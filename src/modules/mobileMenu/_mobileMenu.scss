@@ -6,15 +6,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 80vw;
     height: 100vh;
     background-color: $white;
     z-index: 9;
     transition: transform 0.7s;
-  }
 
-  &__nav--active {
-    transform: translateX(0);
+    &--active {
+      transform: translateX(0);
+    }
+
+    @include r($r-md) {
+      width: 50vw;
+    }
+
+    @include r($r-sm) {
+      width: 80vw;
+    }
+
   }
 
   &__header {
@@ -62,7 +70,7 @@
     padding: 15px;
   }
 
-  @include r(1024) {
+  @include r($r-md) {
     display: flex;
   }
 }
@@ -78,13 +86,13 @@
     height: 22px;
   }
 
-  &--close {
+  &__close {
     display: flex;
     padding: 12px;
   }
 
   &,
-  &--close {
+  &__close {
     &:hover {
       background-color: $orange-900;
 

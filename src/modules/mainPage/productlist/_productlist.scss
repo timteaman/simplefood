@@ -5,14 +5,22 @@
     margin-bottom: 60px;
     align-items: center;
 
-    @include r(1200) {
+    @include r($r-lg) {
         gap: 20px;
         margin-bottom: 30px;
     }
 
-    @include r(992) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    @include r($r-md) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         margin-bottom: 30px;
         gap: 10px 5px;
+    }
+
+    @include r($r-sm) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include r($r-xs) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
