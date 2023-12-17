@@ -1,10 +1,18 @@
-<div class="promo__inner">
-    <h2 class="title">Акції та знижки</h2>
+<section class="section promo">
+    <div class="container">
+        <div class="promo__inner">
+            <h2 class="title">Акції та знижки</h2>
 
-    <div class="promo__content">
+            <div class="promo__content">
 
-        @loop('../../mainPage/restcard/_restcard.html', './mainPage/restaurant/_restaurant.json')
+                <ul class="promo__list">
 
+                    @loop('./_promoCard.html', './catalogPage/catalogPromo/_catalogPromo.json')
+
+                </ul>
+
+            </div>
+
+        </div>
     </div>
-
-</div>
+</section>

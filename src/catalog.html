@@ -163,14 +163,14 @@
         <ul class="breadcrumbs__list">
 
             <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">
+                <a class="breadcrumbs__link link" href="../../index.html">
                     Головна
                     <span class="breadcrumb__separator">&gt;</span>
                 </a>
             </li>
 
             <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">
+                <a class="breadcrumbs__link link" href="../../catalog.html">
                     Каталог продуктів
                 </a>
             </li>
@@ -464,6 +464,24 @@
         </a>
         <button class="btn product-card__btn" type="button">До кошика</button>
     </article>
+</li><li class="product-list__item" data-category="asians">
+    <article class="product-card">
+        <a class="link product-card__link" href="#">
+            <img class="product-card__img" src="../../images/categories/5@1x.webp" alt="фотографія чікен бургера" width="140" height="140">
+            <h3 class="link product-card__title">Чікен бургер</h3>
+            <span class="product-card__price">180 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="asians">
+    <article class="product-card">
+        <a class="link product-card__link" href="#">
+            <img class="product-card__img" src="../../images/categories/5@1x.webp" alt="фотографія чікен бургера" width="140" height="140">
+            <h3 class="link product-card__title">Чікен бургер</h3>
+            <span class="product-card__price">180 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
 </li>
 
                     </ul>
@@ -588,17 +606,22 @@
     </div>
 </section>
 
-            <div class="promo__inner">
-    <h2 class="title">Акції та знижки</h2>
+            <section class="section promo">
+    <div class="container">
+        <div class="promo__inner">
+            <h2 class="title">Акції та знижки</h2>
 
-    <div class="promo__content">
+            <div class="promo__content">
 
-        <li class="swiper-slide restaurant__item">
+                <ul class="promo__list">
+
+                    <li class="@promoClass">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
             <img class="rest-card__img" src="../../images/restaurant/resto_1@2x.webp" alt="Піцца Блейз" width="370" height="300">
         </a>
-        <div class="rest-card__box">
+        <p class="promo-card__text">Знижка на другу піцу</p>
+        <div class="rest-card__box rest-card__box--hide">
             <span class="rest-card__title">Blaze Pizza</span>
             <span class="rest-card__time icon icon--time">
                 <time datetime="T11:00">11:00</time>&nbsp;-&nbsp;<time datetime="T22:00">22:00</time>
@@ -608,12 +631,13 @@
             </button>
         </div>
     </article>
-</li><li class="swiper-slide restaurant__item">
+</li><li class="@promoClass">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
             <img class="rest-card__img" src="../../images/restaurant/resto_2@2x.webp" alt="Піцца Ранчо" width="370" height="300">
         </a>
-        <div class="rest-card__box">
+        <p class="promo-card__text">Картопелька з KFC задарма при замовленні бургера</p>
+        <div class="rest-card__box rest-card__box--hide">
             <span class="rest-card__title">Pizza Runcho</span>
             <span class="rest-card__time icon icon--time">
                 <time datetime="T11:00">12:00</time>&nbsp;-&nbsp;<time datetime="T22:00">21:00</time>
@@ -623,12 +647,13 @@
             </button>
         </div>
     </article>
-</li><li class="swiper-slide restaurant__item">
+</li><li class="@promoClass">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
             <img class="rest-card__img" src="../../images/restaurant/resto_3@2x.webp" alt="Pizza Hut" width="370" height="300">
         </a>
-        <div class="rest-card__box">
+        <p class="promo-card__text">Чорні бургери на чорний день</p>
+        <div class="rest-card__box rest-card__box--hide">
             <span class="rest-card__title">Pizza Hut</span>
             <span class="rest-card__time icon icon--time">
                 <time datetime="T11:00">11:00</time>&nbsp;-&nbsp;<time datetime="T22:00">22:00</time>
@@ -638,56 +663,15 @@
             </button>
         </div>
     </article>
-</li><li class="swiper-slide restaurant__item">
-    <article class="rest-card">
-        <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_4@2x.webp" alt="Гамбургер Макдональдз" width="370" height="300">
-        </a>
-        <div class="rest-card__box">
-            <span class="rest-card__title">McDonald`s</span>
-            <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">06:00</time>&nbsp;-&nbsp;<time datetime="T22:00">23:00</time>
-            </span>
-            <button class="btn rest-card__btn icon icon--arrow" type="button">
-                <span class="sr-only">Додати товар до корзини</span>
-            </button>
-        </div>
-    </article>
-</li><li class="swiper-slide restaurant__item">
-    <article class="rest-card">
-        <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_5@2x.webp" alt="Картопля фрі з КФС" width="370" height="300">
-        </a>
-        <div class="rest-card__box">
-            <span class="rest-card__title">KFC</span>
-            <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">06:00</time>&nbsp;-&nbsp;<time datetime="T22:00">23:00</time>
-            </span>
-            <button class="btn rest-card__btn icon icon--arrow" type="button">
-                <span class="sr-only">Додати товар до корзини</span>
-            </button>
-        </div>
-    </article>
-</li><li class="swiper-slide restaurant__item">
-    <article class="rest-card">
-        <a class="rest-card__link" href="#">
-            <img class="rest-card__img" src="../../images/restaurant/resto_6@2x.webp" alt="зображення Стар Бургеру" width="370" height="300">
-        </a>
-        <div class="rest-card__box">
-            <span class="rest-card__title">Star Burgers</span>
-            <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">09:00</time>&nbsp;-&nbsp;<time datetime="T22:00">21:00</time>
-            </span>
-            <button class="btn rest-card__btn icon icon--arrow" type="button">
-                <span class="sr-only">Додати товар до корзини</span>
-            </button>
-        </div>
-    </article>
 </li>
 
-    </div>
+                </ul>
 
-</div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         </main>
 

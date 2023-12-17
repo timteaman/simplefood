@@ -1,0 +1,98 @@
+[
+    {
+        "productImageUrl": "../../images/categories/1@1x.webp",
+        "productTitle": "Чізбургер з листям салату",
+        "productPrice": "140 грн.",
+        "productAlt": "чізбургера з листям салату",
+        "productClass": "product-list__item",
+        "productDataCategory": "burgers"
+    },
+    {
+        "productImageUrl": "../../images/categories/2@1x.webp",
+        "productTitle": "Біфбургер",
+        "productPrice": "190 грн.",
+        "productAlt": "Біфбургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "pizzas"
+    },
+    {
+        "productImageUrl": "../../images/categories/3@1x.webp",
+        "productTitle": "Королівський чізбургер",
+        "productPrice": "260 грн.",
+        "productAlt": "королівського чізбургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "sandviches"
+    },
+    {
+        "productImageUrl": "../../images/categories/4@1x.webp",
+        "productTitle": "Чорний гамбургер",
+        "productPrice": "199 грн.",
+        "productAlt": "чорного гамбургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "sandviches"
+    },
+    {
+        "productImageUrl": "../../images/categories/5@1x.webp",
+        "productTitle": "Чікен бургер",
+        "productPrice": "180 грн.",
+        "productAlt": "чікен бургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "pizzas"
+    },
+    {
+        "productImageUrl": "../../images/categories/1@1x.webp",
+        "productTitle": "Чізбургер з листям салату",
+        "productPrice": "140 грн.",
+        "productAlt": "чізбургера з листям салату",
+        "productClass": "product-list__item",
+        "productDataCategory": "asians"
+    },
+    {
+        "productImageUrl": "../../images/categories/2@1x.webp",
+        "productTitle": "Біфбургер",
+        "productPrice": "190 грн.",
+        "productAlt": "Біфбургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "dishes"
+    },
+    {
+        "productImageUrl": "../../images/categories/3@1x.webp",
+        "productTitle": "Королівський чізбургер",
+        "productPrice": "260 грн.",
+        "productAlt": "королівського чізбургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "burgers"
+    },
+    {
+        "productImageUrl": "../../images/categories/4@1x.webp",
+        "productTitle": "Чорний гамбургер",
+        "productPrice": "199 грн.",
+        "productAlt": "чорного гамбургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "burgers"
+    },
+    {
+        "productImageUrl": "../../images/categories/5@1x.webp",
+        "productTitle": "Чікен бургер",
+        "productPrice": "180 грн.",
+        "productAlt": "чікен бургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "asians"
+    },
+    {
+        "productImageUrl": "../../images/categories/5@1x.webp",
+        "productTitle": "Чікен бургер",
+        "productPrice": "180 грн.",
+        "productAlt": "чікен бургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "asians"
+    },
+    {
+        "productImageUrl": "../../images/categories/5@1x.webp",
+        "productTitle": "Чікен бургер",
+        "productPrice": "180 грн.",
+        "productAlt": "чікен бургера",
+        "productClass": "product-list__item",
+        "productDataCategory": "asians"
+    }
+]
