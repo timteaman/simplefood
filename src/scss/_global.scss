@@ -1,7 +1,13 @@
 html,
 body {
-    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
+
+// html {
+//     scroll-behavior: smooth;
+//     scroll-padding-top: 163px;
+// }
 
 body {
     font-family: 'Rubik', 'Tahoma', sans-serif;
@@ -17,6 +23,10 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.wrapper--height {
+    padding-top: 163px;
 }
 
 .main {
@@ -35,6 +45,17 @@ body {
     @include r(992) {
         padding: 0 0 40px 0;
     }
+}
+
+.fixed {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0px !important;
+    background-color: $peorpleLight;
+    transition: background-color 0.4s;
 }
 
 .logo {

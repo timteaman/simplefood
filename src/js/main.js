@@ -94,7 +94,38 @@ filterButtons.forEach((button) => {
   });
 });
 
+// header fixed 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('.header');
+  const wrapper = document.querySelector('.wrapper');
+  const menuLinks = document.querySelectorAll('.menu__link');
+  const headerHeight = header.offsetHeight;
+
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= 90) {
+      header.classList.add('fixed');
+      wrapper.classList.add('wrapper--height');
+    } else {
+      header.classList.remove('fixed');
+      wrapper.classList.remove('wrapper--height');
+    }
+  });
+
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const scrollAnchor = this.getAttribute('href');
+      const targetElement = document.querySelector(scrollAnchor);
+      const scrollPoint = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: scrollPoint,
+        behavior: 'smooth'
+      });
+    });
+  });
+});
 
 
 
