@@ -1,7 +1,4 @@
 .catalog {
-    &__inner {
-        margin-bottom: 60px;
-    }
 
     &__title {
         margin-bottom: 0;
@@ -15,6 +12,7 @@
     &__top {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 60px;
     }
 
     &__list {

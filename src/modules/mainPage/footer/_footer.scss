@@ -4,12 +4,19 @@
         display: flex;
         margin-bottom: 61px;
 
-        @include r($r-md) {
-            justify-content: center;
+        @include r($r-lg) {
+            gap: 45px;
         }
 
-        @include r($r-md) {
+        @include r($r-sm) {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        @include r($r-xs) {
             flex-direction: column;
+            gap: 30px;
         }
     }
 
@@ -19,14 +26,14 @@
         flex-shrink: 0;
 
         @include r($r-lg) {
-            margin-right: 30px;
-            margin-bottom: 30px;
-        }
-
-        @include r($r-md) {
             margin-right: 0;
             margin-bottom: 30px;
         }
+
+        @include r($r-sm) {
+            margin-bottom: 0;
+        }
+
     }
 
     &__logo {
@@ -40,7 +47,7 @@
         gap: 15px 90px;
 
         @include r($r-lg) {
-            margin-right: 45px;
+            margin-right: 0;
             gap: 15px 45px;
         }
 
@@ -51,6 +58,11 @@
         }
 
         @include r($r-sm) {
+            order: 1;
+            grid-template-columns: repeat(4, auto);
+        }
+
+        @include r($r-xs) {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -161,16 +173,13 @@
     margin-right: 80px;
 
     @include r($r-lg) {
-        margin-right: 30px;
-    }
-
-    @include r($r-md) {
-        margin-left: 0;
         margin-right: 0;
+        margin-left: 0;
     }
 
     @include r($r-sm) {
         margin-right: 0;
+        margin-bottom: 0;
     }
 
     &__item {
@@ -203,7 +212,7 @@
     gap: 13px;
 
     @include r($r-sm) {
-        margin-bottom: 30px;
+        margin-bottom: 0;
     }
 
     &__link {
