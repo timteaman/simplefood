@@ -115,32 +115,42 @@ document.addEventListener("DOMContentLoaded", function () {
       wrapper.classList.remove("wrapper--height");
     }
   });
-
-
-// const handleClick = (event) => {
-//   event.preventDefault();
-//   const scrollAnchor = event.target.getAttribute("href");
-//   const targetElement = document.querySelector(scrollAnchor);
-
-//   if (targetElement) {
-//     const scrollPoint =
-//       targetElement.getBoundingClientRect().top +
-//       window.pageYOffset -
-//       headerHeight;
-
-//     window.scrollTo({
-//       top: scrollPoint,
-//       behavior: "smooth",
-//     });
-//   }
-// };
-
-
-// menuLinks.forEach((link) => {
-//   link.addEventListener("click", handleClick);
-// });
-
 });
 
+// no ui slider
 
+var priceSlider = document.getElementById("priceSlider");
+var minPriceInput = document.getElementById("minPrice");
+var maxPriceInput = document.getElementById("maxPrice");
 
+noUiSlider.create(priceSlider, {
+  start: [250, 1100], // Начальные значения бегунков
+  connect: true,
+  range: {
+    min: 1,
+    max: 1500,
+  },
+  margin: 5,
+  step: 1,
+  format: {
+    to: function (value) {
+      return Math.round(value); // Округляем до целых чисел
+    },
+    from: function (value) {
+      return value; // Оставляем без изменений при обратном преобразовании
+    },
+  },
+});
+
+priceSlider.noUiSlider.on("update", function (values, handle) {
+  minPriceInput.value = values[0];
+  maxPriceInput.value = values[1];
+});
+
+minPriceInput.addEventListener("change", function () {
+  priceSlider.noUiSlider.set([this.value, null]);
+});
+
+maxPriceInput.addEventListener("change", function () {
+  priceSlider.noUiSlider.set([null, this.value]);
+});

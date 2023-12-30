@@ -1,22 +1,23 @@
 <section class="restaurant section" id="restaurant">
-    <div class="container">
-        <h2 class="title restaurant__title">
-            Найкращі ресторани
-        </h2>
 
-        <div class="swiper restaurant-slider">
+    <h2 class="title restaurant__title">
+        Найкращі ресторани
+    </h2>
 
-            <ul class="swiper-wrapper restaurant-slider__wrapper restaurant__list">
+    <div class="swiper restaurant-slider">
 
-                @loop('../../../components/cards/rest-card/_rest-card.html', '../modules/components/cards/rest-card/rest-card.json')
+        <ul class="swiper-wrapper restaurant-slider__wrapper restaurant__list">
 
-            </ul>
+            @loop('../../../components/cards/rest-card/_rest-card.html',
+            '../modules/components/cards/rest-card/rest-card.json')
 
-        </div>
+        </ul>
 
-        <div class="restaurant-slider__actions slider-actions">
-            <div class="restaurant-slider__dots slider-actions__dots"></div>
-        </div>
     </div>
+
+    <div class="restaurant-slider__actions slider-actions">
+        <div class="restaurant-slider__dots slider-actions__dots"></div>
+    </div>
+
     </div>
 </section>

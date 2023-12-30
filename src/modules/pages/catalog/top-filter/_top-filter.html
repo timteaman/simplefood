@@ -1,24 +1,29 @@
-<form class="top-filter" action="#">
+<div class="top-filter">
 
-    <label class="top-filter__label icon icon--chevron-down" for="sortingByType">
+    <div class="dropdown-menu">
 
-        <select class="top-filter__sort" id="sortingByType" name="sortingByType" aria-label="Сортувати за">
-            <option value="name">За назвою</option>
-            <option value="price">За ціною</option>
-            <option value="size">За розміром</option>
-        </select>
+        <input type="checkbox" id="toggle1" class="dropdown-menu__input">
+        <label for="toggle1" class="dropdown-menu__label">За назвою</label>
 
-    </label>
+        <div class="dropdown-menu__content">
+            <a class="dropdown-menu__link" href="#">За назвою</a>
+            <a class="dropdown-menu__link" href="#">За ціною</a>
+            <a class="dropdown-menu__link" href="#">За розміром</a>
+        </div>
 
-    <label class="top-filter__label icon icon--chevron-down" for="sortingByCount">
+    </div>
 
-        <select class="top-filter__sort" id="sortingByCount" name="sortingByCount"
-            aria-label="Показувати кількість плиток">
-            <option value="12">По 12</option>
-            <option value="8">По 8</option>
-            <option value="4">По 4</option>
-        </select>
+    <div class="dropdown">
 
-    </label>
+        <input type="checkbox" id="toggle2" class="dropdown-menu__input">
+        <label for="toggle2" class="dropdown-menu__label">По 12</label>
 
-</form>
+        <div class="dropdown-menu__content">
+            <a class="dropdown-menu__link" href="#">По 12</a>
+            <a class="dropdown-menu__link" href="#">По 8</a>
+            <a class="dropdown-menu__link" href="#">По 4</a>
+        </div>
+
+    </div>
+
+</div>

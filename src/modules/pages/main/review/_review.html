@@ -1,32 +1,36 @@
 <section class="review section" id="review">
-    <div class="container">
-        <h2 class="title review__title">
-            Відгуки клієнтів
-        </h2>
 
-        <div class="review__inner">
+    <h2 class="title review__title">
+        Відгуки клієнтів
+    </h2>
 
-            <div class="swiper review-slider">
+    <div class="review__inner">
 
-                <ul class="swiper-wrapper review-slider__wrapper review__list">
+        <div class="swiper review-slider">
 
-                    @loop('../../../components/cards/review-card/_review-card.html', '../modules/components/cards/review-card/review-card.json')
+            <ul class="swiper-wrapper review-slider__wrapper review__list">
 
-                </ul>
+                @loop('../../../components/cards/review-card/_review-card.html',
+                '../modules/components/cards/review-card/review-card.json')
 
-                <div class="review-slider__actions slider-actions">
-                    <button
-                        class="review-slider__btn review-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
-                        type="button"></button>
+            </ul>
 
-                    <div class="review-slider__dots slider-actions__dots"></div>
+            <div class="review-slider__actions slider-actions">
 
-                    <button
-                        class="review-slider__btn review-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
-                        type="button"></button>
-                </div>
+                <button
+                    class="review-slider__btn review-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
+                    type="button"></button>
+
+                <div class="review-slider__dots slider-actions__dots"></div>
+
+                <button
+                    class="review-slider__btn review-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
+                    type="button"></button>
+
             </div>
 
         </div>
+
     </div>
+
 </section>

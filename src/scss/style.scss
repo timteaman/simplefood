@@ -18,6 +18,7 @@
 @import '../modules/components/cards/rest-card/rest-card';
 @import '../modules/components/cards/review-card/review-card';
 @import '../modules/components/swiperjs/swiperjs';
+@import '../modules/components/slider-price/slider-price';
 
 // main page
 
@@ -36,8 +37,10 @@
 @import '../modules/pages/catalog/catalog-price/catalog-price';
 @import '../modules/pages/catalog/catalog-promo/catalog-promo';
 @import '../modules/pages/catalog/top-filter/top-filter';
+@import '../modules/pages/catalog/catalog';
 
 
 // product page
 
 @import '../modules/pages/product/product-gallery/product-gallery';
+@import '../modules/pages/product/product-description/product-description';

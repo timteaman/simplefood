@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,17 @@
 
     
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="./css/nouislider.min.css" rel="stylesheet">
     <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="wrapper">
-        <header class="header" id="header">
+
+        <div class="product">
+
+            <header class="header" id="header">
     <div class="container">
 
         <nav class="menu">
@@ -154,7 +159,7 @@
     </div>
 </header>
 
-        <section class="breadcrumbs">
+            <section class="breadcrumbs">
 
     <div class="container">
 
@@ -182,15 +187,95 @@
 
 </section>
 
-        <main class="main">
+            <div class="container">
 
-            @include('./pages/product/product-gallery/_product-gallery.html)
+                <main class="main">
 
-        </main>
+                    <section class="section product-gallery">
 
+    <div class="container">
+
+        <div class="wrapper">
+
+            <h2 class="title product-gallery__title">
+                Чізбургер з листям салату
+            </h2>
+
+            <div class="product-gallery__rating">
+                <ul class="rating">
+                    <li class="rating__item"></li>
+                    <li class="rating__item"></li>
+                    <li class="rating__item"></li>
+                    <li class="rating__item"></li>
+                    <li class="rating__item"></li>
+                </ul>
+            </div>
+
+            <span class="product-gallery__price">
+                160 грн.
+            </span>
+
+            <button></button>
+            <button></button>
+
+
+            <div class="product-gallery__info">
+
+                <h3>
+                    Доставка та оплата
+                </h3>
+
+                <div class="product-gallery__text">
+
+                    <p>
+                        Мінімальна сума замовлення — 160 грн.
+                        Час доставки замовлення — 80-140 мин.
+                        Оплата здійснюється тільки банківською карткою.
+                        Остаточна сума замовлення формується після збору товарів.
+                    </p>
+
+                </div>
+
+
+                <a class="" href="#">Детальніше</a>
+
+            </div>
+        </div>
     </div>
 
-    <footer class="footer" id="footer">
+</section>
+
+                    <div class="product-description">
+
+    <span class="product-description__details">
+        Опис
+    </span>
+
+    <span class="product-description__traits">
+        Характеристики
+    </span>
+
+    <span class="product-description__reviews">
+        Відгуки (2)
+    </span>
+
+    <div class="product-description__text">
+        <p>
+            Рубаний біфштекс із натуральної яловичини на карамелізованій булочці, зі скибочкою сиру "Чеддер", кетчупом,
+            гірчицею, цибулею та маринованими огірочками.
+            Алергени: глютен, молоко, гірчиця. Може містити сою, яйце, сліди кунжуту
+            Зовнішній вигляд товару може відрізнятися від зображень, представлених на сайті.
+        </p>
+    </div>
+
+
+</div>
+
+                </main>
+
+            </div>
+
+            <footer class="footer" id="footer">
     <div class="container">
 
         <div class="footer__inner">
@@ -340,9 +425,14 @@
     </a>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="../../js/main.js"></script> 
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/nouislider.min.js"></script> 
+<script src="./js/main.js"></script> 
 
+
+        </div>
+
+    </div>
 
 </body>
 

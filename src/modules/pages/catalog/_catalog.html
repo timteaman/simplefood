@@ -10,11 +10,7 @@
                     Каталог продуктів
                 </h1>
 
-                <div class="filters-top">
-
-                    @include('./top-filter/_top-filter.html')
-
-                </div>
+                @include('./top-filter/_top-filter.html')
 
             </div>
 
@@ -34,16 +30,16 @@
 
                     <ul class="catalog__list">
 
-
+                        @loop('../../components/cards/product-card/_product-card.html',
+                        '../modules/pages/catalog/catalog-list/catalog-list.json')
 
                     </ul>
 
-                    @include('../../components/pagination/_pagination.html)
+                    @include('../../components/pagination/_pagination.html')
 
                 </div>
 
             </div>
-
 
         </div>
 

@@ -1,3 +1,10 @@
-.rest-card__box--hide {
-    display: none;
+.promo-card {
+    min-height: 392px;
+    height: 100%;
+
+    &__text {
+        padding: 0 20px 15px 20px;
+        font-size: 24px;
+    }
+
 }

@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 @include('./components/head/_head.html')
 
 <body>
-    <div class="wrapper">
+    <div class="wrappert">
 
         @include('./components/header/_header.html')
 
         <main class="main">
 
-            @include('./pages/main/hero/_hero.html')
-            @include('./pages/main/categories/_categories.html')
-            @include('./pages/main/features/_features.html')
-            @include('./pages/main/restaurant/_restaurant.html')
-            @include('./pages/main/review/_review.html')
-            @include('./pages/main/application/_application.html')
+            <div class="container">
+
+                @include('./pages/main/hero/_hero.html')
+                @include('./pages/main/categories/_categories.html')
+                @include('./pages/main/features/_features.html')
+                @include('./pages/main/restaurant/_restaurant.html')
+                @include('./pages/main/review/_review.html')
+                @include('./pages/main/application/_application.html')
+
+            </div>
 
         </main>
 
+        @include('./components/footer/_footer.html')
+
     </div>
-
-    @include('./components/footer/_footer.html')
-
-    @include('./components/scripts/_scripts.html')
 
 </body>
 

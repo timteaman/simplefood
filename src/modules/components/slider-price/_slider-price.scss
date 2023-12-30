@@ -1,0 +1,32 @@
+#priceSlider {
+    width: 90%;
+    height: 2px;
+    background: $gray;
+}
+
+#priceSlider .noUi-connect {
+    background: $orange-900;
+}
+
+#priceSlider .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $orange-900;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#priceSlider .noUi-handle.noUi-active {
+    box-shadow: 0 0 5px $orange-900;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+    display: none;
+}
+
+.noUi-handle {
+    transform: translateY(-15%);
+}
+

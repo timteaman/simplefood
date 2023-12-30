@@ -1,20 +1,47 @@
 .top-filter {
     display: flex;
     gap: 20px;
+}
+
+.dropdown-menu {
+    &__input {
+        display: none;
+    }
+
+    &__link {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background-color: #f1f1f1;
+        }
+
+    }
 
     &__label {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        gap: 15px;
-        padding: 15px;
-        border: 1px solid $gray;
+        background-color: $white;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        width: 160px;
+        margin-bottom: 5px; 
     }
 
-    &__sort {
-        font-size: 14px;
-        letter-spacing: 0.42px;
-        line-height: 1.2;
+    &__content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
     }
+}
+
+
+.dropdown-menu__input:checked~.dropdown-menu__label+.dropdown-content {
+    display: block;
 }
