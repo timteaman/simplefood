@@ -116,22 +116,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // menuLinks.forEach(function (link) {
-  //   link.addEventListener("click", function (event) {
-  //     event.preventDefault();
-  //     const scrollAnchor = this.getAttribute("href");
-  //     const targetElement = document.querySelector(scrollAnchor);
-  //     const scrollPoint =
-  //       targetElement.getBoundingClientRect().top +
-  //       window.pageYOffset -
-  //       headerHeight;
 
-  //     window.scrollTo({
-  //       top: scrollPoint,
-  //       behavior: "smooth",
-  //     });
-  //   });
-  // });
+// const handleClick = (event) => {
+//   event.preventDefault();
+//   const scrollAnchor = event.target.getAttribute("href");
+//   const targetElement = document.querySelector(scrollAnchor);
+
+//   if (targetElement) {
+//     const scrollPoint =
+//       targetElement.getBoundingClientRect().top +
+//       window.pageYOffset -
+//       headerHeight;
+
+//     window.scrollTo({
+//       top: scrollPoint,
+//       behavior: "smooth",
+//     });
+//   }
+// };
+
+
+// menuLinks.forEach((link) => {
+//   link.addEventListener("click", handleClick);
+// });
+
 });
 
 

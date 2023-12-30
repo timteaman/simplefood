@@ -67,7 +67,7 @@ function styles() {
 // }
 
 function images() {
-  return src("./src/images/**/*.*")
+  return src("./src/assets/images/**/*.*")
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
@@ -78,7 +78,7 @@ function images() {
         }),
       ])
     )
-    .pipe(dest("./dist/images"));
+    .pipe(dest("./dist/assets/images"));
 }
 
 const htmlInclude = () => {
@@ -95,7 +95,9 @@ function build() {
   return src(
     [
       "./src/css/style.min.css",
-      "./src/fonts/**/*",
+      "./src/assets/fonts/**/*",
+      "./src/assets/icons/**/*",
+      "./src/assets/images/**/*",
       "./src/js/main.js",
       "./src/*.html",
     ],
@@ -107,9 +109,8 @@ function cleanDist() {
   return del('./dist');
 }
 
-
 function svgSprites() {
-  return src("./src/images/icons/sprites/**/*.svg") // выбираем в папке с иконками все файлы с расширением svg
+  return src("./src/assets/icons/sprites/**/*.svg") // выбираем в папке с иконками все файлы с расширением svg
     .pipe(
       svgSprite({
         mode: {
@@ -119,7 +120,7 @@ function svgSprites() {
         },
       })
     )
-    .pipe(dest("./src/images/icons")); // указываем, в какую папку поместить готовый файл спрайта
+    .pipe(dest("./src/assets/icons")); // указываем, в какую папку поместить готовый файл спрайта
 }
 
 exports.styles = styles;

@@ -4,29 +4,40 @@
 @import 'mixins';
 @import 'global';
 @import 'icons';
-@import '../modules/mainPage/header/header';
-@import '../modules/mobileMenu/mobileMenu';
-@import '../modules/mainPage/hero/hero';
-@import '../modules/mainPage/categories/categories';
-@import '../modules/mainPage/productlist/productlist';
-@import '../modules/mainPage/productcard/productCard';
-@import '../modules/mainPage/features/features';
-@import '../modules/mainPage/restaurant/restaurant';
-@import '../modules/mainPage/restcard/restcard';
-@import '../modules/mainPage/review/review';
-@import '../modules/mainPage/reviewCard/reviewCard';
-@import '../modules/mainPage/application/application';
-@import '../modules/mainPage/footer/footer';
-@import '../modules/swiperjs/swiperjs';
 
-@import '../modules/catalogPage/productCatalog';
-@import '../modules/catalogPage/catalogCategories/catalogCategories';
-@import '../modules/catalogPage/catalogPromo/catalogPromo';
-@import '../modules/catalogPage/catalogPromo/promoCard';
-@import '../modules/catalogPage/catalogPrice/catalogPrice';
-@import '../modules/catalogPage/pagination/paginaion.scss';
-@import '../modules/catalogPage/catalogOffers/catalogOffers';
-@import '../modules/catalogPage/TopFilter/TopFilter.scss';
-@import '../modules/catalogPage/breadcrumbs/breadcrumbs';
+// componetns
 
-@import '../modules/productPage/productGalellery/productgallery';
+@import '../modules/components/breadcrumbs/breadcrumbs';
+@import '../modules/components/footer/footer';
+@import '../modules/components/head/_head.html';
+@import '../modules/components/header/header';
+@import '../modules/components/mobile-menu/mobile-menu';
+@import '../modules/components/pagination/paginaion';
+@import '../modules/components/product-card/product-card';
+@import '../modules/components/promo-card/promo-card';
+@import '../modules/components/rest-card/rest-card';
+@import '../modules/components/review-card/review-card';
+@import '../modules/components/swiperjs/swiperjs';
+
+// main page
+
+@import '../modules/pages/main/application/application';
+@import '../modules/pages/main/categories/categories';
+@import '../modules/pages/main/features/features';
+@import '../modules/pages/main/hero/hero';
+@import '../modules/pages/main/product-list/product-list';
+@import '../modules/pages/main/restaurant/restaurant';
+@import '../modules/pages/main/review/review';
+
+// catalog page
+
+@import '../modules/pages/catalog/catalog-categories/catalog-categories';
+@import '../modules/pages/catalog/catalog-offers/catalog-offers';
+@import '../modules/pages/catalog/catalog-price/catalog-price';
+@import '../modules/pages/catalog/promo/promo';
+@import '../modules/pages/catalog/top-filter/top-filter.scss';
+
+
+// product page
+
+@import '../modules/pages/product/product-galellery/product-galellery';
