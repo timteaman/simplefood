@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="uk">
-@include('./head/_head.html')
+@include('./components/head/_head.html')
 
 <body>
 
     <div class="wrapper">
-        @include('./mainPage/header/_header.html')
+        @include('./components/header/_header.html')
 
-        @include('./breadcrumbs/_breadcrumbs.html')
+        @include('./components/breadcrumbs/_breadcrumbs.html')
 
         <main class="main">
 
-            @include('./productPage/productGalellery/productgallery.html')
+            @include('./pages/product/product-gallery/_product-gallery.html)
 
         </main>
 
     </div>
 
-    @include('./mainPage/footer/_footer.html')
+    @include('./components/footer/_footer.html')
 
-    @include('./scripts/_scripts.html')
+    @include('./components/scripts/_scripts.html')
 
 </body>
 

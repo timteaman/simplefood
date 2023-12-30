@@ -1,6 +1,6 @@
 [
     {
-        "reviewImageUrl": "../../images/review/daryna@2x.webp",
+        "reviewImageUrl": "../assets/images/review/daryna@2x.webp",
         "productAlt": "Щаслива дівчина з гамбургером",
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",
@@ -8,7 +8,7 @@
         "reviewClass": "swiper-slide review-card"
     },
     {
-        "reviewImageUrl": "../../images/review/daryna@2x.webp",
+        "reviewImageUrl": "../assets/images/review/daryna@2x.webp",
         "productAlt": "Щаслива дівчина з гамбургером",
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",
@@ -16,7 +16,7 @@
         "reviewClass": "swiper-slide review-card"
     },
     {
-        "reviewImageUrl": "../../images/review/daryna@2x.webp",
+        "reviewImageUrl": "../assets/images/review/daryna@2x.webp",
         "productAlt": "Щаслива дівчина з гамбургером",
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",
@@ -24,7 +24,7 @@
         "reviewClass": "swiper-slide review-card"
     },
     {
-        "reviewImageUrl": "../../images/review/daryna@2x.webp",
+        "reviewImageUrl": "../assets/images/review/daryna@2x.webp",
         "productAlt": "Щаслива дівчина з гамбургером",
         "reviewText": "SimpleFood - одна з найкращих служб доставки продуктів з ресторанів у місті. Дуже зручний сайт та застосунок. Їхні доставники дуже ввічливі та пунктуальні. Компанія часто проводить акції та дарує знижки на доставку - однозначно рекомендую!",
         "reviewAuthor": "Дарина",

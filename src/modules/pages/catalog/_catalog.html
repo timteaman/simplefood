@@ -12,7 +12,7 @@
 
                 <div class="filters-top">
 
-                    @include('./TopFilter/TopFilter.html')
+                    @include('./top-filter/_top-filter.html')
 
                 </div>
 
@@ -22,23 +22,23 @@
 
                 <div class="sidebar">
 
-                    @include('./catalogCategories/_catalogCategories.html')
+                    @include('./catalog-categories/_catalog-categories.html')
 
-                    @include('./catalogOffers/_catalogOffers.html')
+                    @include('./catalog-offers/_catalog-offers.html')
 
-                    @include('./catalogPrice/_catalogPrice.html')
-                    
+                    @include('./catalog-price/_catalog-price.html')
+
                 </div>
 
                 <div class="catalog__box">
 
                     <ul class="catalog__list">
 
-                        @loop('../mainPage/productcard/_productCard.html', './catalogPage/catalogList/_catalogList.json')
+
 
                     </ul>
 
-                    @include('../catalogPage/pagination/_pagination.html')
+                    @include('../../components/pagination/_pagination.html)
 
                 </div>
 

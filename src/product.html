@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Food</title>
 
-    <link href="../../images/icons/favicon/favicon.ico" rel="icon" sizes="48x48">
-    <link href="../../images/icons/favicon/favicon.svg" rel="icon" sizes="any" type="image/svg+xml">
-    <link href="../../images/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="../../images/icons/favicon/site.webmanifest" rel="manifest" />
-    <link href="../../images/icons/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#ff6838" />
+    <link href="../assets/icons/favicon/favicon.ico" rel="icon" sizes="48x48">
+    <link href="../assets/icons/favicon/favicon.svg" rel="icon" sizes="any" type="image/svg+xml">
+    <link href="../assets/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../assets/icons/favicon/site.webmanifest" rel="manifest" />
+    <link href="../assets/icons/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#ff6838" />
 
     
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
@@ -25,16 +25,16 @@
         <nav class="menu">
 
             <a class="logo header__logo" href="#hero">
-                <img class="logo__img" src="./images/logo.svg" alt="Логотип компанії" width="200" height="39">
+                <img class="logo__img" src="./assets/images/logo.svg" alt="Логотип компанії" width="200" height="39">
             </a>
 
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link menu__link--active" href="../../index.html">Головна</a>
+                    <a class="menu__link menu__link--active" href="./index.html">Головна</a>
                 </li>
 
                 <li class="menu__item">
-                    <a class="menu__link" href="../../catalog.html">Страви</a>
+                    <a class="menu__link" href="./catalog.html">Страви</a>
                 </li>
 
                 <li class="menu__item">
@@ -163,13 +163,13 @@
         <ul class="breadcrumbs__list">
 
             <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link link" href="../../index.html">
+                <a class="breadcrumbs__link link" href="./index.html">
                     Головна
                 </a>
             </li>
 
             <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link link" href="../../catalog.html">
+                <a class="breadcrumbs__link link" href="./catalog.html">
                     Каталог продуктів
                 </a>
             </li>
@@ -184,54 +184,7 @@
 
         <main class="main">
 
-            <section class="section product-gallery">
-
-    <div class="container">
-
-
-        <div class="product-gallery__img">
-
-        </div>
-
-        <div class="wrapper">
-            <h2 class="title product-gallery__title">
-                Чізбургер з листям салату
-            </h2>
-
-            <div class="product-gallery__rating">
-                <ul class="rating">
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                </ul>
-            </div>
-
-            <span class="product-gallery__price">
-                160 грн.
-            </span>
-
-            <button></button>
-            <button></button>
-
-
-            <div class="product-gallery__info">
-                <h3>
-                    Доставка та оплата
-                </h3>
-                <p>
-                    Мінімальна сума замовлення — 160 грн.
-                    Час доставки замовлення — 80-140 мин.
-                    Оплата здійснюється тільки банківською карткою.
-                    Остаточна сума замовлення формується після збору товарів.
-                </p>
-                <a href="#">Детальніше</a>
-            </div>
-        </div>
-    </div>
-
-</section>
+            @include('./pages/product/product-gallery/_product-gallery.html)
 
         </main>
 
@@ -245,7 +198,7 @@
             <div class="footer__box">
 
                 <a class="logo footer__logo" href="#">
-                    <img class="logo__img" src="./images/logo.svg" alt="Логотип компанії" width="200" height="39">
+                    <img class="logo__img" src="./assets/images/logo.svg" alt="Логотип компанії" width="200" height="39">  
                 </a>
 
                 <form class="form" action="#">

@@ -9,14 +9,14 @@
 
 @import '../modules/components/breadcrumbs/breadcrumbs';
 @import '../modules/components/footer/footer';
-@import '../modules/components/head/_head.html';
 @import '../modules/components/header/header';
 @import '../modules/components/mobile-menu/mobile-menu';
-@import '../modules/components/pagination/paginaion';
-@import '../modules/components/product-card/product-card';
-@import '../modules/components/promo-card/promo-card';
-@import '../modules/components/rest-card/rest-card';
-@import '../modules/components/review-card/review-card';
+@import '../modules/components/pagination/pagination';
+
+@import '../modules/components/cards/product-card/product-card';
+@import '../modules/components/cards/promo-card/promo-card';
+@import '../modules/components/cards/rest-card/rest-card';
+@import '../modules/components/cards/review-card/review-card';
 @import '../modules/components/swiperjs/swiperjs';
 
 // main page
@@ -34,10 +34,10 @@
 @import '../modules/pages/catalog/catalog-categories/catalog-categories';
 @import '../modules/pages/catalog/catalog-offers/catalog-offers';
 @import '../modules/pages/catalog/catalog-price/catalog-price';
-@import '../modules/pages/catalog/promo/promo';
-@import '../modules/pages/catalog/top-filter/top-filter.scss';
+@import '../modules/pages/catalog/catalog-promo/catalog-promo';
+@import '../modules/pages/catalog/top-filter/top-filter';
 
 
 // product page
 
-@import '../modules/pages/product/product-galellery/product-galellery';
+@import '../modules/pages/product/product-gallery/product-gallery';

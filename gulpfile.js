@@ -82,13 +82,13 @@ function images() {
 }
 
 const htmlInclude = () => {
-  return src(['./src/modules/*.html']) // Находит любой .html файл в папке "html", куда будем подключать другие .html файлы
-  .pipe(fileInclude({
-    prefix: '@',
-    basepath: '@file',
-  }))
-  .pipe(dest('./src')) // указываем, в какую папку поместить готовый файл html
-  .pipe(browserSync.stream());
+  return src(['./src/modules/*.html']) // Выбираем только файлы .html внутри папки "src/modules"
+    .pipe(fileInclude({
+      prefix: '@',
+      basepath: '@file',
+    }))
+    .pipe(dest('./src')) // указываем, в какую папку поместить готовый файл html
+    .pipe(browserSync.stream());
 }
 
 function build() {
