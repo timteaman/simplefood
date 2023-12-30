@@ -4,13 +4,8 @@ body {
     position: relative;
 }
 
-// html {
-//     scroll-behavior: smooth;
-//     scroll-padding-top: 163px;
-// }
-
 body {
-    font-family: 'Rubik', 'Tahoma', sans-serif;
+    @include fontFamily('Rubik');
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -120,20 +115,6 @@ body {
     &:active {
         color: $orange-900;
         background-color: rgba($orange-900, 0.1);
-    }
-}
-
-.icon {
-    &::before {
-        transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
-        content: '';
-        display: inline-block;
-        background-color: $darkBlue-900;
-        min-width: 18px;
-        height: 18px;
-        mask-repeat: no-repeat;
-        mask-size: contain;
-        mask-position: center;
     }
 }
 

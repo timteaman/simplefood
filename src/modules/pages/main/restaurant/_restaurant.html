@@ -1,0 +1,22 @@
+<section class="restaurant section" id="restaurant">
+    <div class="container">
+        <h2 class="title restaurant__title">
+            Найкращі ресторани
+        </h2>
+
+        <div class="swiper restaurant-slider">
+
+            <ul class="swiper-wrapper restaurant-slider__wrapper restaurant__list">
+
+                @loop('../restcard/_restcard.html', './mainPage/restaurant/_restaurant.json')
+
+            </ul>
+
+        </div>
+
+        <div class="restaurant-slider__actions slider-actions">
+            <div class="restaurant-slider__dots slider-actions__dots"></div>
+        </div>
+    </div>
+    </div>
+</section>

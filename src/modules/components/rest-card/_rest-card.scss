@@ -1,0 +1,107 @@
+.rest-card {
+    max-width: 370px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 0 rgba($darkBlue-900, 0.10);
+    background-color: $white;
+
+    @include r($r-sm) {
+        margin-bottom: 30px;
+    }
+
+    &:hover {
+        background-color: $white;
+        box-shadow: 0 3px 15px 0 rgba($orange-900, 0.50);
+    }
+
+    &__link {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__box {
+        display: flex;
+        padding: 0 20px 20px 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+
+    &__title {
+        font-size: 24px;
+        display: block;
+        width: 100%;
+        @include line-clamp(1);
+
+        @include r($r-md) {
+            font-size: 18px;
+        }
+    }
+
+    &__time {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            margin-right: 10px;
+            width: 22px;
+            height: 22px;
+        }
+
+        @include r($r-md) {
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        margin-left: auto;
+        border-radius: 20px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 79px;
+        height: 33px;
+
+        &::before {
+            width: 16px;
+            height: 16px;
+            background-color: $white;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        &:hover {
+            background-color: transparent;
+
+            &::before {
+                transition: transform 1s ease-in-out, background-color 0.3s;
+                transform: translateX(25px);
+                background-color: $orange-900;
+
+                @include r($r-md) {
+                    transform: translateX(12px);
+                }
+            }
+        }
+
+        &:active,
+        &:focus {
+
+            &::before {
+                transition: background-color 0.3s;
+                background-color: $orange-900;
+            }
+        }
+
+        @include r($r-md) {
+            width: 52px;
+            height: 25px;
+        }
+    }
+
+}

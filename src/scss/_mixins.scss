@@ -24,3 +24,16 @@
         @content;
     }
 }
+
+@mixin fontFamily($fontName) {
+    font-family: #{$fontName}, Arial, Tahoma, sans-serif;
+}
+
+// @include fontFamily('Euclid Galactic');
+
+@mixin bg-image($image-path) {
+    background-image: url($image-path);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

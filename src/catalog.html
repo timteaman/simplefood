@@ -166,7 +166,6 @@
             <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link link" href="../../index.html">
                     Головна
-                    <span class="breadcrumb__separator">&gt;</span>
                 </a>
             </li>
 
@@ -186,7 +185,7 @@
 
         <main class="main">
 
-            <section class="catalog section">
+                <section class="catalog section">
 
     <div class="container">
 
@@ -231,7 +230,7 @@
 
             <div class="catalog__wrapper">
 
-                <div class="filters-right">
+                <div class="sidebar">
 
                     <div class="catalog-categories">
 
@@ -239,54 +238,54 @@
         Категорії
     </h3>
 
-    <ul class="catalog-categories__list">
+    <ul class="category-filter">
 
-        <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+        <li class="category-filter__item">
+            <a class="catalog-categories__link link" href="#">
                 Бургери
-            </button>
+            </a>
         </li>
 
         <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+            <a class="catalog-categories__link link" href="#">
                 Піца
-            </button>
+            </a>
         </li>
 
         <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+            <a class="catalog-categories__link link" href="#">
                 Сендвічі
-            </button>
+            </a>
         </li>
 
         <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+            <a class="catalog-categories__link link" href="#">
                 Азійська кухня
-            </button>
+            </a>
         </li>
 
         <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+            <a class="catalog-categories__link link" href="#">
                 Сети
-            </button>
+            </a>
         </li>
 
         <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+            <a class="catalog-categories__link link" href="#">
                 Європейська кухня
-            </button>
+            </a>
         </li>
 
         <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+            <a class="catalog-categories__link link" href="#">
                 Напої
-            </button>
+            </a>
         </li>
 
         <li class="catalog-categories__item">
-            <button class="catalog-categories__btn link">
+            <a class="catalog-categories__link link" href="#">
                 Алкоголь
-            </button>
+            </a>
         </li>
 
     </ul>
@@ -304,19 +303,20 @@
         <ul class="catalog-offers__list">
 
             <li class="catalog-offers__checkbox">
-                <!-- <label class="catalog-checkbox__label" for="discountCheckbox1">
+
+                <label class="catalog-checkbox__label" for="discountCheckbox1">
                     <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox1"
                         name="discountCheckbox1">
                     <span class="catalog-checkbox__checkmark"></span>
                     <span class="catalog-checkbox__text">Зі знижкою</span>
-                </label> -->
+                </label>
 
-                <div class="checkbox">
+                <!-- <div class="checkbox">
                     <input class="checkbox__input sr-only" type="checkbox" id="catalog-checkbox[sale]">
                     <label class="checkbox__label" for="catalog-checkbox[sale]">
                         Зі знижкою
                     </label>
-                </div>
+                </div> -->
             </li>
 
             <li class="catalog-checkbox">
@@ -579,7 +579,7 @@
 
 </section>
 
-            <section class="application section" id="application">
+                <section class="application section" id="application">
     <div class="container">
         <div class="application__inner" style="background-image: url('../../images/application/get_app@1x.webp')">
 
@@ -610,7 +610,7 @@
     </div>
 </section>
 
-            <section class="section promo">
+                <section class="section promo">
     <div class="container">
         <div class="promo__inner">
             <h2 class="title">Акції та знижки</h2>
@@ -619,21 +619,13 @@
 
                 <ul class="promo__list">
 
-                    <li class="@promoClass">
+                    <li class="promo-card">
     <article class="rest-card">
         <a class="rest-card__link" href="#">
             <img class="rest-card__img" src="../../images/restaurant/resto_1@2x.webp" alt="Піцца Блейз" width="370" height="300">
         </a>
         <p class="promo-card__text">Знижка на другу піцу</p>
-        <div class="rest-card__box rest-card__box--hide">
-            <span class="rest-card__title">Blaze Pizza</span>
-            <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">11:00</time>&nbsp;-&nbsp;<time datetime="T22:00">22:00</time>
-            </span>
-            <button class="btn rest-card__btn icon icon--arrow" type="button">
-                <span class="sr-only">Додати товар до корзини</span>
-            </button>
-        </div>
+
     </article>
 </li><li class="@promoClass">
     <article class="rest-card">
@@ -641,15 +633,7 @@
             <img class="rest-card__img" src="../../images/restaurant/resto_2@2x.webp" alt="Піцца Ранчо" width="370" height="300">
         </a>
         <p class="promo-card__text">Картопелька з KFC задарма при замовленні бургера</p>
-        <div class="rest-card__box rest-card__box--hide">
-            <span class="rest-card__title">Pizza Runcho</span>
-            <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">12:00</time>&nbsp;-&nbsp;<time datetime="T22:00">21:00</time>
-            </span>
-            <button class="btn rest-card__btn icon icon--arrow" type="button">
-                <span class="sr-only">Додати товар до корзини</span>
-            </button>
-        </div>
+
     </article>
 </li><li class="@promoClass">
     <article class="rest-card">
@@ -657,15 +641,7 @@
             <img class="rest-card__img" src="../../images/restaurant/resto_3@2x.webp" alt="Pizza Hut" width="370" height="300">
         </a>
         <p class="promo-card__text">Чорні бургери на чорний день</p>
-        <div class="rest-card__box rest-card__box--hide">
-            <span class="rest-card__title">Pizza Hut</span>
-            <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">11:00</time>&nbsp;-&nbsp;<time datetime="T22:00">22:00</time>
-            </span>
-            <button class="btn rest-card__btn icon icon--arrow" type="button">
-                <span class="sr-only">Додати товар до корзини</span>
-            </button>
-        </div>
+
     </article>
 </li>
 
@@ -695,8 +671,7 @@
                 <form class="form" action="#">
 
                     <label class="form__label" for="email">
-                        <input class="form__input" type="email" name="email" id="email" placeholder="Ваш email"
-                            required>
+                        <input class="form__input" type="email" name="email" id="email" placeholder="Ваш email " required autocomplete="off">
                         <span class="sr-only">Впишіть ваш імейл</span>
                     </label>
 

@@ -1,0 +1,117 @@
+.categories {
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__filter {
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 45px;
+        gap: 20px;
+        justify-content: center;
+        padding: 2px;
+
+        @include r($r-xs) {
+            flex-wrap: nowrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            overflow-y: auto;
+            justify-content: flex-start;
+        }
+    }
+
+    &__btn {
+        font-size: 20px;
+        color: $darkBlue-900;
+        background-color: $white;
+        padding: 12px 32px;
+        outline: 1px solid $silver-200;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        gap: 10px;
+
+        @include r($r-sm) {
+            font-size: 14px;
+            padding: 12px 16px;
+            gap: 5px;
+        }
+
+        &::before {
+            width: 44px;
+            height: 44px;
+
+            @include r($r-sm) {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &:hover {
+            outline-color: rgba($orange-900, 0.7);
+            background-color: rgba($orange-900, 0.10);
+            color: $orange-900;
+
+            &::before {
+                background-color: $orange-900;
+            }
+        }
+
+        &:focus {
+            outline-color: rgba($orange-900, 0.7);
+            color: $darkBlue-900;
+            background-color: transparent;
+        }
+
+        &:active {
+            color: $darkBlue-900;
+            background-color: $white;
+            box-shadow: 0 -5px 12px 0 rgba($orange-900, 0.20) inset;
+        }
+
+
+        &--active {
+            color: $white;
+            background-color: $orange-900;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:focus {
+                color: $white;
+                background-color: $orange-900;
+
+                &::before {
+                    background-color: $white;
+                }
+            }
+
+            &::before {
+                background-color: $white;
+            }
+        }
+
+    }
+
+    &__more {
+        border-radius: 5px;
+
+        &::after {
+            bottom: 6px;
+        }
+
+        &:hover::after,
+        &:active::after {
+            border-bottom-color: transparent;
+        }
+
+        &:focus::after {
+            border-bottom-color: $darkBlue-900;
+        }
+
+        @include r($r-sm) {
+            &::after {
+                bottom: 2px;
+            }
+        }
+    }
+}

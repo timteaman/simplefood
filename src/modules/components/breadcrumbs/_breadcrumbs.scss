@@ -17,6 +17,21 @@
         font-size: 14px;
         letter-spacing: 0.42px;
         line-height: 1.2;
+<<<<<<< HEAD
+=======
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 10px;
+            mask-image: url('../images/icons/sprite.svg#icon-chevron-right');
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            mask-position: center;
+            background-color: $darkBlue-900;
+        }
+>>>>>>> 7ed6aa9d6d26e026a5e5a522133f520c74537620
     }
 
 }

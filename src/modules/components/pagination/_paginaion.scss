@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border-radius: 3px;
+        background: rgba($orange-900, 0.10);
+        color: $darkBlue-900;
+        letter-spacing: 0.54px;
+        line-height: 1;
+        min-width: 48px;
+
+        &--active {
+            border: 1px solid $darkBlue-900;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 6px;
+    }
+}
+
+.pagination__list .pagination__item:nth-child(n + 4):nth-child(-n + 9) {
+    display: none;
+}

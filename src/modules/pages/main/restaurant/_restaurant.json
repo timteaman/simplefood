@@ -1,0 +1,50 @@
+[
+    {
+        "restImageUrl": "../../images/restaurant/resto_1@2x.webp",
+        "resttAlt": "Піцца Блейз",
+        "restTitle": "Blaze Pizza",
+        "restFirstTime": "11:00",
+        "restSecondTime": "22:00",
+        "restClass": "swiper-slide restaurant__item"
+    },
+    {
+        "restImageUrl": "../../images/restaurant/resto_2@2x.webp",
+        "resttAlt": "Піцца Ранчо",
+        "restTitle": "Pizza Runcho",
+        "restFirstTime": "12:00",
+        "restSecondTime": "21:00",
+        "restClass": "swiper-slide restaurant__item"
+    },
+    {
+        "restImageUrl": "../../images/restaurant/resto_3@2x.webp",
+        "resttAlt": "Pizza Hut",
+        "restTitle": "Pizza Hut",
+        "restFirstTime": "11:00",
+        "restSecondTime": "22:00",
+        "restClass": "swiper-slide restaurant__item"
+    },
+    {
+        "restImageUrl": "../../images/restaurant/resto_4@2x.webp",
+        "resttAlt": "Гамбургер Макдональдз",
+        "restTitle": "McDonald`s",
+        "restFirstTime": "06:00",
+        "restSecondTime": "23:00",
+        "restClass": "swiper-slide restaurant__item"
+    },
+    {
+        "restImageUrl": "../../images/restaurant/resto_5@2x.webp",
+        "resttAlt": "Картопля фрі з КФС",
+        "restTitle": "KFC",
+        "restFirstTime": "06:00",
+        "restSecondTime": "23:00",
+        "restClass": "swiper-slide restaurant__item"
+    },
+    {
+        "restImageUrl": "../../images/restaurant/resto_6@2x.webp",
+        "resttAlt": "зображення Стар Бургеру",
+        "restTitle": "Star Burgers",
+        "restFirstTime": "09:00",
+        "restSecondTime": "21:00",
+        "restClass": "swiper-slide restaurant__item"
+    }
+]
