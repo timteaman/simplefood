@@ -12,7 +12,14 @@
         border-radius: 4px;
         cursor: pointer;
         user-select: none;
-        transition: outline 0.5s, background-color 0.7s;
+        transition: outline 0.5s, background-color 0.7s, color 0.5s;
+
+        &:hover {
+
+            &::before {
+                background-color: $orange-900;
+            }
+        }
 
         &::before {
             width: 6px;
@@ -23,6 +30,7 @@
         &:hover {
             background-color: $silver-200;
             outline: 1px solid $orange-900;
+            color: $orange-900;
         }
     }
 

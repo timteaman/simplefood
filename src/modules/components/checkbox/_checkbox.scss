@@ -1,0 +1,46 @@
+.checkbox {
+    display: flex;
+
+    &__input {
+        display: none;
+        position: relative;
+
+        &:checked+.checkbox__label::after {
+            outline-color: $darkBlue-900;
+            color: $darkBlue-900;
+        }
+
+        &:checked+.checkbox__label::before {
+            background-color: $darkBlue-900;
+        }
+
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 12px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            outline: 1px solid $silver-200;
+            border-radius: 3px;
+            background-color: rgba($orange-900, 0.2);
+        }
+
+        &::before {
+            background-color: transparent;
+            width: 12px;
+            height: 8px;
+            position: absolute;
+            left: 4px;
+        }
+    }
+
+}

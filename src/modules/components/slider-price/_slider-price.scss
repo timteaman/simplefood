@@ -1,12 +1,16 @@
 #priceSlider {
     width: 90%;
     height: 2px;
-    background: $orange-900 !important;
-  
+    background-color: $gray !important;
+
     &.noUi-connect {
-      background: $gray !important;
+        background-color: $orange-900 !important ;
     }
-  }
+}
+
+.noUi-connect {
+    background-color: $orange-900 !important ;
+}
 
 #priceSlider .noUi-handle {
     width: 18px;

@@ -5,7 +5,7 @@
 @import 'global';
 @import 'icons';
 
-// componetns
+// components
 
 @import '../modules/components/breadcrumbs/breadcrumbs';
 @import '../modules/components/footer/footer';
@@ -20,6 +20,7 @@
 @import '../modules/components/swiperjs/swiperjs';
 @import '../modules/components/slider-price/slider-price';
 @import '../modules/components/dropdown/dropdown';
+@import '../modules/components/checkbox/checkbox';
 
 // main page
 
@@ -44,4 +45,4 @@
 // product page
 
 @import '../modules/pages/product/product-gallery/product-gallery';
-@import '../modules/pages/product/product-description/product-description';
+@import '../modules/pages/product/product-info/product-info;
