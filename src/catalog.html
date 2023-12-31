@@ -203,31 +203,31 @@
 
                 <div class="top-filter">
 
-    <div class="dropdown-menu">
-
-        <input type="checkbox" id="toggle1" class="dropdown-menu__input">
-        <label for="toggle1" class="dropdown-menu__label">За назвою</label>
-
-        <div class="dropdown-menu__content">
-            <a class="dropdown-menu__link" href="#">За назвою</a>
-            <a class="dropdown-menu__link" href="#">За ціною</a>
-            <a class="dropdown-menu__link" href="#">За розміром</a>
-        </div>
-
-    </div>
-
     <div class="dropdown">
 
-        <input type="checkbox" id="toggle2" class="dropdown-menu__input">
-        <label for="toggle2" class="dropdown-menu__label">По 12</label>
+    <label for="toggle1" class="dropdown__text icon icon--chevron-down">За ціною</label>
+    <input type="checkbox" id="toggle1" class="dropdown__toggle">
 
-        <div class="dropdown-menu__content">
-            <a class="dropdown-menu__link" href="#">По 12</a>
-            <a class="dropdown-menu__link" href="#">По 8</a>
-            <a class="dropdown-menu__link" href="#">По 4</a>
-        </div>
+    <ul class="dropdown__content">
+        <li><a class="dropdown__link" href="#">За ціною</a></li>
+        <li><a class="dropdown__link" href="#">За назвою</a></li>
+        <li><a class="dropdown__link" href="#">За розміром</a></li>
+    </ul>
 
-    </div>
+</div>
+
+<div class="dropdown">
+
+    <label for="toggle2" class="dropdown__text icon icon--chevron-down">По 12</label>
+    <input type="checkbox" id="toggle2" class="dropdown__toggle">
+
+    <ul class="dropdown__content">
+        <li><a class="dropdown__link" href="#">По 12</a></li>
+        <li><a class="dropdown__link" href="#">По 8</a></li>
+        <li><a class="dropdown__link" href="#">По 4</a></li>
+    </ul>
+
+</div>
 
 </div>
 
@@ -303,48 +303,33 @@
         Пропозиції
     </h2>
 
-    <form class="catalog-offers__form" action="#">
+    <div class="checkbox-container">
 
-        <ul class="catalog-offers__list">
+        <input type="checkbox" id="discountCheckbox" class="custom-checkbox">
+        <label for="discountCheckbox" class="custom-checkbox-label">
+            Зі знижкою
+        </label>
 
-            <li class="catalog-offers__checkbox">
+    </div>
 
-                <label class="catalog-checkbox__label" for="discountCheckbox1">
-                    <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox1"
-                        name="discountCheckbox1">
-                    <span class="catalog-checkbox__checkmark"></span>
-                    <span class="catalog-checkbox__text">Зі знижкою</span>
-                </label>
+    <div class="checkbox-container">
 
-                <!-- <div class="checkbox">
-                    <input class="checkbox__input sr-only" type="checkbox" id="catalog-checkbox[sale]">
-                    <label class="checkbox__label" for="catalog-checkbox[sale]">
-                        Зі знижкою
-                    </label>
-                </div> -->
-            </li>
+        <input type="checkbox" id="newArrivalCheckbox" class="custom-checkbox">
+        <label for="newArrivalCheckbox" class="custom-checkbox-label">
+            Новинка
+        </label>
 
-            <li class="catalog-checkbox">
-                <label class="catalog-checkbox__label" for="discountCheckbox2">
-                    <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox2"
-                        name="discountCheckbox2" checked>
-                    <span class="catalog-checkbox__checkmark"></span>
-                    <span class="catalog-checkbox__text">Новинка</span>
-                </label>
-            </li>
+    </div>
 
-            <li class="catalog-checkbox">
-                <label class="catalog-checkbox__label" for="discountCheckbox3">
-                    <input class="catalog-checkbox__input" type="checkbox" id="discountCheckbox3"
-                        name="discountCheckbox3">
-                    <span class="catalog-checkbox__checkmark"></span>
-                    <span class="catalog-checkbox__text">Хіт сезону</span>
-                </label>
-            </li>
+    <div class="checkbox-container">
 
-        </ul>
+        <input type="checkbox" id="seasonalHitCheckbox" class="custom-checkbox">
+        <label for="seasonalHitCheckbox" class="custom-checkbox-label">
+            Хіт сезону
+        </label>
 
-    </form>
+    </div>
+
 
 </div>
 

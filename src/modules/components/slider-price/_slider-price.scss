@@ -1,12 +1,12 @@
 #priceSlider {
     width: 90%;
     height: 2px;
-    background: $gray;
-}
-
-#priceSlider .noUi-connect {
-    background: $orange-900;
-}
+    background: $orange-900 !important;
+  
+    &.noUi-connect {
+      background: $gray !important;
+    }
+  }
 
 #priceSlider .noUi-handle {
     width: 18px;
@@ -27,6 +27,5 @@
 }
 
 .noUi-handle {
-    transform: translateY(-15%);
+    transform: translateY(-4px);
 }
-

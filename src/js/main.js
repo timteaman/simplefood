@@ -154,3 +154,4 @@ minPriceInput.addEventListener("change", function () {
 maxPriceInput.addEventListener("change", function () {
   priceSlider.noUiSlider.set([null, this.value]);
 });
+
