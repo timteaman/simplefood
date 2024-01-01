@@ -12,8 +12,7 @@
     <link href="../assets/icons/favicon/site.webmanifest" rel="manifest" />
     <link href="../assets/icons/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#ff6838" />
 
-    
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
     <link href="./css/nouislider.min.css" rel="stylesheet">
     <link href="./css/style.min.css" rel="stylesheet">
 </head>
@@ -193,122 +192,275 @@
 
                     <section class="product-gallery">
 
-            <h2 class="title product-gallery__title">
-                Чізбургер з листям салату
-            </h2>
 
-            <div class="product-gallery__rating">
-                <ul class="rating">
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                </ul>
+        <!-- <div class="swiper product-slider">
+
+            <ul class="swiper-wrapper product-slider__wrapper">
+    
+                <li class="product-list__item" data-category="burgers">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/1@1x.webp" alt="фотографія чізбургера з листям салату" width="140" height="140">
+            <h3 class="link product-card__title">Чізбургер з листям салату</h3>
+            <span class="product-card__price">140 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="pizzas">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/2@1x.webp" alt="фотографія Біфбургера" width="140" height="140">
+            <h3 class="link product-card__title">Біфбургер</h3>
+            <span class="product-card__price">190 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="sandviches">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/3@1x.webp" alt="фотографія королівського чізбургера" width="140" height="140">
+            <h3 class="link product-card__title">Королівський чізбургер</h3>
+            <span class="product-card__price">260 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="sandviches">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/4@1x.webp" alt="фотографія чорного гамбургера" width="140" height="140">
+            <h3 class="link product-card__title">Чорний гамбургер</h3>
+            <span class="product-card__price">199 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="pizzas">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/5@1x.webp" alt="фотографія чікен бургера" width="140" height="140">
+            <h3 class="link product-card__title">Чікен бургер</h3>
+            <span class="product-card__price">180 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="asians">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/1@1x.webp" alt="фотографія чізбургера з листям салату" width="140" height="140">
+            <h3 class="link product-card__title">Чізбургер з листям салату</h3>
+            <span class="product-card__price">140 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="dishes">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/2@1x.webp" alt="фотографія Біфбургера" width="140" height="140">
+            <h3 class="link product-card__title">Біфбургер</h3>
+            <span class="product-card__price">190 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="burgers">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/3@1x.webp" alt="фотографія королівського чізбургера" width="140" height="140">
+            <h3 class="link product-card__title">Королівський чізбургер</h3>
+            <span class="product-card__price">260 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="burgers">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/4@1x.webp" alt="фотографія чорного гамбургера" width="140" height="140">
+            <h3 class="link product-card__title">Чорний гамбургер</h3>
+            <span class="product-card__price">199 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li><li class="product-list__item" data-category="asians">
+    <article class="product-card">
+        <a class="link product-card__link" href="./product.html">
+            <img class="product-card__img" src="../assets/images/categories/5@1x.webp" alt="фотографія чікен бургера" width="140" height="140">
+            <h3 class="link product-card__title">Чікен бургер</h3>
+            <span class="product-card__price">180 грн.</span>
+        </a>
+        <button class="btn product-card__btn" type="button">До кошика</button>
+    </article>
+</li>
+    
+            </ul>
+
+            <div class="product-slider__actions slider-actions">
+
+                <button
+                    class="product-slider__btn product-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
+                    type="button"></button>
+
+                <div class="product-slider__dots slider-actions__dots"></div>
+
+                <button
+                    class="product-slider__btn product-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
+                    type="button"></button>
+
+            </div>
+    
+        </div> -->
+
+    <div class="product-gallery__inner">
+
+        <h2 class="title product-gallery__title">
+            Чізбургер з листям салату
+        </h2>
+
+        <div class="product-gallery__rating">
+            <div class="rating">
+    <input type="radio" id="star1" name="rating" value="1" class="rating__input">
+    <label for="star1" class="rating__star"></label>
+    <input type="radio" id="star2" name="rating" value="2" class="rating__input">
+    <label for="star2" class="rating__star"></label>
+    <input type="radio" id="star3" name="rating" value="3" class="rating__input">
+    <label for="star3" class="rating__star"></label>
+    <input type="radio" id="star4" name="rating" value="4" class="rating__input">
+    <label for="star4" class="rating__star"></label>
+    <input type="radio" id="star5" name="rating" value="5" class="rating__input">
+    <label for="star5" class="rating__star"></label>
+</div>
+        </div>
+
+        <span class="product-gallery__price">
+            160 грн.
+        </span>
+
+        <div class="product-gallery__order">
+            <div class="change-count">
+    <button class="change-count__button icon icon--icon-plus" type="button"></button>
+    <span class="change-count__value">
+        1
+    </span>
+    <button class="change-count__button icon icon--icon-minus" type="button"></button>
+</div>
+
+            <button class="product-gallery__button icon icon--cart">
+                Додати до кошика
+            </button>
+        </div>
+
+        <div class="product-gallery__info">
+
+            <h3 class="product-gallery__subtitle">
+                Доставка та оплата
+            </h3>
+
+            <div class="product-gallery__text">
+
+                <p>
+                    Мінімальна сума замовлення — 160 грн.
+                    Час доставки замовлення — 80-140 мин.
+                    Оплата здійснюється тільки банківською карткою.
+                    Остаточна сума замовлення формується після збору товарів.
+                </p>
+
             </div>
 
-            <span class="product-gallery__price">
-                160 грн.
-            </span>
+            <a class="product-gallery__link link" href="#">Детальніше</a>
 
-            <button></button>
-            <button></button>
+        </div>
 
-
-            <div class="product-gallery__info">
-
-                <h3>
-                    Доставка та оплата
-                </h3>
-
-                <div class="product-gallery__text">
-
-                    <p>
-                        Мінімальна сума замовлення — 160 грн.
-                        Час доставки замовлення — 80-140 мин.
-                        Оплата здійснюється тільки банківською карткою.
-                        Остаточна сума замовлення формується після збору товарів.
-                    </p>
-
-                </div>
-
-
-                <a class="" href="#">Детальніше</a>
-
-            </div>
+    </div>
 
 </section>
 
                     <div class="product-info">
 
-    <div class="product-info__details">
+    <div class="product-info__details-title">
 
         <a class="product-info__details-title">
             Опис
         </a>
-
-        <div class="product-info__details-text">
-            <p>
-                Рубаний біфштекс із натуральної яловичини на карамелізованій булочці, зі скибочкою сиру "Чеддер", кетчупом,
-                гірчицею, цибулею та маринованими огірочками.
-                Алергени: глютен, молоко, гірчиця. Може містити сою, яйце, сліди кунжуту
-                Зовнішній вигляд товару може відрізнятися від зображень, представлених на сайті.
-            </p>
-        </div>
-        
-    </div>
-
-    <div class="product-info__traits">
-
+    
         <a class="product-info__traits-title">
             Характеристики
         </a>
-
-        <div class="product-info__wrapper">
-
-            <span class="product-info__traits-parameter">
-                Діаметр:
-                <span class="product-info__traits-value">
-                    20см
-                </span>
-            </span>
-
-            <span class="product-info__traits-parameter">
-                Вага:
-                <span class="product-info__traits-value">
-                    300гр
-                </span>
-            </span>
-
-            <span class="product-info__traits-parameter">
-                Калорійність (на 100г):
-                <span class="product-info__traits-value">
-                    295 ккал
-                </span>
-            </span>
-
-            <span class="product-info__traits-parameter">
-                Термін зберігання:
-                <span class="product-info__traits-value">
-                    до 3діб
-                </span>
-            </span>
-        </div>
-
-    </div>
-
-    <div class="product-info__reviews-box">
+    
         <a class="product-info__reviews">
             Відгуки (2)
         </a>
+
     </div>
 
+    <div class="product-info__inner">
 
+        <div class="product-info__details">
 
+            <div class="product-info__details-text">
+                <p>
+                    Рубаний біфштекс із натуральної яловичини на карамелізованій булочці, зі скибочкою сиру "Чеддер",
+                    кетчупом,
+                    гірчицею, цибулею та маринованими огірочками.
+                    Алергени: глютен, молоко, гірчиця. Може містити сою, яйце, сліди кунжуту
+                    Зовнішній вигляд товару може відрізнятися від зображень, представлених на сайті.
+                </p>
+            </div>
 
+        </div>
 
+        <div class="product-info__traits">
 
+            <div class="product-info__wrapper">
 
+                <span class="product-info__traits-parameter">
+                    Діаметр:
+                    <span class="product-info__traits-value">
+                        20см
+                    </span>
+                </span>
+
+                <span class="product-info__traits-parameter">
+                    Вага:
+                    <span class="product-info__traits-value">
+                        300гр
+                    </span>
+                </span>
+
+                <span class="product-info__traits-parameter">
+                    Калорійність (на 100г):
+                    <span class="product-info__traits-value">
+                        295 ккал
+                    </span>
+                </span>
+
+                <span class="product-info__traits-parameter">
+                    Термін зберігання:
+                    <span class="product-info__traits-value">
+                        до 3діб
+                    </span>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="product-info__review">
+            
+            <h2>Думки наших клієнтів</h2>
+            <span>Андрій</span>
+            <span>10.06.2021</span>
+            <span>Доставили швидко. Товар свіжий та дуже смачний, буду ще обов’язково куштувати! </span>
+            <div class="rating">
+    <input type="radio" id="star1" name="rating" value="1" class="rating__input">
+    <label for="star1" class="rating__star"></label>
+    <input type="radio" id="star2" name="rating" value="2" class="rating__input">
+    <label for="star2" class="rating__star"></label>
+    <input type="radio" id="star3" name="rating" value="3" class="rating__input">
+    <label for="star3" class="rating__star"></label>
+    <input type="radio" id="star4" name="rating" value="4" class="rating__input">
+    <label for="star4" class="rating__star"></label>
+    <input type="radio" id="star5" name="rating" value="5" class="rating__input">
+    <label for="star5" class="rating__star"></label>
+</div>
+        </div>
+
+    </div>
 
 
 </div>
@@ -467,10 +619,9 @@
     </a>
 </footer>
 
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./js/nouislider.min.js"></script> 
-<script src="./js/main.js"></script> 
-
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+<script src="./js/nouislider.min.js"></script>
+<script src="./js/main.js"></script>
 
         </div>
 

@@ -50,22 +50,21 @@
         display: none;
         min-width: 100px;
         margin-top: 5px;
-        padding: 8px 0;
         border: 1px solid $gray;
         border-radius: 4px;
         background-color: $white;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-
-        & .dropdown__link {
+        & .dropdown__btn {
             display: block;
-            padding: 8px 15px;
+            width: 100%;
+            padding: 15px;
             color: $darkBlue-900;
             text-decoration: none;
-            transition: background-color 0.4s;
+            transition: background-color 0.4s, outline 0.4s;
 
             &:hover {
                 background-color: $silver-200;
+                outline: 1px solid $orange-900;
             }
         }
     }

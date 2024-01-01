@@ -1,47 +1,74 @@
 <section class="product-gallery">
 
-            <h2 class="title product-gallery__title">
-                Чізбургер з листям салату
-            </h2>
 
-            <div class="product-gallery__rating">
-                <ul class="rating">
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                    <li class="rating__item"></li>
-                </ul>
-            </div>
+        <!-- <div class="swiper product-slider">
 
-            <span class="product-gallery__price">
-                160 грн.
-            </span>
+            <ul class="swiper-wrapper product-slider__wrapper">
+    
+                @loop('../../../components/cards/product-card/_product-card.html',
+                '../modules/components/cards/product-card/product-card.json')
+    
+            </ul>
 
-            <button></button>
-            <button></button>
+            <div class="product-slider__actions slider-actions">
 
+                <button
+                    class="product-slider__btn product-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
+                    type="button"></button>
 
-            <div class="product-gallery__info">
+                <div class="product-slider__dots slider-actions__dots"></div>
 
-                <h3>
-                    Доставка та оплата
-                </h3>
-
-                <div class="product-gallery__text">
-
-                    <p>
-                        Мінімальна сума замовлення — 160 грн.
-                        Час доставки замовлення — 80-140 мин.
-                        Оплата здійснюється тільки банківською карткою.
-                        Остаточна сума замовлення формується після збору товарів.
-                    </p>
-
-                </div>
-
-
-                <a class="" href="#">Детальніше</a>
+                <button
+                    class="product-slider__btn product-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
+                    type="button"></button>
 
             </div>
+    
+        </div> -->
+
+    <div class="product-gallery__inner">
+
+        <h2 class="title product-gallery__title">
+            Чізбургер з листям салату
+        </h2>
+
+        <div class="product-gallery__rating">
+            @include('../../../components/rating/_rating.html')
+        </div>
+
+        <span class="product-gallery__price">
+            160 грн.
+        </span>
+
+        <div class="product-gallery__order">
+            @include('../../../components/change-count/_change-count.html')
+
+            <button class="product-gallery__button icon icon--cart">
+                Додати до кошика
+            </button>
+        </div>
+
+        <div class="product-gallery__info">
+
+            <h3 class="product-gallery__subtitle">
+                Доставка та оплата
+            </h3>
+
+            <div class="product-gallery__text">
+
+                <p>
+                    Мінімальна сума замовлення — 160 грн.
+                    Час доставки замовлення — 80-140 мин.
+                    Оплата здійснюється тільки банківською карткою.
+                    Остаточна сума замовлення формується після збору товарів.
+                </p>
+
+            </div>
+
+            <a class="product-gallery__link link" href="#">Детальніше</a>
+
+        </div>
+
+    </div>
 
 </section>

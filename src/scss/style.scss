@@ -21,6 +21,8 @@
 @import '../modules/components/slider-price/slider-price';
 @import '../modules/components/dropdown/dropdown';
 @import '../modules/components/checkbox/checkbox';
+@import '../modules/components/rating/rating';
+@import '../modules/components/change-count/change-count';
 
 // main page
 
@@ -45,4 +47,4 @@
 // product page
 
 @import '../modules/pages/product/product-gallery/product-gallery';
-@import '../modules/pages/product/product-info/product-info;
+@import '../modules/pages/product/product-info/product-info';

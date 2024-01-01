@@ -180,4 +180,16 @@
             mask-image: url('../assets/icons/sprite.svg#icon-check');
         }
     }
+
+    &--icon-plus {
+        &::before {
+            mask-image: url('../assets/icons/sprite.svg#icon-plus');
+        }
+    }
+
+    &--icon-minus {
+        &::before {
+            mask-image: url('../assets/icons/sprite.svg#icon-minus');
+        }
+    }
 }

@@ -1,0 +1,27 @@
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+
+    &__input {
+        display: none;
+    }
+
+    &__star {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background-image: url('../../../assets/icons/star.svg');
+        background-size: cover;
+
+        &:hover,
+        &:hover~.rating__star {
+            background-image: url('../../../assets/icons/star-yellow.svg');
+        }
+    }
+
+    &__input:checked~&__star {
+        background-image: url('../../../assets/icons/star-yellow.svg');
+    }
+}

@@ -1,0 +1,33 @@
+.change-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $orange-900;
+        cursor: pointer;
+        height: 100%;
+        width: 44px;
+
+        &::before {
+            background-color: $white;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__value {
+        font-size: inherit;
+        background-color: $orangeLight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 100%;
+        color: $darkBlue-900;
+    }
+}

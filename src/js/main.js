@@ -20,7 +20,7 @@ function createSlider(selector, paginationEl, nextBtn, prevBtn) {
       prevEl: prevBtn,
     },
     spaceBetween: 20,
-    centeredSLiders: true,
+    centeredSliders: true,
   });
 }
 
@@ -119,12 +119,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // no ui slider
 
-var priceSlider = document.getElementById("priceSlider");
-var minPriceInput = document.getElementById("minPrice");
-var maxPriceInput = document.getElementById("maxPrice");
+let priceSlider = document.getElementById("priceSlider");
+let minPriceInput = document.getElementById("minPrice");
+let maxPriceInput = document.getElementById("maxPrice");
 
 noUiSlider.create(priceSlider, {
-  start: [250, 1100], // Начальные значения бегунков
+  start: [250, 1100], 
   connect: true,
   range: {
     min: 1,
@@ -134,10 +134,10 @@ noUiSlider.create(priceSlider, {
   step: 1,
   format: {
     to: function (value) {
-      return Math.round(value); // Округляем до целых чисел
+      return Math.round(value); 
     },
     from: function (value) {
-      return value; // Оставляем без изменений при обратном преобразовании
+      return value; 
     },
   },
 });
