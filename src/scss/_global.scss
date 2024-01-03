@@ -201,3 +201,10 @@ body {
         background-color: rgba($dark, 0.9);
     }
 }
+
+// remove default spinners from number input
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}

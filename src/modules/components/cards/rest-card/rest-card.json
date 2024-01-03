@@ -4,7 +4,9 @@
         "resttAlt": "Піцца Блейз",
         "restTitle": "Blaze Pizza",
         "restFirstTime": "11:00",
+        "restFirstTimeDataTipe": "11:00",
         "restSecondTime": "22:00",
+        "restSecondTimeDataTipe": "22:00",
         "restClass": "swiper-slide restaurant__item"
     },
     {
@@ -12,7 +14,9 @@
         "resttAlt": "Піцца Ранчо",
         "restTitle": "Pizza Runcho",
         "restFirstTime": "12:00",
+        "restFirstTimeDataTipe": "12:00",
         "restSecondTime": "21:00",
+        "restSecondTimeDataTipe": "21:00",
         "restClass": "swiper-slide restaurant__item"
     },
     {
@@ -20,7 +24,9 @@
         "resttAlt": "Pizza Hut",
         "restTitle": "Pizza Hut",
         "restFirstTime": "11:00",
+        "restFirstTimeDataTipe": "11:00",
         "restSecondTime": "22:00",
+        "restSecondTimeDataTipe": "22:00",
         "restClass": "swiper-slide restaurant__item"
     },
     {
@@ -28,7 +34,9 @@
         "resttAlt": "Гамбургер Макдональдз",
         "restTitle": "McDonald`s",
         "restFirstTime": "06:00",
+        "restFirstTimeDataTipe": "06:00",
         "restSecondTime": "23:00",
+        "restSecondTimeDataTipe": "23:00",
         "restClass": "swiper-slide restaurant__item"
     },
     {
@@ -36,7 +44,9 @@
         "resttAlt": "Картопля фрі з КФС",
         "restTitle": "KFC",
         "restFirstTime": "06:00",
+        "restFirstTimeDataTipe": "06:00",
         "restSecondTime": "23:00",
+        "restSecondTimeDataTipe": "23:00",
         "restClass": "swiper-slide restaurant__item"
     },
     {
@@ -44,7 +54,9 @@
         "resttAlt": "зображення Стар Бургеру",
         "restTitle": "Star Burgers",
         "restFirstTime": "09:00",
+        "restFirstTimeDataTipe": "09:00",
         "restSecondTime": "21:00",
+        "restSecondTimeDataTipe": "21:00",
         "restClass": "swiper-slide restaurant__item"
     }
 ]

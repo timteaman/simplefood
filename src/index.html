@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Food</title>
+    <title>Simple food | Головна сторінка</title>
 
     <link href="../assets/icons/favicon/favicon.ico" rel="icon" sizes="48x48">
     <link href="../assets/icons/favicon/favicon.svg" rel="icon" sizes="any" type="image/svg+xml">
-    <link href="../assets/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="../assets/icons/favicon/site.webmanifest" rel="manifest" />
-    <link href="../assets/icons/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#ff6838" />
+    <link href="../assets/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/icons/favicon/site.webmanifest" rel="manifest">
+    <link href="../assets/icons/favicon/safari-pinned-tab.svg" rel="mask-icon" color="#ff6838">
 
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
+    <link href="./css/swiperjs.min.css" rel="stylesheet">
     <link href="./css/nouislider.min.css" rel="stylesheet">
     <link href="./css/style.min.css" rel="stylesheet">
 </head>
@@ -62,6 +62,7 @@
                 </li>
             </ul>
 
+            
             <div class="mobile-menu">
 
     <button class="burger icon icon--burger-open" type="button">
@@ -72,81 +73,117 @@
 
         <div class="mobile-menu__header">
 
-            <a class="logo mobile-menu__logo" href="#header">
-                <img class="logo__img" src="./images/logo.svg" alt="Логотип компанії" width="200" height="39">
-            </a>
-
             <button class="burger__close icon icon--burger-close" type="button">
                 <span class="sr-only">Закрити меню</span>
             </button>
 
         </div>
 
-        <ul class="menu__list mobile-menu__list">
-            <li class="menu__item mobile-menu__item">
-                <a class="menu__link menu__link--active mobile-menu__link" href="#header">Головна</a>
-            </li>
+        <h2 class="mobile-menu__title">
+            Категорії
+        </h2>
 
-            <li class="menu__item  mobile-menu__item">
-                <a class="menu__link mobile-menu__link" href="#categories">Страви</a>
+        <ul class="mobile-menu--catalog__list">
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Бургери
+                </a>
             </li>
-
-            <li class="menu__item  mobile-menu__item">
-                <a class="menu__link mobile-menu__link" href="#footer">Контакти</a>
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Піца
+                </a>
+            </li>
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Сендвічі
+                </a>
+            </li>
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Азійська кухня
+                </a>
+            </li>
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Сети
+                </a>
+            </li>
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Європейська кухня
+                </a>
+            </li>
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Напої
+                </a>
+            </li>
+            <li class="mobile-menu--catalog__item">
+                <a href="#">
+                    Алкоголь
+                </a>
             </li>
         </ul>
 
-        <address class="address mobile-menu__address">
-            <ul class="address__list">
+        <h2 class="mobile-menu__title">
+            Пропозиції
+        </h2>
 
-                <li class="address__item">
-                    <a class="address__link link icon icon--location" href="#">
-                        вул. Т.Г. Шевченка, 1
-                    </a>
-                </li>
+        <div class="checkbox">
 
-                <li class="address__item">
-                    <a class="address__link link icon icon--call" href="tel:+380501112233">
-                        380501112233
-                    </a>
-                </li>
+    <input type="checkbox" id="discountCheckbox" class="checkbox__input">
+    <label for="discountCheckbox" class="checkbox__label icon icon--check">
+        Зі знижкою
+    </label>
 
-                <li class="address__item">
-                    <a class="address__link link icon icon--message" href="mailto:support@sfood.com">
-                        support@sfood.com
-                    </a>
-                </li>
+</div>
 
-            </ul>
+<div class="checkbox">
 
-            <ul class="social mobile-menu__social">
+    <input type="checkbox" id="newCheckbox" class="checkbox__input">
+    <label for="newCheckbox" class="checkbox__label icon icon--check">
+        Новинка
+    </label>
 
-                <li class="social__item mobile-menu__social-list">
-                    <a class="social__link icon icon--social icon--facebook" href="#">
-                        <span class="sr-only">
-                            Відкрити сторінку Facebook
-                        </span>
-                    </a>
-                </li>
+</div>
 
-                <li class="social__item">
-                    <a class="social__link icon icon--social icon--twitter" href="#">
-                        <span class="sr-only">
-                            Відкрити сторінку Twitter
-                        </span>
-                    </a>
-                </li>
+<div class="checkbox">
 
-                <li class="social__item">
-                    <a class="social__link icon icon--social icon--instagram" href="#">
-                        <span class="sr-only">
-                            Відкрити сторінку Instagram
-                        </span>
-                    </a>
-                </li>
+    <input type="checkbox" id="seasonHitCheckbox" class="checkbox__input">
+    <label for="seasonHitCheckbox" class="checkbox__label icon icon--check">
+        Хіт сезону
+    </label>
 
-            </ul>
-        </address>
+</div>
+
+        <div class="price">
+
+    <label class="price__label" for="minPrice">
+        <span class="price__text">
+            від
+        </span>
+        <input class="price__input" type="number" id="minPrice" name="minPrice" min="1" step="1" max="9999" value="100">
+        <span class="price__text">
+            &#8372;
+        </span>
+    </label>
+
+    <label class="price__label" for="maxPrice">
+        <span class="price__text">
+            до
+        </span>
+        <input class="price__input" type="number" id="maxPrice" name="maxPrice" min="1" step="1" max="9999"
+            value="1000">
+        <span class="price__text">
+            &#8372;
+        </span>
+    </label>
+
+</div>
+
+        <div class="price-slider"></div>
+
     </nav>
 
 </div>
@@ -395,7 +432,7 @@
         <div class="rest-card__box">
             <span class="rest-card__title">Blaze Pizza</span>
             <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">11:00</time>&nbsp;-&nbsp;<time datetime="T22:00">22:00</time>
+                <time datetime="11:00">11:00</time>&nbsp;-&nbsp;<time datetime="11:00">22:00</time>
             </span>
             <button class="btn rest-card__btn icon icon--arrow" type="button">
                 <span class="sr-only">Додати товар до корзини</span>
@@ -410,7 +447,7 @@
         <div class="rest-card__box">
             <span class="rest-card__title">Pizza Runcho</span>
             <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">12:00</time>&nbsp;-&nbsp;<time datetime="T22:00">21:00</time>
+                <time datetime="12:00">12:00</time>&nbsp;-&nbsp;<time datetime="12:00">21:00</time>
             </span>
             <button class="btn rest-card__btn icon icon--arrow" type="button">
                 <span class="sr-only">Додати товар до корзини</span>
@@ -425,7 +462,7 @@
         <div class="rest-card__box">
             <span class="rest-card__title">Pizza Hut</span>
             <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">11:00</time>&nbsp;-&nbsp;<time datetime="T22:00">22:00</time>
+                <time datetime="11:00">11:00</time>&nbsp;-&nbsp;<time datetime="11:00">22:00</time>
             </span>
             <button class="btn rest-card__btn icon icon--arrow" type="button">
                 <span class="sr-only">Додати товар до корзини</span>
@@ -440,7 +477,7 @@
         <div class="rest-card__box">
             <span class="rest-card__title">McDonald`s</span>
             <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">06:00</time>&nbsp;-&nbsp;<time datetime="T22:00">23:00</time>
+                <time datetime="06:00">06:00</time>&nbsp;-&nbsp;<time datetime="06:00">23:00</time>
             </span>
             <button class="btn rest-card__btn icon icon--arrow" type="button">
                 <span class="sr-only">Додати товар до корзини</span>
@@ -455,7 +492,7 @@
         <div class="rest-card__box">
             <span class="rest-card__title">KFC</span>
             <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">06:00</time>&nbsp;-&nbsp;<time datetime="T22:00">23:00</time>
+                <time datetime="06:00">06:00</time>&nbsp;-&nbsp;<time datetime="06:00">23:00</time>
             </span>
             <button class="btn rest-card__btn icon icon--arrow" type="button">
                 <span class="sr-only">Додати товар до корзини</span>
@@ -470,7 +507,7 @@
         <div class="rest-card__box">
             <span class="rest-card__title">Star Burgers</span>
             <span class="rest-card__time icon icon--time">
-                <time datetime="T11:00">09:00</time>&nbsp;-&nbsp;<time datetime="T22:00">21:00</time>
+                <time datetime="09:00">09:00</time>&nbsp;-&nbsp;<time datetime="09:00">21:00</time>
             </span>
             <button class="btn rest-card__btn icon icon--arrow" type="button">
                 <span class="sr-only">Додати товар до корзини</span>
@@ -485,8 +522,6 @@
 
     <div class="restaurant-slider__actions slider-actions">
         <div class="restaurant-slider__dots slider-actions__dots"></div>
-    </div>
-
     </div>
 
 </section>
@@ -578,13 +613,19 @@
 
                 <button
                     class="review-slider__btn review-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
-                    type="button"></button>
+                    type="button">
+                    <span class="sr-only">Нерелистнути слайд вліло</span>
+                </button>
 
-                <div class="review-slider__dots slider-actions__dots"></div>
+                <div class="review-slider__dots slider-actions__dots">
+                    <span class="sr-only">Навігація по слайдам</span>
+                </div>
 
                 <button
                     class="review-slider__btn review-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
-                    type="button"></button>
+                    type="button">
+                    <span class="sr-only">Нерелистнути слайд вправо</span>
+                </button>
 
             </div>
 
@@ -614,10 +655,16 @@
             <ul class="application__list">
 
                 <li class="application__item">
+                    <span class="sr-only">
+                        Перейти на сторінку єпл стор, для завантаження додатку.
+                    </span>
                     <a class="application__link application__link--apple" href="#"></a>
                 </li>
 
                 <li class="application__item">
+                    <span class="sr-only">
+                        Перейти на сторінку гугл плей, для завантаження додатку.
+                    </span>
                     <a class="application__link application__link--google" href="#"></a>
                 </li>
 
@@ -782,6 +829,9 @@
         &copy; 2023 Simple Food
     </a>
 </footer>
+
+        <script src="./js/swiperjs.min.js"></script>
+        <script src="./js/main.js"></script>
 
     </div>
 

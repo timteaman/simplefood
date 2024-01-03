@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-@include('./components/head/_head.html')
+@include('./components/head/_head.html', {'title': 'Simple food | Головна сторінка'})
 
 <body>
     <div class="wrapper">
@@ -24,6 +24,9 @@
         </main>
 
         @include('./components/footer/_footer.html')
+
+        <script src="./js/swiperjs.min.js"></script>
+        <script src="./js/main.js"></script>
 
     </div>
 

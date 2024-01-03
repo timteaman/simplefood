@@ -2,29 +2,12 @@
 
     <h3 class="catalog__subtitle">Ціна</h3>
 
-    <div class="catalog-price__wrapper">
-
         <form class="catalog-price__form" action="#">
 
-            <div class="catalog-price__box">
+            @include('../../../components/price-box/_price-box.html')
 
-                <label class="catalog-price__lable" for="minPrice">
-                    <span class="catalog-price__text">від</span>
-                    <input class="catalog-price__input" type="number" id="minPrice" name="minPrice" min="1" step="1"
-                        max="9999" value="100">
-                    <span class="catalog-price__text">&#8372;</span>
-                </label>
+        </form>
 
-                <label class="catalog-price__lable" for="maxPrice">
-                    <span class="catalog-price__text">до</span>
-                    <input class="catalog-price__input" type="number" id="maxPrice" name="maxPrice" min="1" step="1"
-                        max="9999" value="1000">
-                    <span class="catalog-price__text">&#8372;</span>
-                </label>
-            </div>
-
-    </div>
-
-    @include('../../../components/slider-price/_slider-price.html')
+        @include('../../../components/slider-price/_slider-price.html')
 
 </div>

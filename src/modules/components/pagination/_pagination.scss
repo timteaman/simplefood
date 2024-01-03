@@ -3,7 +3,8 @@
     justify-content: center;
     gap: 6px;
 
-    &__btn {
+    &__btn,
+    &__link {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -11,12 +12,35 @@
         border-radius: 3px;
         background: rgba($orange-900, 0.10);
         color: $darkBlue-900;
+        min-width: 48px;
+        outline: 2px solid transparent;
+        transition: border-color 0.4s, color 0.4s, background-color 0.4s, outline-color 0.4s, box-shadow 0.4s;
+    }
+
+    &__link {
         letter-spacing: 0.54px;
         line-height: 1;
-        min-width: 48px;
-
         &--active {
             border: 1px solid $darkBlue-900;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: transparent;
+        }
+
+        &:hover {
+            background-color: $orange-900;
+            color: $white;
+        }
+
+        &:focus {
+            outline-color: $orange-900;
+        }
+
+        &:active {
+            box-shadow: 0 -1px 4px 2px rgba($black, 0.15) inset;
         }
     }
 

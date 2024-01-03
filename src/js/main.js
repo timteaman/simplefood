@@ -1,3 +1,4 @@
+"use strict";
 // swiperJS
 
 function createSlider(selector, paginationEl, nextBtn, prevBtn) {
@@ -43,19 +44,19 @@ if (window.innerWidth <= 768) {
 // burger menu
 
 document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger"); // Наша кнопка
-  const mobileMenu = document.querySelector(".mobile-menu__nav"); // Мобильное меню
-  const bodyLock = document.querySelector("body"); // Тег body
+  const burger = document.querySelector(".burger");
+  const mobileMenu = document.querySelector(".mobile-menu__nav");
+  const bodyLock = document.querySelector("body");
   const closeBtn = document.querySelector(".burger__close");
 
   burger.addEventListener("click", () => {
-    burger.classList.add("burger--active"); // Добавляем класс для активации кнопки
+    burger.classList.add("burger--active");
     mobileMenu.classList.add("mobile-menu__nav--active");
     bodyLock.classList.add("lock");
   });
 
   closeBtn.addEventListener("click", () => {
-    burger.classList.remove("burger--active"); // Удаляем класс активации кнопки при закрытии меню
+    burger.classList.remove("burger--active");
     mobileMenu.classList.remove("mobile-menu__nav--active");
     bodyLock.classList.remove("lock");
   });
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
       !e.target.closest(".burger") &&
       !e.target.closest(".mobile-menu__nav")
     ) {
-      burger.classList.remove("burger--active"); // Удаляем класс активации кнопки
+      burger.classList.remove("burger--active");
       mobileMenu.classList.remove("mobile-menu__nav--active");
       bodyLock.classList.remove("lock");
     }
@@ -119,39 +120,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // no ui slider
 
-let priceSlider = document.getElementById("priceSlider");
-let minPriceInput = document.getElementById("minPrice");
-let maxPriceInput = document.getElementById("maxPrice");
+document.addEventListener("DOMContentLoaded", function() {
+  let priceSliders = document.querySelectorAll(".price-slider");
+  let minPriceInput = document.getElementById("minPrice");
+  let maxPriceInput = document.getElementById("maxPrice");
 
-noUiSlider.create(priceSlider, {
-  start: [250, 1100], 
-  connect: true,
-  range: {
-    min: 1,
-    max: 1500,
-  },
-  margin: 5,
-  step: 1,
-  format: {
-    to: function (value) {
-      return Math.round(value); 
-    },
-    from: function (value) {
-      return value; 
-    },
-  },
+  priceSliders.forEach(function(slider) {
+      noUiSlider.create(slider, {
+          start: [250, 1100],
+          connect: true,
+          range: {
+              min: 1,
+              max: 1500,
+          },
+          step: 1,
+          format: {
+              to: function (value) {
+                  return Math.round(value);
+              },
+              from: function (value) {
+                  return value;
+              },
+          },
+      });
+
+      slider.noUiSlider.on("update", function (values, handle) {
+          minPriceInput.value = values[0];
+          maxPriceInput.value = values[1];
+      });
+
+      minPriceInput.addEventListener("change", function () {
+          slider.noUiSlider.set([this.value, null]);
+      });
+
+      maxPriceInput.addEventListener("change", function () {
+          slider.noUiSlider.set([null, this.value]);
+      });
+  });
 });
-
-priceSlider.noUiSlider.on("update", function (values, handle) {
-  minPriceInput.value = values[0];
-  maxPriceInput.value = values[1];
-});
-
-minPriceInput.addEventListener("change", function () {
-  priceSlider.noUiSlider.set([this.value, null]);
-});
-
-maxPriceInput.addEventListener("change", function () {
-  priceSlider.noUiSlider.set([null, this.value]);
-});
-

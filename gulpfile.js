@@ -1,3 +1,5 @@
+'use strict';
+
 const { src, dest, watch, parallel, series } = require('gulp');
 
 const scss = require('gulp-sass')(require('sass'));

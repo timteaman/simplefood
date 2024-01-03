@@ -14,9 +14,18 @@
     }
 
     &__link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
         font-size: 14px;
         letter-spacing: 0.42px;
         line-height: 1.2;
+
+        &::before {
+            min-width: 6px !important;
+            height: 10px;
+            background-color: $gray;
+        }
     }
 
 }

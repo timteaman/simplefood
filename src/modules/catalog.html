@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-@include('./components/head/_head.html')
+@include('./components/head/_head.html', {'title': 'Simple food | Каталог страв'})
 
 <body>
 
     <div class="wrapper">
-        
+
         @include('./components/header/_header.html')
 
         @include('./components/breadcrumbs/_breadcrumbs.html')
@@ -29,7 +29,9 @@
 
     @include('./components/footer/_footer.html')
 
-    @include('./components/scripts/_scripts.html')
+    <script src="./js/swiperjs.min.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 

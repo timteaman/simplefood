@@ -23,6 +23,29 @@
         gap: 12px;
         position: relative;
         cursor: pointer;
+        outline: 1px solid transparent;
+        transition: color 0.4s;
+
+        &:hover,
+        &:focus {
+            &::after {
+                transition: outline-color 0.4s;
+            }
+        }
+
+        &:hover {
+            color: $orange-900;
+
+            &::after {
+                outline-color: $orange-900;
+            }
+        }
+
+        &:focus {
+            &::after {
+                outline-color: $orange-900;
+            }
+        }
 
         &::after {
             content: '';

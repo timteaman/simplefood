@@ -12,14 +12,7 @@
         border-radius: 4px;
         cursor: pointer;
         user-select: none;
-        transition: outline 0.5s, background-color 0.7s, color 0.5s;
-
-        &:hover {
-
-            &::before {
-                background-color: $orange-900;
-            }
-        }
+        transition: border-color 0.5s, background-color 0.5s, color 0.5s;
 
         &::before {
             width: 6px;
@@ -28,10 +21,21 @@
         }
 
         &:hover {
-            background-color: $silver-200;
-            outline: 1px solid $orange-900;
+
+            &::before {
+                background-color: $orange-900;
+            }
+        }
+
+        &:hover {
+            border-color: $orange-900;
             color: $orange-900;
         }
+
+        &:focus {
+            border-color: $orange-900;
+        }
+
     }
 
     &__toggle {
@@ -63,7 +67,6 @@
             transition: background-color 0.4s, outline 0.4s;
 
             &:hover {
-                background-color: $silver-200;
                 outline: 1px solid $orange-900;
             }
         }

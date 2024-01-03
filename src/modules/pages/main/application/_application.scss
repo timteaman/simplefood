@@ -99,14 +99,14 @@
         &--apple {
             &::before {
                 width: 120px;
-                background-image: url('../../images/application/app_store.svg');
+                background-image: url('../assets/images/application/app_store.svg');
             }
         }
 
         &--google {
             &::before {
                 width: 135px;
-                background-image: url('../../images/application/play_store.svg');
+                background-image: url('../assets/images/application/play_store.svg');
 
             }
         }
