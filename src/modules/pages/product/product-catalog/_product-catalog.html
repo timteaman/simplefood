@@ -1,7 +1,18 @@
 <div class="product-catalog section">
-    
+
     <h2 class="title">
         Вас може зацікавити
     </h2>
+
+    <div class="swiper product-catalog-slider">
+
+        <ul class="swiper-wrapper product-catalog__wrapper product-catalog__list">
+
+            @loop('../../../components/cards/product-card/_product-card.html',
+            '../modules/components/cards/product-card/product-card.json')
+
+        </ul>
+
+    </div>
 
 </div>
