@@ -1,7 +1,11 @@
 .promo {
-    // &__content {
-    //     display: flex;
-    // }
+    display: flex;
+
+    &__title {
+        @include r($r-md) {
+            margin-bottom: 30px;
+        }
+    }
 
     &__list {
         display: flex;

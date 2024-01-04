@@ -33,6 +33,15 @@ const reviewSlider = createSlider(
 );
 
 if (window.innerWidth <= 768) {
+const promoSlider = createSlider(
+  ".promo-slider",
+  ".promo-slider__dots",
+  ".promo-slider__btn--next",
+  ".promo-slider__btn--prev"
+);
+}
+
+if (window.innerWidth <= 768) {
   const restaurantSlider = createSlider(
     ".restaurant-slider",
     ".restaurant-slider__dots",
@@ -41,7 +50,7 @@ if (window.innerWidth <= 768) {
   );
 }
 
-// burger menu
+// main mobile menu
 
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".burger");
@@ -74,7 +83,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// filter
+// filter mobile menu
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".catalog__filter-btn");
+  const mobileMenu = document.querySelector(".filter-menu__nav");
+  const bodyLock = document.querySelector("body");
+  const closeBtn = document.querySelector(".filter-menu__close");
+
+  burger.addEventListener("click", () => {
+    burger.classList.add("catalog__filter-btn--active");
+    mobileMenu.classList.add("filter-menu__nav--active");
+    bodyLock.classList.add("lock");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    burger.classList.remove("catalog__filter-btn--active");
+    mobileMenu.classList.remove("filter-menu__nav--active");
+    bodyLock.classList.remove("lock");
+  });
+
+  // Клик вне таргета
+  document.addEventListener("click", function (e) {
+    if (
+      !e.target.closest(".catalog__filter-btn") &&
+      !e.target.closest(".filter-menu__nav")
+    ) {
+      burger.classList.remove("catalog__filter-btn--active");
+      mobileMenu.classList.remove("filter-menu__nav--active");
+      bodyLock.classList.remove("lock");
+    }
+  });
+});
+
+
+// filter-card
 
 const filterButtons = document.querySelectorAll(".categories__btn");
 const workItems = document.querySelectorAll(".product-list__item");
@@ -120,41 +163,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // no ui slider
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let priceSliders = document.querySelectorAll(".price-slider");
   let minPriceInput = document.getElementById("minPrice");
   let maxPriceInput = document.getElementById("maxPrice");
 
-  priceSliders.forEach(function(slider) {
-      noUiSlider.create(slider, {
-          start: [250, 1100],
-          connect: true,
-          range: {
-              min: 1,
-              max: 1500,
-          },
-          step: 1,
-          format: {
-              to: function (value) {
-                  return Math.round(value);
-              },
-              from: function (value) {
-                  return value;
-              },
-          },
-      });
+  priceSliders.forEach(function (slider) {
+    noUiSlider.create(slider, {
+      start: [250, 1100],
+      connect: true,
+      range: {
+        min: 1,
+        max: 1500,
+      },
+      step: 1,
+      format: {
+        to: function (value) {
+          return Math.round(value);
+        },
+        from: function (value) {
+          return value;
+        },
+      },
+    });
 
-      slider.noUiSlider.on("update", function (values, handle) {
-          minPriceInput.value = values[0];
-          maxPriceInput.value = values[1];
-      });
+    slider.noUiSlider.on("update", function (values, handle) {
+      minPriceInput.value = values[0];
+      maxPriceInput.value = values[1];
+    });
 
-      minPriceInput.addEventListener("change", function () {
-          slider.noUiSlider.set([this.value, null]);
-      });
+    minPriceInput.addEventListener("change", function () {
+      slider.noUiSlider.set([this.value, null]);
+    });
 
-      maxPriceInput.addEventListener("change", function () {
-          slider.noUiSlider.set([null, this.value]);
-      });
+    maxPriceInput.addEventListener("change", function () {
+      slider.noUiSlider.set([null, this.value]);
+    });
   });
 });

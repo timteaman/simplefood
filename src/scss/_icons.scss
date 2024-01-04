@@ -192,4 +192,11 @@
             mask-image: url('../assets/icons/sprite.svg#icon-minus');
         }
     }
+
+    &--icon-filters {
+        &::before {
+            mask-image: url('../assets/icons/sprite.svg#icon-filters');
+        }
+    }
+    
 }

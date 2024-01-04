@@ -1,41 +1,53 @@
 <section class="catalog section">
 
-    <div class="container">
+    <div class="catalog__inner">
 
-        <div class="catalog__inner">
+        <div class="catalog__top">
 
-            <div class="catalog__top">
+            <h1 class="title catalog__title">
+                Каталог продуктів
+            </h1>
 
-                <h1 class="title catalog__title">
-                    Каталог продуктів
-                </h1>
+            <div class="catalog__filters">
 
-                @include('./top-filter/_top-filter.html')
+                <button class="catalog__filter-btn icon icon--icon-filters" type="button">
+
+                    <span class="sr-only">
+                        Відктири філтр товарів
+                    </span>
+
+                </button>
+
+                <div class="catalog__dropdown">
+                    @include('../../components/dropdown/_dropdown.html')
+                </div>
 
             </div>
 
-            <div class="catalog__wrapper">
+            @include('../../components/filter/_filter.html')
 
-                <div class="sidebar">
-                    @include('./catalog-categories/_catalog-categories.html')
+        </div>
 
-                    @include('./catalog-offers/_catalog-offers.html')
+        <div class="catalog__wrapper">
 
-                    @include('./catalog-price/_catalog-price.html')
-                </div>
+            <div class="catalog__sidebar">
+                @include('./catalog-categories/_catalog-categories.html')
 
-                <div class="catalog__box">
+                @include('./catalog-offers/_catalog-offers.html')
 
-                    <ul class="catalog__list">
+                @include('./catalog-price/_catalog-price.html')
+            </div>
 
-                        @loop('../../components/cards/product-card/_product-card.html',
-                        '../modules/pages/catalog/catalog-list/catalog-list.json')
+            <div class="catalog__box ">
 
-                    </ul>
+                <ul class="catalog__list">
 
-                    @include('../../components/pagination/_pagination.html')
+                    @loop('../../components/cards/product-card/_product-card.html',
+                    '../modules/pages/catalog/catalog-list/catalog-list.json')
 
-                </div>
+                </ul>
+
+                @include('../../components/pagination/_pagination.html')
 
             </div>
 

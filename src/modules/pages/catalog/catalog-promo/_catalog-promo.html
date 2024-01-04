@@ -1,17 +1,22 @@
 <section class="section promo">
 
     <div class="promo__inner">
-        <h2 class="title">Акції та знижки</h2>
 
-        <div class="promo__content">
+        <h2 class="title promo__title">Акції та знижки</h2>
 
-            <ul class="promo__list">
+        <div class="swiper promo-slider">
+
+            <ul class="swiper-wrapper promo-slider__wrapper promo__list">
 
                 @loop('../../../components/cards/promo-card/_promo-card.html',
                 '../modules/components/cards/promo-card/promo-card.json')
 
             </ul>
 
+        </div>
+
+        <div class="promo-slider__actions slider-actions">
+            <div class="promo-slider__dots slider-actions__dots"></div>
         </div>
 
     </div>
