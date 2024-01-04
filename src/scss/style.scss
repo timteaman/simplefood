@@ -12,18 +12,20 @@
 @import '../modules/components/header/header';
 @import '../modules/components/mobile-menu/mobile-menu';
 @import '../modules/components/pagination/pagination';
-@import '../modules/components/filter/filter';
+@import '../modules/components/filter-menu/filter-menu';
 
 @import '../modules/components/cards/product-card/product-card';
 @import '../modules/components/cards/promo-card/promo-card';
 @import '../modules/components/cards/rest-card/rest-card';
 @import '../modules/components/cards/review-card/review-card';
+@import '../modules/components/cards/image-card/image-card';
+
 @import '../modules/components/swiperjs/swiperjs';
 @import '../modules/components/slider-price/slider-price';
 @import '../modules/components/dropdown/dropdown';
 @import '../modules/components/checkbox/checkbox';
 @import '../modules/components/rating/rating';
-@import '../modules/components/change-count/change-count';
+@import '../modules/components/counter/counter';
 @import '../modules/components/price-box/price-box';
 
 // main page

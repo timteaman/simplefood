@@ -4,7 +4,7 @@
     align-items: center;
     gap: 20px;
     padding-bottom: 0.5px;
-    
+
     &__btn {
         border-radius: 50%;
         border: 3px solid $gray;
@@ -16,22 +16,23 @@
             border-color: rgba($orange-900, 0.5);
             background-color: $orangeLight;
 
-        &::before {
-            background-color: rgba($orange-900, 0.5);
+            &::before {
+                background-color: rgba($orange-900, 0.5);
+            }
         }
-    }
 
-    &:focus {
-        outline-color: $orange-900;
-    }
-
-    &:active {
-        background-color: $orangeLight;
-        border-color: transparent;
-        &::before {
-            background-color: $orange-900;
+        &:focus {
+            outline-color: $orange-900;
         }
-    }
+
+        &:active {
+            background-color: $orangeLight;
+            border-color: transparent;
+
+            &::before {
+                background-color: $orange-900;
+            }
+        }
 
         &::before {
             display: block;
@@ -41,13 +42,9 @@
         }
 
 
-        &--next {
+        &--next {}
 
-        }
-
-        &--prev {
-
-        }
+        &--prev {}
     }
 
     &__dots {
@@ -64,6 +61,7 @@
         outline: 2px solid transparent;
         cursor: pointer;
         transition: outline-color 0.4s, background-color 0.4s;
+
         &--active {
             background-color: $orange-900;
         }
@@ -115,5 +113,33 @@
         @include r($r-md) {
             display: none;
         }
+    }
+}
+
+.product-slider {
+    position: relative;
+
+    &__btn {
+        position: absolute;
+        bottom: 50%;
+        z-index: 999;
+        border: none;
+        &::before {
+            width: 18px;
+            height: 30px;
+            background-color: $darkBlue-900;
+        }
+
+        &--prev {
+            left: 5%;
+        }
+
+        &--next {
+            right: 5%;
+        }
+    }
+
+    &__dots {
+        display: none;
     }
 }

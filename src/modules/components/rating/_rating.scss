@@ -12,16 +12,21 @@
         width: 16px;
         height: 16px;
         display: inline-block;
-        background-image: url('../../../assets/icons/star.svg');
-        background-size: cover;
+        &::before {
+            background-color: $gray;
+        }
 
         &:hover,
         &:hover~.rating__star {
-            background-image: url('../../../assets/icons/star-yellow.svg');
+            &::before {
+                background-color: $yellow;
+            }
         }
     }
 
     &__input:checked~&__star {
-        background-image: url('../../../assets/icons/star-yellow.svg');
+        &::before {
+            background-color: $yellow;
+        }
     }
 }

@@ -32,6 +32,13 @@ const reviewSlider = createSlider(
   ".review-slider__btn--prev"
 );
 
+const productSlider = createSlider(
+  ".product-slider",
+  ".product-slider__dots",
+  ".product-slider__btn--next",
+  ".product-slider__btn--prev"
+);
+
 if (window.innerWidth <= 768) {
 const promoSlider = createSlider(
   ".promo-slider",

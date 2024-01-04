@@ -1,9 +1,16 @@
 .product-gallery {
     display: flex;
+    gap: 30px;
 
     &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         max-width: 610px;
         width: 100%;
+        border-radius: 5px;
+        border: 1px solid $silver-200;
+        background-color: $white;
     }
 
     &__inner {
@@ -57,6 +64,18 @@
         font-size: 24px;
         line-height: 1.2;
         letter-spacing: 0.72px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: $gray;
+        }
     }
 
     &__text {
@@ -70,5 +89,8 @@
         font-size: 20px;
         text-decoration-line: underline;
     }
-}
 
+    &__list {
+        padding: 75px 105px;
+    }
+}

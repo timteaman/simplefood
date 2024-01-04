@@ -1,30 +1,45 @@
-<section class="product-gallery">
+<section class="product-gallery section">
 
+    <div class="product-gallery__wrapper">
 
-        <!-- <div class="swiper product-slider">
+        <div class="swiper product-slider">
 
-            <ul class="swiper-wrapper product-slider__wrapper">
-    
-                @loop('../../../components/cards/product-card/_product-card.html',
-                '../modules/components/cards/product-card/product-card.json')
-    
+            <ul class="swiper-wrapper product-slider__wrapper product-gallery__list">
+
+                @loop('../../../components/cards/image-card/_image-card.html',
+                '../modules/components/cards/image-card/image-card.json')
+
             </ul>
 
             <div class="product-slider__actions slider-actions">
 
                 <button
-                    class="product-slider__btn product-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
-                    type="button"></button>
+                    class="product-slider__btn product-slider__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--chevron-left"
+                    type="button">
+                    <span class="sr-only">
+                        Нерелистнути слайд вліло
+                    </span>
+                </button>
 
-                <div class="product-slider__dots slider-actions__dots"></div>
+                <div class="product-slider__dots slider-actions__dots">
+                    <span class="sr-only">
+                        Навігація по слайдам
+                    </span>
+                </div>
 
                 <button
-                    class="product-slider__btn product-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
-                    type="button"></button>
+                    class="product-slider__btn product-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--chevron-right"
+                    type="button">
+                    <span class="sr-only">
+                        Нерелистнути слайд вправо
+                    </span>
+                </button>
 
             </div>
-    
-        </div> -->
+
+        </div>
+
+    </div>
 
     <div class="product-gallery__inner">
 
@@ -41,11 +56,13 @@
         </span>
 
         <div class="product-gallery__order">
-            @include('../../../components/change-count/_change-count.html')
+
+            @include('../../../components/counter/_counter.html')
 
             <button class="product-gallery__button icon icon--cart">
                 Додати до кошика
             </button>
+
         </div>
 
         <div class="product-gallery__info">
@@ -65,7 +82,9 @@
 
             </div>
 
-            <a class="product-gallery__link link" href="#">Детальніше</a>
+            <a class="product-gallery__link link" href="#">
+                Детальніше
+            </a>
 
         </div>
 

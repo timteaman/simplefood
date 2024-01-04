@@ -1,5 +1,36 @@
 .product-info {
     display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100vw;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        background-color: $gray;
+        position: absolute;
+    }
+
+    &__details-title {
+        display: flex;
+        gap: 60px;
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__box {
+        max-width: 690px;
+    }
 
     &__review {
         display: flex;

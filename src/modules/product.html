@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-@include('./components/head/_head.html')
+@include('./components/head/_head.html', {'title': 'Simple food | Чізбургер з листям салату'})
 
 <body>
 
@@ -13,17 +13,19 @@
 
             @include('./components/breadcrumbs/_breadcrumbs.html')
 
-            <div class="container">
+            <main class="main">
 
-                <main class="main">
+                <div class="container">
 
                     @include('./pages/product/product-gallery/_product-gallery.html')
 
                     @include('./pages/product/product-info/_product-info.html')
 
-                </main>
+                    @include('./pages/product/product-catalog/_product-catalog.html')
 
-            </div>
+                </div>
+
+            </main>
 
             @include('./components/footer/_footer.html')
 

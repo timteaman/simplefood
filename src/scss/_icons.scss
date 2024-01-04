@@ -199,4 +199,11 @@
         }
     }
     
+    &--icon-star {
+        &::before {
+            mask-image: url('../assets/icons/sprite.svg#icon-star');
+        }
+    }
+
+
 }

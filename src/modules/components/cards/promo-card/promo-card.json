@@ -2,19 +2,19 @@
     {
         "restImageUrl": "../assets/images/restaurant/resto_1@2x.webp",
         "resttAlt": "Піцца Блейз",
-        "promoClass": "swiper-slide promo-item",
+        "promoClass": "swiper-slide promo__item",
         "promoText": "Знижка на другу піцу"
     },
     {
         "restImageUrl": "../assets/images/restaurant/resto_2@2x.webp",
         "resttAlt": "Піцца Ранчо",
-        "promoClass": "swiper-slide promo-item",
+        "promoClass": "swiper-slide promo__item",
         "promoText": "Картопелька з KFC задарма при замовленні бургера"
     },
     {
         "restImageUrl": "../assets/images/restaurant/resto_3@2x.webp",
         "resttAlt": "Pizza Hut",
-        "promoClass": "swiper-slide promo-item",
+        "promoClass": "swiper-slide promo__item",
         "promoText": "Чорні бургери на чорний день"
     }
 ]

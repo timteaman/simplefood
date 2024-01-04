@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple food | Каталог страв</title>
+    <title>
+        Simple food | Каталог продуктів
+    </title>
 
     <link href="../assets/icons/favicon/favicon.ico" rel="icon" sizes="48x48">
     <link href="../assets/icons/favicon/favicon.svg" rel="icon" sizes="any" type="image/svg+xml">
@@ -160,27 +162,27 @@
 
     <div class="container">
 
-    <div class="breadcrumbs__inner">
+        <div class="breadcrumbs__inner">
 
-        <ul class="breadcrumbs__list">
+            <ul class="breadcrumbs__list">
 
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link link" href="./index.html">
-                    Головна
-                </a>
-            </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link link" href="./index.html">
+                        Головна
+                    </a>
+                </li>
 
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link link  icon icon--chevron-right" href="./catalog.html">
-                    Каталог продуктів
-                </a>
-            </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link link  icon icon--chevron-right" href="./catalog.html">
+                        Каталог продуктів
+                    </a>
+                </li>
 
-        </ul>
+            </ul>
+
+        </div>
 
     </div>
-
-</div>
 
 </section>
 
@@ -190,26 +192,24 @@
 
                 <section class="catalog section">
 
-    <div class="catalog__inner">
+    <div class="catalog__top">
 
-        <div class="catalog__top">
+        <h1 class="title catalog__title">
+            Каталог продуктів
+        </h1>
 
-            <h1 class="title catalog__title">
-                Каталог продуктів
-            </h1>
+        <div class="catalog__filters">
 
-            <div class="catalog__filters">
+            <button class="catalog__filter-btn icon icon--icon-filters" type="button">
 
-                <button class="catalog__filter-btn icon icon--icon-filters" type="button">
+                <span class="sr-only">
+                    Відктири філтр товарів
+                </span>
 
-                    <span class="sr-only">
-                        Відктири філтр товарів
-                    </span>
+            </button>
 
-                </button>
-
-                <div class="catalog__dropdown">
-                    <div class="dropdown">
+            <div class="catalog__dropdown">
+                <div class="dropdown">
 
     <label for="dropdown1" class="dropdown__text icon icon--chevron-down">За ціною</label>
     <input type="checkbox" id="dropdown1" class="dropdown__toggle">
@@ -246,11 +246,11 @@
     </ul>
 
 </div>
-                </div>
-
             </div>
 
-            <div class="filter-menu">
+        </div>
+
+        <div class="filter-menu">
 
     <nav class="filter-menu__nav">
 
@@ -265,6 +265,7 @@
         </h2>
 
         <ul class="filter-menu__list">
+
             <li class="filter-menu__item">
                 <a class="link" href="#">
                     Бургери
@@ -305,6 +306,7 @@
                     Алкоголь
                 </a>
             </li>
+
         </ul>
 
         <div class="filter-menu__inner">
@@ -339,6 +341,7 @@
     </label>
 
 </div>
+
         </div>
 
         <div class="filter-menu__wrapper">
@@ -372,22 +375,22 @@
     </label>
 
 </div>
-    
+
                 <div class="price-slider"></div>
             </div>
-    
+
         </div>
 
     </nav>
 
 </div>
 
-        </div>
+    </div>
 
-        <div class="catalog__wrapper">
+    <div class="catalog__wrapper">
 
-            <div class="catalog__sidebar">
-                <div class="catalog-categories">
+        <div class="catalog__sidebar">
+            <div class="catalog-categories">
 
     <h3 class="catalog__subtitle">
         Категорії
@@ -447,7 +450,7 @@
 
 </div>
 
-                <div class="catalog-offers">
+            <div class="catalog-offers">
 
     <h2 class="catalog__subtitle">
         Пропозиції
@@ -486,7 +489,7 @@
 
 </div>
 
-                <div class="catalog-price">
+            <div class="catalog-price">
 
     <h3 class="catalog__subtitle">Ціна</h3>
 
@@ -522,13 +525,13 @@
         <div class="price-slider"></div>
 
 </div>
-            </div>
+        </div>
 
-            <div class="catalog__box ">
+        <div class="catalog__box ">
 
-                <ul class="catalog__list">
+            <ul class="catalog__list">
 
-                    <li class="product-list__item" data-category="burgers">
+                <li class="product-list__item" data-category="burgers">
     <article class="product-card">
         <a class="link product-card__link" href="./product.html">
             <img class="product-card__img" src="../assets/images/categories/1@1x.webp" alt="фотографія чізбургера з листям салату" width="140" height="140">
@@ -638,9 +641,9 @@
     </article>
 </li>
 
-                </ul>
+            </ul>
 
-                <div class="pagination">
+            <div class="pagination">
 
     <button class="pagination__btn btn icon icon--chevron-left"></button>
 
@@ -711,14 +714,12 @@
                 10
             </a>
         </li>
-        
+
     </ul>
 
     <button class="pagination__btn btn icon icon--chevron-right"></button>
 
 </div>
-
-            </div>
 
         </div>
 
@@ -768,17 +769,19 @@
 
 </section>
 
-                <section class="section promo">
+                <section class="promo section">
+
+    <h2 class="title promo__title">
+        Акції та знижки
+    </h2>
 
     <div class="promo__inner">
-
-        <h2 class="title promo__title">Акції та знижки</h2>
 
         <div class="swiper promo-slider">
 
             <ul class="swiper-wrapper promo-slider__wrapper promo__list">
 
-                <li class="swiper-slide promo-item">
+                <li class="swiper-slide promo__item">
 
     <article class="rest-card promo-card">
 
@@ -792,7 +795,7 @@
 
     </article>
 
-</li><li class="swiper-slide promo-item">
+</li><li class="swiper-slide promo__item">
 
     <article class="rest-card promo-card">
 
@@ -806,7 +809,7 @@
 
     </article>
 
-</li><li class="swiper-slide promo-item">
+</li><li class="swiper-slide promo__item">
 
     <article class="rest-card promo-card">
 
@@ -827,9 +830,15 @@
         </div>
 
         <div class="promo-slider__actions slider-actions">
-            <div class="promo-slider__dots slider-actions__dots"></div>
+            <div class="promo-slider__dots slider-actions__dots">
+                <span class="sr-only">
+                    Навігація по слайдам
+                </span>
+            </div>
         </div>
 
+    </div>
+    
     </div>
 
 </section>

@@ -1,14 +1,22 @@
 .promo {
-    display: flex;
-
     &__title {
+        text-align: left;
         @include r($r-md) {
             margin-bottom: 30px;
         }
     }
 
+    &__inner {
+        display: flex;
+    }
+
     &__list {
         display: flex;
         gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        width: fit-content;
     }
 }
