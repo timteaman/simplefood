@@ -21,6 +21,11 @@
         line-height: 1.5;
         margin-bottom: 30px;
     }
+    &__details-text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
     &__inner {
         display: flex;

@@ -28,7 +28,7 @@
 
         <nav class="menu">
 
-            <a class="logo header__logo" href="#hero">
+            <a class="logo header__logo" href="./index.html">
                 <img class="logo__img" src="./assets/images/logo.svg" alt="Логотип компанії" width="200" height="39">
             </a>
 
@@ -87,11 +87,11 @@
 
         <ul class="menu__list mobile-menu__list">
             <li class="menu__item mobile-menu__item">
-                <a class="menu__link menu__link--active mobile-menu__link" href="#header">Головна</a>
+                <a class="menu__link menu__link--active mobile-menu__link" href="./index.html">Головна</a>
             </li>
 
             <li class="menu__item  mobile-menu__item">
-                <a class="menu__link mobile-menu__link" href="#categories">Страви</a>
+                <a class="menu__link mobile-menu__link" href="./catalog.html">Страви</a>
             </li>
 
             <li class="menu__item  mobile-menu__item">
@@ -158,37 +158,32 @@
     </div>
 </header>
 
-        <section class="breadcrumbs">
-
-    <div class="container">
-
-        <div class="breadcrumbs__inner">
-
-            <ul class="breadcrumbs__list">
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link link" href="./index.html">
-                        Головна
-                    </a>
-                </li>
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link link  icon icon--chevron-right" href="./catalog.html">
-                        Каталог продуктів
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
         <main class="main">
 
             <div class="container">
+
+                <div class="breadcrumbs">
+
+        <ul class="breadcrumbs__list">
+
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current link" href="./index.html">
+                    Головна
+                </a>
+            </li>
+
+            
+
+            
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current">
+                    Каталог продуктів
+                </a>
+            </li>
+            
+        </ul>
+
+</div>
 
                 <section class="catalog section">
 
@@ -203,193 +198,81 @@
             <button class="catalog__filter-btn icon icon--icon-filters" type="button">
 
                 <span class="sr-only">
-                    Відктири філтр товарів
+                    Відктири фільтр товарів
                 </span>
 
             </button>
 
             <div class="catalog__dropdown">
+
                 <div class="dropdown">
 
-    <label for="dropdown1" class="dropdown__text icon icon--chevron-down">За ціною</label>
-    <input type="checkbox" id="dropdown1" class="dropdown__toggle">
+    <label for="dopdown1" class="dropdown__text icon icon--chevron-down">
+        За ціною
+    </label>
+    <input type="checkbox" id="dopdown1" class="dropdown__toggle">
 
     <ul class="dropdown__content">
         <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">За ціною</button>
-        </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">За назвою</button>
-        </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">За розміром</button>
-        </li>
-    </ul>
-
-</div>
-
-<div class="dropdown">
-
-    <label for="dropdown2" class="dropdown__text icon icon--chevron-down">По 12</label>
-    <input type="checkbox" id="dropdown2" class="dropdown__toggle">
-
-    <ul class="dropdown__content">
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">По 12</button>
-        </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">По 8</button>
-        </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">По 4</button>
-        </li>
-    </ul>
-
-</div>
-            </div>
-
-        </div>
-
-        <div class="filter-menu">
-
-    <nav class="filter-menu__nav">
-
-        <div class="filter-menu__box">
-            <button class="filter-menu__close icon icon--burger-close" type="button">
-                <span class="sr-only">Закрити меню</span>
+            <button class="dropdown__btn" href="#">
+                За ціною
             </button>
-        </div>
-
-        <h2 class="filter-menu__title">
-            Категорії
-        </h2>
-
-        <ul class="filter-menu__list">
-
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Бургери
-                </a>
-            </li>
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Піца
-                </a>
-            </li>
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Сендвічі
-                </a>
-            </li>
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Азійська кухня
-                </a>
-            </li>
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Сети
-                </a>
-            </li>
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Європейська кухня
-                </a>
-            </li>
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Напої
-                </a>
-            </li>
-            <li class="filter-menu__item">
-                <a class="link" href="#">
-                    Алкоголь
-                </a>
-            </li>
-
-        </ul>
-
-        <div class="filter-menu__inner">
-
-            <h2 class="filter-menu__title">
-                Пропозиції
-            </h2>
-
-            <div class="checkbox">
-
-    <input type="checkbox" id="discountCheckbox" class="checkbox__input">
-    <label for="discountCheckbox" class="checkbox__label icon icon--check">
-        Зі знижкою
-    </label>
+        </li>
+        <li class="dropdown__item">
+            <button class="dropdown__btn" href="#">
+                За назвою
+            </button>
+        </li>
+        <li class="dropdown__item">
+            <button class="dropdown__btn" href="#">
+                За розміром
+            </button>
+        </li>
+    </ul>
 
 </div>
 
-<div class="checkbox">
+                <div class="dropdown">
 
-    <input type="checkbox" id="newCheckbox" class="checkbox__input">
-    <label for="newCheckbox" class="checkbox__label icon icon--check">
-        Новинка
+    <label for="dopdown2" class="dropdown__text icon icon--chevron-down">
+        По 12
     </label>
+    <input type="checkbox" id="dopdown2" class="dropdown__toggle">
+
+    <ul class="dropdown__content">
+        <li class="dropdown__item">
+            <button class="dropdown__btn" href="#">
+                За ціною
+            </button>
+        </li>
+        <li class="dropdown__item">
+            <button class="dropdown__btn" href="#">
+                За назвою
+            </button>
+        </li>
+        <li class="dropdown__item">
+            <button class="dropdown__btn" href="#">
+                За розміром
+            </button>
+        </li>
+    </ul>
 
 </div>
 
-<div class="checkbox">
-
-    <input type="checkbox" id="seasonHitCheckbox" class="checkbox__input">
-    <label for="seasonHitCheckbox" class="checkbox__label icon icon--check">
-        Хіт сезону
-    </label>
-
-</div>
-
-        </div>
-
-        <div class="filter-menu__wrapper">
-
-            <h2 class="filter-menu__title">
-                Ціна
-            </h2>
-
-            <div class="filter-menu__container">
-                <div class="price">
-
-    <label class="price__label" for="minPrice">
-        <span class="price__text">
-            від
-        </span>
-        <input class="price__input" type="number" id="minPrice" name="minPrice" min="1" step="1" max="9999" value="100">
-        <span class="price__text">
-            &#8372;
-        </span>
-    </label>
-
-    <label class="price__label" for="maxPrice">
-        <span class="price__text">
-            до
-        </span>
-        <input class="price__input" type="number" id="maxPrice" name="maxPrice" min="1" step="1" max="9999"
-            value="1000">
-        <span class="price__text">
-            &#8372;
-        </span>
-    </label>
-
-</div>
-
-                <div class="price-slider"></div>
             </div>
 
         </div>
-
-    </nav>
-
-</div>
 
     </div>
 
     <div class="catalog__wrapper">
 
-        <aside class="catalog__sidebar">
+        <section class="catalog__sidebar">
+
+            <button class="catalog__btn-close burger__close icon icon--burger-close" type="button">
+                <span class="sr-only">Закрити меню</span>
+            </button>
+
             <div class="catalog-categories">
 
     <h3 class="catalog__subtitle">
@@ -460,30 +343,33 @@
 
         <div class="checkbox">
 
-    <input type="checkbox" id="discountCheckbox" class="checkbox__input">
-    <label for="discountCheckbox" class="checkbox__label icon icon--check">
+    <input type="checkbox" id="discount" class="checkbox__input">
+    <label for="discount" class="checkbox__label">
         Зі знижкою
     </label>
 
 </div>
 
-<div class="checkbox">
 
-    <input type="checkbox" id="newCheckbox" class="checkbox__input">
-    <label for="newCheckbox" class="checkbox__label icon icon--check">
+        <div class="checkbox">
+
+    <input type="checkbox" id="newProuct" class="checkbox__input">
+    <label for="newProuct" class="checkbox__label">
         Новинка
     </label>
 
 </div>
 
-<div class="checkbox">
 
-    <input type="checkbox" id="seasonHitCheckbox" class="checkbox__input">
-    <label for="seasonHitCheckbox" class="checkbox__label icon icon--check">
+        <div class="checkbox">
+
+    <input type="checkbox" id="seasonHit" class="checkbox__input">
+    <label for="seasonHit" class="checkbox__label">
         Хіт сезону
     </label>
 
 </div>
+
 
     </div>
 
@@ -525,9 +411,10 @@
         <div class="price-slider"></div>
 
 </div>
-        </aside>
 
-        <div class="catalog__box ">
+        </section>
+
+        <section class="catalog__box ">
 
             <ul class="catalog__list">
 
@@ -721,7 +608,7 @@
 
 </div>
 
-        </div>
+        </section>
 
     </div>
 
@@ -775,13 +662,11 @@
         Акції та знижки
     </h2>
 
-    <div class="promo__inner">
+    <div class="swiper promo-slider">
 
-        <div class="swiper promo-slider">
+        <ul class="swiper-wrapper promo-slider__wrapper promo__list">
 
-            <ul class="swiper-wrapper promo-slider__wrapper promo__list">
-
-                <li class="swiper-slide promo__item">
+            <li class="swiper-slide promo__item">
 
     <article class="rest-card promo-card">
 
@@ -825,20 +710,16 @@
 
 </li>
 
-            </ul>
-
-        </div>
-
-        <div class="promo-slider__actions slider-actions">
-            <div class="promo-slider__dots slider-actions__dots">
-                <span class="sr-only">
-                    Навігація по слайдам
-                </span>
-            </div>
-        </div>
+        </ul>
 
     </div>
-    
+
+    <div class="promo-slider__actions slider-actions">
+        <div class="promo-slider__dots slider-actions__dots">
+            <span class="sr-only">
+                Навігація по слайдам
+            </span>
+        </div>
     </div>
 
 </section>

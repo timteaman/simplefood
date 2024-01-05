@@ -25,6 +25,8 @@
         cursor: pointer;
         outline: 1px solid transparent;
         transition: color 0.4s;
+        @extend .icon;
+        @extend .icon--check;
 
         &:hover,
         &:focus {

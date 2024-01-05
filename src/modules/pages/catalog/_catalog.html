@@ -11,32 +11,46 @@
             <button class="catalog__filter-btn icon icon--icon-filters" type="button">
 
                 <span class="sr-only">
-                    Відктири філтр товарів
+                    Відктири фільтр товарів
                 </span>
 
             </button>
 
             <div class="catalog__dropdown">
-                @include('../../components/dropdown/_dropdown.html')
+
+                @include('../../components/dropdown/_dropdown.html', {
+                    dropdownTitle: 'За ціною',
+                    dropdownId: 'dopdown1'
+                })
+
+                @include('../../components/dropdown/_dropdown.html', {
+                    dropdownTitle: 'По 12',
+                    dropdownId: 'dopdown2'
+                })
+
             </div>
 
         </div>
-
-        @include('../../components/filter-menu/_filter-menu.html')
 
     </div>
 
     <div class="catalog__wrapper">
 
-        <aside class="catalog__sidebar">
+        <section class="catalog__sidebar">
+
+            <button class="catalog__btn-close burger__close icon icon--burger-close" type="button">
+                <span class="sr-only">Закрити меню</span>
+            </button>
+
             @include('./catalog-categories/_catalog-categories.html')
 
             @include('./catalog-offers/_catalog-offers.html')
 
             @include('./catalog-price/_catalog-price.html')
-        </aside>
 
-        <div class="catalog__box ">
+        </section>
+
+        <section class="catalog__box ">
 
             <ul class="catalog__list">
 
@@ -47,7 +61,7 @@
 
             @include('../../components/pagination/_pagination.html')
 
-        </div>
+        </section>
 
     </div>
 

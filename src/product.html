@@ -30,7 +30,7 @@
 
         <nav class="menu">
 
-            <a class="logo header__logo" href="#hero">
+            <a class="logo header__logo" href="./index.html">
                 <img class="logo__img" src="./assets/images/logo.svg" alt="Логотип компанії" width="200" height="39">
             </a>
 
@@ -89,11 +89,11 @@
 
         <ul class="menu__list mobile-menu__list">
             <li class="menu__item mobile-menu__item">
-                <a class="menu__link menu__link--active mobile-menu__link" href="#header">Головна</a>
+                <a class="menu__link menu__link--active mobile-menu__link" href="./index.html">Головна</a>
             </li>
 
             <li class="menu__item  mobile-menu__item">
-                <a class="menu__link mobile-menu__link" href="#categories">Страви</a>
+                <a class="menu__link mobile-menu__link" href="./catalog.html">Страви</a>
             </li>
 
             <li class="menu__item  mobile-menu__item">
@@ -160,37 +160,37 @@
     </div>
 </header>
 
-            <section class="breadcrumbs">
-
-    <div class="container">
-
-        <div class="breadcrumbs__inner">
-
-            <ul class="breadcrumbs__list">
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link link" href="./index.html">
-                        Головна
-                    </a>
-                </li>
-
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link link  icon icon--chevron-right" href="./catalog.html">
-                        Каталог продуктів
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
             <main class="main">
 
                 <div class="container">
+
+                    <div class="breadcrumbs">
+
+        <ul class="breadcrumbs__list">
+
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current link" href="./index.html">
+                    Головна
+                </a>
+            </li>
+
+            
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current" href="./catalog.html">
+                    Каталог продуктів
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current">
+                    Сторінка продукта
+                </a>
+            </li>
+            
+
+            
+        </ul>
+
+</div>
 
                     <section class="product-gallery section">
 
@@ -231,12 +231,6 @@
                         Нерелистнути слайд вліло
                     </span>
                 </button>
-
-                <div class="product-slider__dots slider-actions__dots">
-                    <span class="sr-only">
-                        Навігація по слайдам
-                    </span>
-                </div>
 
                 <button
                     class="product-slider__btn product-slider__btn--next slider-actions__btn slider-actions__btn--next icon icon--chevron-right"
@@ -328,7 +322,9 @@
 
     <div class="product-info__inner">
 
-        <div class="product-info__details-title">
+        <ul class="product-info__details-title">
+
+            <li></li>
 
             <a class="product-info__link link" href="#" >
                 Опис
@@ -342,7 +338,7 @@
                 Відгуки (2)
             </a>
     
-        </div>
+        </ul>
 
         <div class="product-info__box">
 
@@ -350,8 +346,13 @@
                 <p>
                     Рубаний біфштекс із натуральної яловичини на карамелізованій булочці, зі скибочкою сиру "Чеддер",
                     кетчупом,
-                    гірчицею, цибулею та маринованими огірочками.
-                    Алергени: глютен, молоко, гірчиця. Може містити сою, яйце, сліди кунжуту
+                </p>
+
+                <p>
+                    Алергени: глютен, молоко, гірчиця. Може містити сою, яйце, сліди кунжуту.
+                </p>
+
+                <p>
                     Зовнішній вигляд товару може відрізнятися від зображень, представлених на сайті.
                 </p>
             </div>
@@ -680,12 +681,12 @@
     </a>
 </footer>
 
-            <script src="./js/swiperjs.min.js"></script>
-            <script src="./js/main.js"></script>
-
         </div>
 
     </div>
+
+    <script src="./js/swiperjs.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 

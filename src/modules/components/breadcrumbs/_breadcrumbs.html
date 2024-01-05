@@ -1,27 +1,33 @@
-<section class="breadcrumbs">
+<div class="breadcrumbs">
 
-    <div class="container">
+        <ul class="breadcrumbs__list">
 
-        <div class="breadcrumbs__inner">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current link" href="./index.html">
+                    Головна
+                </a>
+            </li>
 
-            <ul class="breadcrumbs__list">
+            @if (third) {
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current" href="./catalog.html">
+                    Каталог продуктів
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current">
+                    @thirdElement
+                </a>
+            </li>
+            }
 
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link link" href="./index.html">
-                        Головна
-                    </a>
-                </li>
+            @if (!third) {
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current">
+                    Каталог продуктів
+                </a>
+            </li>
+            }
+        </ul>
 
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link link  icon icon--chevron-right" href="./catalog.html">
-                        Каталог продуктів
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
+</div>

@@ -4,29 +4,23 @@
         Акції та знижки
     </h2>
 
-    <div class="promo__inner">
+    <div class="swiper promo-slider">
 
-        <div class="swiper promo-slider">
+        <ul class="swiper-wrapper promo-slider__wrapper promo__list">
 
-            <ul class="swiper-wrapper promo-slider__wrapper promo__list">
+            @loop('../../../components/cards/promo-card/_promo-card.html',
+            '../modules/components/cards/promo-card/promo-card.json')
 
-                @loop('../../../components/cards/promo-card/_promo-card.html',
-                '../modules/components/cards/promo-card/promo-card.json')
-
-            </ul>
-
-        </div>
-
-        <div class="promo-slider__actions slider-actions">
-            <div class="promo-slider__dots slider-actions__dots">
-                <span class="sr-only">
-                    Навігація по слайдам
-                </span>
-            </div>
-        </div>
+        </ul>
 
     </div>
-    
+
+    <div class="promo-slider__actions slider-actions">
+        <div class="promo-slider__dots slider-actions__dots">
+            <span class="sr-only">
+                Навігація по слайдам
+            </span>
+        </div>
     </div>
 
 </section>

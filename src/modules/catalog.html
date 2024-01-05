@@ -9,11 +9,14 @@
 
         @include('./components/header/_header.html')
 
-        @include('./components/breadcrumbs/_breadcrumbs.html')
-
         <main class="main">
 
             <div class="container">
+
+                @include('./components/breadcrumbs/_breadcrumbs.html', {
+                    className: 'new-class',
+                    third: false
+                })
 
                 @include('./pages/catalog/_catalog.html')
 

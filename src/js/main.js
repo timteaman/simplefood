@@ -1,8 +1,8 @@
 "use strict";
 // swiperJS
 
-function createSlider(selector, paginationEl, nextBtn, prevBtn) {
-  return new Swiper(selector, {
+function createSlider(selector, options = {}) {
+  const defaultOptions = {
     direction: "horizontal",
     loop: true,
     lazyLoading: true,
@@ -11,60 +11,101 @@ function createSlider(selector, paginationEl, nextBtn, prevBtn) {
       disableOnInteraction: false,
     },
     pagination: {
-      el: paginationEl,
+      el: ".slider-actions__dots",
       bulletClass: "slider-actions__dot",
       bulletActiveClass: "slider-actions__dot--active",
       clickable: true,
     },
     navigation: {
-      nextEl: nextBtn,
-      prevEl: prevBtn,
+      nextEl: ".slider-btn--next",
+      prevEl: ".slider-btn--prev",
     },
     spaceBetween: 20,
-    centeredSliders: true,
+    centeredSlides: true,
+  };
+
+  const mergedOptions = { ...defaultOptions, ...options };
+
+  return new Swiper(selector, mergedOptions);
+}
+
+if (window.innerWidth <= 768) {
+  const restaurantSlider = createSlider(".restaurant-slider", {
+    pagination: {
+      el: ".restaurant-slider__dots",
+    },
+    navigation: {
+      nextEl: ".restaurant-slider__btn--next",
+      prevEl: ".restaurant-slider__btn--prev",
+    },
+    loop: false,
+    lazyLoading: false,
   });
 }
 
-const reviewSlider = createSlider(
-  ".review-slider",
-  ".review-slider__dots",
-  ".review-slider__btn--next",
-  ".review-slider__btn--prev"
-);
+const reviewSlider = createSlider(".review-slider", {
+  pagination: {
+    el: ".review-slider__dots",
+  },
+  navigation: {
+    nextEl: ".review-slider__btn--next",
+    prevEl: ".review-slider__btn--prev",
+  }
+});
 
-const productSlider = createSlider(
-  ".product-slider",
-  ".product-slider__dots",
-  ".product-slider__btn--next",
-  ".product-slider__btn--prev"
-);
+const productSlider = createSlider(".product-slider", {
+  pagination: {
+    el: ".product-slider__dots",
+    // Уникальные параметры пагинации для productSlider, если нужно
+  },
+  navigation: {
+    nextEl: ".product-slider__btn--next",
+    prevEl: ".product-slider__btn--prev",
+    // Уникальные параметры навигации для productSlider, если нужно
+  },
+  slidesPerView: 1
+});
 
-const productCatalogSlider = createSlider(
-  ".product-catalog-slider",
-  ".review-slider__dots",
-  ".review-slider__btn--next",
-  ".review-slider__btn--prev"
-);
+const productCatalogSlider = createSlider(".product-catalog-slider", {
+  pagination: {
+    el: ".product-catalog-slider__dots",
+  },
+  navigation: {
+    nextEl: ".product-catalog-slider__btn--next",
+    prevEl: ".product-catalog-slider__btn--prev",
+  },
+  slidesPerView: 5
+});
 
-if (window.innerWidth <= 768) {
-const promoSlider = createSlider(
-  ".promo-slider",
-  ".promo-slider__dots",
-  ".promo-slider__btn--next",
-  ".promo-slider__btn--prev"
-);
+let slidesPerViewValue = 1; 
+
+if (window.innerWidth <= 1200) {
+  slidesPerViewValue = 3; 
+}
+
+if (window.innerWidth <= 992) {
+  slidesPerViewValue = 2; 
 }
 
 if (window.innerWidth <= 768) {
-  const restaurantSlider = createSlider(
-    ".restaurant-slider",
-    ".restaurant-slider__dots",
-    ".restaurant-slider__btn--next",
-    ".restaurant-slider__btn--prev"
-  );
+  slidesPerViewValue = 1; 
 }
 
-// main mobile menu
+if (window.innerWidth <= 1200) {
+  const promoSlider = createSlider(".promo-slider", {
+    pagination: {
+      el: ".promo-slider__dots",
+    },
+    navigation: {
+      nextEl: ".promo-slider__btn--next",
+      prevEl: ".promo-slider__btn--prev",
+    },
+    spaceBetween: 20,
+    slidesPerView: slidesPerViewValue // Устанавливаем slidesPerView в зависимости от условия
+  });
+}
+
+// mobile menu
 
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".burger");
@@ -97,23 +138,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 // filter mobile menu
 
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".catalog__filter-btn");
-  const mobileMenu = document.querySelector(".filter-menu__nav");
+  const mobileMenu = document.querySelector(".catalog__sidebar");
   const bodyLock = document.querySelector("body");
-  const closeBtn = document.querySelector(".filter-menu__close");
+  const closeBtn = document.querySelector(".catalog__btn-close");
 
   burger.addEventListener("click", () => {
     burger.classList.add("catalog__filter-btn--active");
-    mobileMenu.classList.add("filter-menu__nav--active");
+    mobileMenu.classList.add("catalog__sidebar--active");
     bodyLock.classList.add("lock");
   });
 
   closeBtn.addEventListener("click", () => {
     burger.classList.remove("catalog__filter-btn--active");
-    mobileMenu.classList.remove("filter-menu__nav--active");
+    mobileMenu.classList.remove("catalog__sidebar--active");
     bodyLock.classList.remove("lock");
   });
 
@@ -121,10 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", function (e) {
     if (
       !e.target.closest(".catalog__filter-btn") &&
-      !e.target.closest(".filter-menu__nav")
+      !e.target.closest(".catalog__sidebar")
     ) {
       burger.classList.remove("catalog__filter-btn--active");
-      mobileMenu.classList.remove("filter-menu__nav--active");
+      mobileMenu.classList.remove("catalog__sidebar--active");
       bodyLock.classList.remove("lock");
     }
   });

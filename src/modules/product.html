@@ -11,11 +11,15 @@
 
             @include('./components/header/_header.html')
 
-            @include('./components/breadcrumbs/_breadcrumbs.html')
-
             <main class="main">
 
                 <div class="container">
+
+                    @include('./components/breadcrumbs/_breadcrumbs.html',{
+                        className: 'new-class',
+                        third: true,
+                        thirdElement: 'Сторінка продукта'
+                    })
 
                     @include('./pages/product/product-gallery/_product-gallery.html')
 
@@ -29,12 +33,12 @@
 
             @include('./components/footer/_footer.html')
 
-            <script src="./js/swiperjs.min.js"></script>
-            <script src="./js/main.js"></script>
-
         </div>
 
     </div>
+
+    <script src="./js/swiperjs.min.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 
