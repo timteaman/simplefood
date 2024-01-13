@@ -1,10 +1,13 @@
 .product-catalog {
-    &__list {
-        display: flex;
-    }
 
-    // &__wrapper {
-    //     display: grid;
-    //     grid-template-columns: repeat(1, minmax(0, 1fr));
-    // }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 66px;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
 }

@@ -11,6 +11,7 @@
   "devDependencies": {
     "@barba/core": "^2.9.7",
     "browser-sync": "^2.29.3",
+    "choices.js": "^10.2.0",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",

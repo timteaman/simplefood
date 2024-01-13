@@ -19,13 +19,17 @@
             <div class="catalog__dropdown">
 
                 @include('../../components/dropdown/_dropdown.html', {
-                    dropdownTitle: 'За ціною',
-                    dropdownId: 'dopdown1'
+                dropdownTitle: 'За калорійністю',
+                activeClass1: 'active', value1: 'За калорійністю',
+                activeClass2: '', value2: 'За розміром',
+                activeClass3: '', value3: 'По типу'
                 })
 
                 @include('../../components/dropdown/_dropdown.html', {
-                    dropdownTitle: 'По 12',
-                    dropdownId: 'dopdown2'
+                dropdownTitle: 'По 10',
+                activeClass1: 'active', value1: 'По 10',
+                activeClass2: '', value2: 'По 8',
+                activeClass3: '', value3: 'По 6'
                 })
 
             </div>

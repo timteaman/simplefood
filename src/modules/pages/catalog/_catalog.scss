@@ -66,6 +66,10 @@
     &__dropdown {
         display: flex;
         gap: 20px;
+
+        @include r($r-xs) {
+            gap: 5px;
+        }
     }
 
     &__wrapper {

@@ -1,33 +1,33 @@
 <div class="breadcrumbs">
 
-        <ul class="breadcrumbs__list">
+    <ul class="breadcrumbs__list">
 
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current link" href="./index.html">
-                    Головна
-                </a>
-            </li>
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current" href="./index.html">
+                Головна
+            </a>
+        </li>
 
-            @if (third) {
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current" href="./catalog.html">
-                    Каталог продуктів
-                </a>
-            </li>
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current">
-                    @thirdElement
-                </a>
-            </li>
-            }
+        @if (third) {
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current icon icon--chevron-right" href="./catalog.html">
+                Каталог продуктів
+            </a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current icon icon--chevron-right">
+                @thirdElement
+            </a>
+        </li>
+        }
 
-            @if (!third) {
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current">
-                    Каталог продуктів
-                </a>
-            </li>
-            }
-        </ul>
+        @if (!third) {
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current icon icon--chevron-right">
+                Каталог продуктів
+            </a>
+        </li>
+        }
+    </ul>
 
 </div>

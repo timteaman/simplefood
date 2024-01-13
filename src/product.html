@@ -166,29 +166,29 @@
 
                     <div class="breadcrumbs">
 
-        <ul class="breadcrumbs__list">
+    <ul class="breadcrumbs__list">
 
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current link" href="./index.html">
-                    Головна
-                </a>
-            </li>
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current" href="./index.html">
+                Головна
+            </a>
+        </li>
 
-            
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current" href="./catalog.html">
-                    Каталог продуктів
-                </a>
-            </li>
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current">
-                    Сторінка продукта
-                </a>
-            </li>
-            
+        
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current icon icon--chevron-right" href="./catalog.html">
+                Каталог продуктів
+            </a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current icon icon--chevron-right">
+                Сторінка продукта
+            </a>
+        </li>
+        
 
-            
-        </ul>
+        
+    </ul>
 
 </div>
 
@@ -324,20 +324,24 @@
 
         <ul class="product-info__details-title">
 
-            <li></li>
+            <li class="product-info__details">
+                <a class="product-info__link product-info__link--active link" href="#">
+                    Опис
+                </a>
+            </li>
 
-            <a class="product-info__link link" href="#" >
-                Опис
-            </a>
-        
-            <a class="product-info__link link" href="#" >
-                Характеристики
-            </a>
-        
-            <a class="product-info__link link" href="#" >
-                Відгуки (2)
-            </a>
-    
+            <li class="product-info__details">
+                <a class="product-info__link link" href="#">
+                    Характеристики
+                </a>
+            </li>
+
+            <li class="product-info__details">
+                <a class="product-info__link link" href="#">
+                    Відгуки (2)
+                </a>
+            </li>
+
         </ul>
 
         <div class="product-info__box">
@@ -421,9 +425,33 @@
 
                     <div class="product-catalog section">
 
-    <h2 class="title">
-        Вас може зацікавити
-    </h2>
+    <div class="product-catalog__inner">
+
+        <h2 class="product-catalog__title title">
+            Вас може зацікавити
+        </h2>
+
+        <div class="product-catalog__actions slider-actions">
+
+            <button
+                class="product-catalog__btn product-catalog__btn--prev slider-actions__btn slider-actions__btn--prev icon icon--prev"
+                type="button">
+                <span class="sr-only">
+                    Нерелистнути слайд вліло
+                </span>
+            </button>
+
+            <button
+                class="product-catalog__btn product-catalog__btn--next slider-actions__btn slider-actions__btn--next icon icon--next"
+                type="button">
+                <span class="sr-only">
+                    Нерелистнути слайд вправо
+                </span>
+            </button>
+
+        </div>
+
+    </div>
 
     <div class="swiper product-catalog-slider">
 

@@ -30,8 +30,7 @@ ol,
 li,
 figure,
 figcaption,
-blockquote
-{
+blockquote {
     margin: 0;
     font: inherit;
 }
@@ -41,7 +40,8 @@ label {
     font: inherit;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 

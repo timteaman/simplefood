@@ -1,3 +1,7 @@
+.swiper-wrapper {
+    padding: 1px 0;
+}
+
 .slider-actions {
     display: flex;
     justify-content: center;
@@ -112,6 +116,7 @@
         z-index: 999;
         border: none;
         padding: 10px 15px;
+
         &::before {
             width: 18px;
             height: 30px;

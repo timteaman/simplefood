@@ -1,25 +1,23 @@
 <div class="dropdown">
 
-    <label for="@dropdownId" class="dropdown__text icon icon--chevron-down">
-        @dropdownTitle
-    </label>
-    <input type="checkbox" id="@dropdownId" class="dropdown__toggle">
+    <div class="dropdown__select icon icon--chevron-down">
 
-    <ul class="dropdown__content">
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За ціною
-            </button>
+        <span class="dropdown__selected">
+            @dropdownTitle
+        </span>
+
+    </div>
+
+    <ul class="dropdown__menu dropdown__menu--open">
+
+        <li class="dropdown__item @activeClass1">
+            @value1
         </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За назвою
-            </button>
+        <li class="dropdown__item @activeClass2">
+            @value2
         </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За розміром
-            </button>
+        <li class="dropdown__item @activeClass3">
+            @value3
         </li>
     </ul>
 

@@ -164,24 +164,24 @@
 
                 <div class="breadcrumbs">
 
-        <ul class="breadcrumbs__list">
+    <ul class="breadcrumbs__list">
 
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current link" href="./index.html">
-                    Головна
-                </a>
-            </li>
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current" href="./index.html">
+                Головна
+            </a>
+        </li>
 
-            
+        
 
-            
-            <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link breadcrumbs__link--current">
-                    Каталог продуктів
-                </a>
-            </li>
-            
-        </ul>
+        
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current icon icon--chevron-right">
+                Каталог продуктів
+            </a>
+        </li>
+        
+    </ul>
 
 </div>
 
@@ -207,26 +207,24 @@
 
                 <div class="dropdown">
 
-    <label for="dopdown1" class="dropdown__text icon icon--chevron-down">
-        За ціною
-    </label>
-    <input type="checkbox" id="dopdown1" class="dropdown__toggle">
+    <div class="dropdown__select icon icon--chevron-down">
 
-    <ul class="dropdown__content">
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За ціною
-            </button>
+        <span class="dropdown__selected">
+            За калорійністю
+        </span>
+
+    </div>
+
+    <ul class="dropdown__menu dropdown__menu--open">
+
+        <li class="dropdown__item active">
+            За калорійністю
         </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За назвою
-            </button>
+        <li class="dropdown__item ">
+            За розміром
         </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За розміром
-            </button>
+        <li class="dropdown__item ">
+            По типу
         </li>
     </ul>
 
@@ -234,26 +232,24 @@
 
                 <div class="dropdown">
 
-    <label for="dopdown2" class="dropdown__text icon icon--chevron-down">
-        По 12
-    </label>
-    <input type="checkbox" id="dopdown2" class="dropdown__toggle">
+    <div class="dropdown__select icon icon--chevron-down">
 
-    <ul class="dropdown__content">
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За ціною
-            </button>
+        <span class="dropdown__selected">
+            По 10
+        </span>
+
+    </div>
+
+    <ul class="dropdown__menu dropdown__menu--open">
+
+        <li class="dropdown__item active">
+            По 10
         </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За назвою
-            </button>
+        <li class="dropdown__item ">
+            По 8
         </li>
-        <li class="dropdown__item">
-            <button class="dropdown__btn" href="#">
-                За розміром
-            </button>
+        <li class="dropdown__item ">
+            По 6
         </li>
     </ul>
 
@@ -379,9 +375,9 @@
 
     <h3 class="catalog__subtitle">Ціна</h3>
 
-        <form class="catalog-price__form" action="#">
+    <form class="catalog-price__form" action="#">
 
-            <div class="price">
+        <div class="price">
 
     <label class="price__label" for="minPrice">
         <span class="price__text">
@@ -406,9 +402,9 @@
 
 </div>
 
-        </form>
+    </form>
 
-        <div class="price-slider"></div>
+    <div class="price-slider"></div>
 
 </div>
 
