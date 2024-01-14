@@ -36,6 +36,10 @@
             height: 10px;
             background-color: $gray;
         }
+
+        &--current {
+            color: $orange-900;
+        }
     }
 
 }

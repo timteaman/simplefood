@@ -5,31 +5,31 @@
         <ul class="product-info__details-title">
 
             <li class="product-info__details">
-                <a class="product-info__link product-info__link--active link" href="#">
+                <button class="product-info__btn product-info__btn--active link"
+                    data-content="product-info__details-text" onclick="showContent(this)">
                     Опис
-                </a>
+                </button>
             </li>
 
             <li class="product-info__details">
-                <a class="product-info__link link" href="#">
+                <button class="product-info__btn link" data-content="product-info__traits" onclick="showContent(this)">
                     Характеристики
-                </a>
+                </button>
             </li>
 
             <li class="product-info__details">
-                <a class="product-info__link link" href="#">
+                <button class="product-info__btn link" data-content="product-info__review" onclick="showContent(this)">
                     Відгуки (2)
-                </a>
+                </button>
             </li>
 
         </ul>
 
-        <div class="product-info__box">
-
+        <div class="product-info__box active" id="product-info__details-text">
             <div class="product-info__details-text">
                 <p>
                     Рубаний біфштекс із натуральної яловичини на карамелізованій булочці, зі скибочкою сиру "Чеддер",
-                    кетчупом,
+                    кетчупом, гірчицею, цибулею та маринованими огірочками.
                 </p>
 
                 <p>
@@ -40,13 +40,10 @@
                     Зовнішній вигляд товару може відрізнятися від зображень, представлених на сайті.
                 </p>
             </div>
-
         </div>
 
-        <!-- <div class="product-info__traits">
-
+        <div class="product-info__traits" id="product-info__traits">
             <div class="product-info__wrapper">
-
                 <span class="product-info__traits-parameter">
                     Діаметр:
                     <span class="product-info__traits-value">
@@ -75,19 +72,69 @@
                     </span>
                 </span>
             </div>
+        </div>
+
+        <div class="product-info__review" id="product-info__review">
+
+            <h2 class="product-info__review-title">
+                Думки наших клієнтів
+            </h2>
+
+            <div class="product-info__review-box">
+
+                <div class="product-info__review-inner">
+
+                    <span class="product-info__review-user">
+                        Андрій
+                    </span>
+
+                    @include('../../../components/rating/_rating.html')
+
+                </div>
+
+                <span class="product-info__review-date">
+                    10.06.2021
+                </span>
+
+                <div class="product-info__review-text">
+                    <p>
+                        Доставили швидко. Товар свіжий та дуже смачний, буду ще обов’язково куштувати!
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="product-info__review-box">
+
+                <div class="product-info__review-inner">
+
+                    <span class="product-info__review-user">
+                        Катерина Біла
+                    </span>
+
+                    @include('../../../components/rating/_rating.html')
+
+                </div>
+
+
+
+                <span class="product-info__review-date">
+                    7.06.2021
+                </span>
+
+
+
+                <div class="product-info__review-text">
+                    <p>
+                        Цей бургер непоганий на смак, особливо, коли немає можливості або часу щось готувати. Це чудовий
+                        варіант, щоб перекусити находу, але, щоб себе побалувати, краще замовлю піцу
+                    </p>
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="product-info__review">
-            
-            <h2>Думки наших клієнтів</h2>
-            <span>Андрій</span>
-            <span>10.06.2021</span>
-            <span>Доставили швидко. Товар свіжий та дуже смачний, буду ще обов’язково куштувати! </span>
-            @include('../../../components/rating/_rating.html')
-        </div> -->
-
     </div>
-
 
 </div>

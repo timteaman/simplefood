@@ -276,3 +276,47 @@ dropdowns.forEach(dropdown => {
     });
   });
 });
+
+function showContent(btn) {
+  var contentId = btn.getAttribute('data-content');
+
+  document
+    .querySelectorAll(
+      '.product-info__box, .product-info__traits, .product-info__review'
+    )
+    .forEach(function (content) {
+      content.classList.remove('active');
+    });
+
+  document.getElementById(contentId).classList.add('active');
+
+  document.querySelectorAll('.product-info__btn').forEach(function (button) {
+    button.classList.remove('product-info__btn--active');
+  });
+
+  btn.classList.add('product-info__btn--active');
+}
+
+// bread crumbs
+
+document.addEventListener('DOMContentLoaded', function () {
+  var currentPage = 'third'; // Замените на реальное значение
+
+  document
+    .querySelectorAll('.breadcrumbs__link--current')
+    .forEach(function (link) {
+      link.classList.remove('breadcrumbs__link--current');
+    });
+
+  let selector =
+    currentPage === 'home'
+      ? '.breadcrumbs__link[href="./index.html"]'
+      : currentPage === 'catalog'
+      ? '.breadcrumbs__link[href="./catalog.html"]'
+      : '.breadcrumbs__link:not([href="./index.html"]):not([href="./catalog.html"])';
+
+  let thirdElementLink = document.querySelector(selector);
+  if (thirdElementLink) {
+    thirdElementLink.classList.add('breadcrumbs__link--current');
+  }
+});
