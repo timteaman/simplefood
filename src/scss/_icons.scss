@@ -81,55 +81,55 @@
 
     &--facebook {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-facebook');
+            mask-image: url('../assets/icons/sprite.svg#icon-facebook');
         }
     }
 
     &--twitter {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-twitter');
+            mask-image: url('../assets/icons/sprite.svg#icon-twitter');
         }
     }
 
     &--instagram {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-instagram');
+            mask-image: url('../assets/icons/sprite.svg#icon-instagram');
         }
     }
 
     &--telegram {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-telegram');
+            mask-image: url('../assets/icons/sprite.svg#icon-telegram');
         }
     }
 
     &--location {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-location');
+            mask-image: url('../assets/icons/sprite.svg#icon-location');
         }
     }
 
     &--call {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-call');
+            mask-image: url('../assets/icons/sprite.svg#icon-call');
         }
     }
 
     &--message {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-message');
+            mask-image: url('../assets/icons/sprite.svg#icon-message');
         }
     }
 
     &--arrow {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-arrow-right');
+            mask-image: url('../assets/icons/sprite.svg#icon-arrow-right');
         }
     }
 
     &--time {
         &::before {
-            mask-image: url('../../assets/icons/sprite.svg#icon-time');
+            mask-image: url('../assets/icons/sprite.svg#icon-time');
         }
     }
 
@@ -198,7 +198,7 @@
             mask-image: url('../assets/icons/sprite.svg#icon-filters');
         }
     }
-    
+
     &--icon-star {
         &::before {
             mask-image: url('../assets/icons/sprite.svg#icon-star');
