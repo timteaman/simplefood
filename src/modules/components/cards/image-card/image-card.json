@@ -1,16 +1,16 @@
 [
     {
-        "imageCardImageUrl": "../assets/images/categories/1@1x.webp",
+        "imageCardImageUrl": "./assets/images/categories/1@1x.webp",
         "imageCardAlt": "чізбургера з листям салату",
         "imageCardClass": "swiper-slide product-list__item"
     },
     {
-        "imageCardImageUrl": "../assets/images/categories/2@1x.webp",
+        "imageCardImageUrl": "./assets/images/categories/2@1x.webp",
         "imageCardAlt": "Біфбургер",
         "imageCardClass": "swiper-slide product-list__item"
     },
     {
-        "imageCardImageUrl": "../assets/images/categories/3@1x.webp",
+        "imageCardImageUrl": "./assets/images/categories/3@1x.webp",
         "imageCardAlt": "Королівський чізбургер",
         "imageCardClass": "swiper-slide product-list__item"
     }
